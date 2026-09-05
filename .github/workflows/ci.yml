@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  repository:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate repository
+        run: python scripts/validate-repository.py
+      - name: Run repository-contained Python tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          while IFS= read -r test_file; do
+            python -B "$test_file"
+          done < <(find . -type f -name 'test_*.py' -not -path './.git/*' | sort)
+      - name: Reject private or generated files
+        shell: pwsh
+        run: ./scripts/check-secrets.ps1
