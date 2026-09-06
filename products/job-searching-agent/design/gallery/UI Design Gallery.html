@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Job Searching Agent, Frontend UI UX Design</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --black: #0a0a0a;
+      --graphite: #3f3f46;
+      --muted: #71717a;
+      --border: #e4e4e7;
+      --canvas: #f8f8f7;
+      --white: #ffffff;
+      --green: #16a34a;
+      --orange: #d97706;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--canvas);
+      color: var(--black);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: center;
+      padding: 20px 28px;
+      background: rgba(255,255,255,.96);
+      border-bottom: 1px solid var(--border);
+    }
+    h1, h2 { margin: 0; letter-spacing: -.03em; }
+    h1 { font-size: 24px; }
+    h2 { font-size: 22px; }
+    p { color: var(--graphite); line-height: 1.55; }
+    .version { color: var(--muted); white-space: nowrap; }
+    main { max-width: 1560px; margin: 0 auto; padding: 28px; }
+    .intro {
+      display: grid;
+      grid-template-columns: 1.4fr .6fr;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .note {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 18px;
+    }
+    .note strong { display: block; margin-bottom: 6px; }
+    .note p { margin: 0; }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 28px;
+    }
+    nav a {
+      color: var(--black);
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 12px;
+      text-decoration: none;
+      font-weight: 650;
+    }
+    nav a:hover, nav a:focus { border-color: var(--black); outline: none; }
+    section {
+      scroll-margin-top: 96px;
+      margin-bottom: 42px;
+    }
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 20px;
+      margin-bottom: 14px;
+    }
+    .section-head p { margin: 6px 0 0; }
+    .screens {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 390px);
+      align-items: start;
+      gap: 18px;
+    }
+    figure {
+      margin: 0;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    figure img { display: block; width: 100%; height: auto; }
+    figcaption {
+      padding: 12px 14px;
+      border-top: 1px solid var(--border);
+      color: var(--graphite);
+      font-weight: 650;
+    }
+    .sample { color: var(--orange); }
+    .final { color: var(--green); }
+    footer {
+      padding: 26px 28px;
+      border-top: 1px solid var(--border);
+      background: var(--white);
+      color: var(--muted);
+      text-align: center;
+    }
+    @media (max-width: 900px) {
+      .intro, .screens { grid-template-columns: 1fr; }
+      main { padding: 18px; }
+      header { padding: 16px 18px; }
+      .screens figure:last-child { max-width: 390px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Job Searching Agent</h1>
+      <div class="version">Complete frontend UI and UX design set</div>
+    </div>
+    <strong>V 3.0</strong>
+  </header>
+  <main>
+    <div class="intro">
+      <div class="note">
+        <strong>How to review</strong>
+        <p>Each page is shown as a desktop and mobile pair. Click an image to open the full-resolution PNG. The Agent Dashboard uses sample data so you can see the populated state.</p>
+      </div>
+      <div class="note">
+        <strong>Continuous Day rule</strong>
+        <p>30 Aug = Day 30, 31 Aug = Day 31, 1 Sep = Day 32. The number never resets monthly.</p>
+      </div>
+    </div>
+    <nav>
+      <a href="#dashboard">1. Agent Dashboard</a>
+      <a href="#jobs">2. All Jobs</a>
+      <a href="#queue">3. Queue</a>
+      <a href="#applications">4. Applications</a>
+      <a href="#investigations">5. Investigations</a>
+      <a href="#performance">6. Performance</a>
+      <a href="#settings">7. Settings</a>
+    </nav>
+
+    <section id="dashboard">
+      <div class="section-head"><div><h2>1. Agent Dashboard</h2><p>Filled operational overview with cumulative counts and UK-country application totals.</p></div><strong class="sample">Sample data, not live</strong></div>
+      <div class="screens"><figure><a href="01 - Agent Dashboard/Desktop.png"><img src="01 - Agent Dashboard/Desktop.png" alt="Agent Dashboard desktop design"></a><figcaption>Desktop, filled state</figcaption></figure><figure><a href="01 - Agent Dashboard/Mobile.png"><img src="01 - Agent Dashboard/Mobile.png" alt="Agent Dashboard mobile design"></a><figcaption>Mobile, filled state</figcaption></figure></div>
+    </section>
+    <section id="jobs">
+      <div class="section-head"><div><h2>2. All Jobs</h2><p>Canonical job library, filters, flags, evidence states, and investigation drawer.</p></div><strong class="final">Desktop and mobile</strong></div>
+      <div class="screens"><figure><a href="02 - All Jobs/Desktop.png"><img src="02 - All Jobs/Desktop.png" alt="All Jobs desktop design"></a><figcaption>Desktop with job drawer</figcaption></figure><figure><a href="02 - All Jobs/Mobile.png"><img src="02 - All Jobs/Mobile.png" alt="All Jobs mobile design"></a><figcaption>Mobile with filter sheet</figcaption></figure></div>
+    </section>
+    <section id="queue">
+      <div class="section-head"><div><h2>3. Application Queue</h2><p>Persistent manual-application queue with prioritisation evidence and sticky actions.</p></div><strong class="final">Desktop and mobile</strong></div>
+      <div class="screens"><figure><a href="03 - Application Queue/Desktop.png"><img src="03 - Application Queue/Desktop.png" alt="Application Queue desktop design"></a><figcaption>Desktop queue</figcaption></figure><figure><a href="03 - Application Queue/Mobile.png"><img src="03 - Application Queue/Mobile.png" alt="Application Queue mobile design"></a><figcaption>Mobile queue</figcaption></figure></div>
+    </section>
+    <section id="applications">
+      <div class="section-head"><div><h2>4. Applications</h2><p>Cumulative application lifecycle, details, notes, follow-up dates, and append-only timeline.</p></div><strong class="sample">Fixture lifecycle data</strong></div>
+      <div class="screens"><figure><a href="04 - Applications/Desktop.png"><img src="04 - Applications/Desktop.png" alt="Applications desktop design"></a><figcaption>Desktop with application drawer</figcaption></figure><figure><a href="04 - Applications/Mobile.png"><img src="04 - Applications/Mobile.png" alt="Applications mobile design"></a><figcaption>Mobile with full-screen timeline</figcaption></figure></div>
+    </section>
+    <section id="investigations">
+      <div class="section-head"><div><h2>5. Daily Investigations</h2><p>Run history, evidence gaps, agent errors, email preview, and UK-country counts.</p></div><strong class="final">Verified snapshot labels</strong></div>
+      <div class="screens"><figure><a href="05 - Daily Investigations/Desktop.png"><img src="05 - Daily Investigations/Desktop.png" alt="Daily Investigations desktop design"></a><figcaption>Desktop history</figcaption></figure><figure><a href="05 - Daily Investigations/Mobile.png"><img src="05 - Daily Investigations/Mobile.png" alt="Daily Investigations mobile design"></a><figcaption>Mobile history</figcaption></figure></div>
+    </section>
+    <section id="performance">
+      <div class="section-head"><div><h2>6. Agent Performance</h2><p>Measured quality, explicit unknowns, outcome funnel, and evidenced version promotion.</p></div><strong class="final">No invented metrics</strong></div>
+      <div class="screens"><figure><a href="06 - Agent Performance/Desktop.png"><img src="06 - Agent Performance/Desktop.png" alt="Agent Performance desktop design"></a><figcaption>Desktop performance</figcaption></figure><figure><a href="06 - Agent Performance/Mobile.png"><img src="06 - Agent Performance/Mobile.png" alt="Agent Performance mobile design"></a><figcaption>Mobile performance</figcaption></figure></div>
+    </section>
+    <section id="settings">
+      <div class="section-head"><div><h2>7. Settings</h2><p>Data sources, continuous Day numbering, schedules, notifications, access, and quality rules.</p></div><strong class="final">Day 32 rule included</strong></div>
+      <div class="screens"><figure><a href="07 - Settings/Desktop.png"><img src="07 - Settings/Desktop.png" alt="Settings desktop design"></a><figcaption>Desktop settings</figcaption></figure><figure><a href="07 - Settings/Mobile.png"><img src="07 - Settings/Mobile.png" alt="Settings mobile design"></a><figcaption>Mobile settings and More menu</figcaption></figure></div>
+    </section>
+  </main>
+  <footer>Job Searching Agent, Frontend UI and UX Design, V 3.0</footer>
+</body>
+</html>

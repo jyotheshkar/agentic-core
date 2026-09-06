@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "mode": "SHADOW_ONLY",
+  "unit_of_analysis": "one observed role on one London calendar day",
+  "evidence_inputs_read_only": ["data/jobs.sqlite3", "Job Applications/applications.csv", "Job Applications/ready_to_submit.csv", "data/run-log.md", "data/preparation-status.md"],
+  "hard_gates": ["live", "unique", "sponsor_entity", "role_sponsorship", "salary", "occupation", "mandatory_eligibility"],
+  "actions": ["NO_ACTION", "KEEP_BASELINE", "PRIORITIZE_RESEARCH"],
+  "action_mask": {
+    "NO_ACTION": "always allowed",
+    "KEEP_BASELINE": "allowed only for a complete observed record",
+    "PRIORITIZE_RESEARCH": "allowed only when no hard gate is FAIL and unresolved evidence is explicitly recorded"
+  },
+  "label_policy": {
+    "allowed": ["JYO_CONFIRMED_SUBMISSION", "EXPLICIT_OUTCOME_LABEL"],
+    "forbidden": ["absence_as_label", "inferred_outcome", "fabricated_label"]
+  },
+  "promotion_requirements": ["frozen evidence ledger", "baseline comparison", "safety regression pass", "rollback artifact", "explicit Jyo approval"]
+}

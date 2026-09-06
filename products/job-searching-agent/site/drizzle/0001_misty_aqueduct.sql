@@ -1,0 +1,1 @@
+ALTER TABLE `job_evidence` ADD `application_confidence` integer NOT NULL;

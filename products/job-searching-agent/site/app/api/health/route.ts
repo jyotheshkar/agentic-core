@@ -1,0 +1,2 @@
+import { runtimeEnv, json } from '@/lib/server/runtime';
+export async function GET() { let database = 'ready'; try { await runtimeEnv().DB.prepare('SELECT 1').first(); } catch { database = 'unavailable'; } return json({ status: database === 'ready' ? 'ok' : 'degraded', database, mode: 'private-owner', applications: 'manual-only', timestamp: new Date().toISOString() }, { status: database === 'ready' ? 200 : 503 }); }

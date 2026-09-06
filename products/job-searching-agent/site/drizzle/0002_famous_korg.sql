@@ -1,0 +1,1 @@
+ALTER TABLE `jobs` ADD `role_type` text NOT NULL;

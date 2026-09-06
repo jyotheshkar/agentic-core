@@ -21,11 +21,10 @@ jobs:
       - name: Run product tests
         shell: bash
         run: |
-          if [ -f products/job-searching-agent/package.json ]; then
-            cd products/job-searching-agent
+          if [ -f products/job-searching-agent/site/package.json ]; then
+            cd products/job-searching-agent/site
             npm ci
-            npm test
-            npm run build
+            npm run check
           fi
       - name: Reject private or generated files
         shell: pwsh
