@@ -1,0 +1,4 @@
+interface:
+  display_name: "Performance Engineering"
+  short_description: "Define performance objectives, instrument workloads, measure..."
+  default_prompt: "Use $performance-engineering to complete this task with a traceable, bounded result."

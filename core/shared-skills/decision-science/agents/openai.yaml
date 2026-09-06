@@ -1,0 +1,4 @@
+interface:
+  display_name: "Decision Science"
+  short_description: "Compare options, uncertainty, cost, and reversibility"
+  default_prompt: "Use $decision-science to compare my options and identify what could reverse the ranking."

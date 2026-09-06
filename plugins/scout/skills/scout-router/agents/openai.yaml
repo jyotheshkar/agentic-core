@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scout Router"
+  short_description: "Choose proportionate research depth and skills"
+  default_prompt: "Use $scout-router to choose the minimum sufficient research mode and shared skills for this question."

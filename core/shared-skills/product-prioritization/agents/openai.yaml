@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Prioritization"
+  short_description: "Prioritize product opportunities and work using value, eviden..."
+  default_prompt: "Use $product-prioritization to complete this task with a traceable, bounded result."

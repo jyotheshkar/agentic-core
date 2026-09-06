@@ -1,0 +1,4 @@
+interface:
+  display_name: "LLM Engineering"
+  short_description: "Design reliable language-model workflows using task contracts..."
+  default_prompt: "Use $llm-engineering to complete this task with a traceable, bounded result."

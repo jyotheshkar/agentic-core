@@ -1,0 +1,4 @@
+interface:
+  display_name: "MOA Problem Framing"
+  short_description: "Frame the real problem and outcome"
+  default_prompt: "Use $moa-problem-framing to separate the request, real problem, and desired outcome."

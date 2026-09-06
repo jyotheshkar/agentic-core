@@ -1,0 +1,4 @@
+interface:
+  display_name: "Experience Design"
+  short_description: "Design coherent user flows, information architecture, interac..."
+  default_prompt: "Use $experience-design to complete this task with a traceable, bounded result."

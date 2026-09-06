@@ -1,0 +1,158 @@
+{
+  "status": "PASS",
+  "release": "AI OS SHARED SKILL LIBRARY v1.0",
+  "category_counts": {
+    "reasoning": 9,
+    "research": 4,
+    "product-design": 5,
+    "engineering": 9,
+    "ai": 6,
+    "operations-quality": 5
+  },
+  "domain_total": 38,
+  "registry_total": 39,
+  "custom_quality_gate": "PASS",
+  "external_source_validation": "PASS",
+  "registry": "PASS",
+  "skill_broker": "PASS",
+  "routing_evals": "PASS",
+  "negative_routing": "PASS",
+  "agent_access": {
+    "Forge": [
+      "ai",
+      "engineering",
+      "operations-quality",
+      "product-design",
+      "reasoning",
+      "research"
+    ],
+    "Minister": [
+      "ai",
+      "engineering",
+      "operations-quality",
+      "product-design",
+      "reasoning",
+      "research"
+    ],
+    "MOA": [
+      "ai",
+      "engineering",
+      "operations-quality",
+      "product-design",
+      "reasoning",
+      "research"
+    ]
+  },
+  "duplicate_canonical_skills": "NONE",
+  "broken_references": "NONE",
+  "critical": 0,
+  "high": 0,
+  "warnings": [],
+  "errors": [],
+  "source_results": {
+    "https://www.prisma-statement.org/prisma-2020": {
+      "passed": true,
+      "status": "200"
+    },
+    "https://www.crossref.org/documentation/retrieve-metadata/rest-api/": {
+      "passed": true,
+      "status": "200"
+    },
+    "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10": {
+      "passed": true,
+      "status": "200"
+    },
+    "https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works": {
+      "passed": true,
+      "status": "200"
+    },
+    "https://insights.sei.cmu.edu/library/software-requirements/": {
+      "passed": true,
+      "status": "200"
+    },
+    "https://www.gov.uk/service-manual/user-research": {
+      "passed": true,
+      "status": "200"
+    },
+    "https://www.w3.org/TR/wcag/": {
+      "passed": true,
+      "status": "200"
+    },
+    "https://www.gov.uk/service-manual/agile-delivery": {
+      "passed": true,
+      "status": "200"
+    },
+    "https://www.sei.cmu.edu/our-work/software-architecture/": {
+      "passed": true,
+      "status": "200"
+    },
+    "https://developer.mozilla.org/en-US/docs/Learn_web_development": {
+      "passed": true,
+      "status": "200"
+    },
+    "https://12factor.net/": {
+      "passed": true,
+      "status": "200"
+    },
+    "https://spec.openapis.org/oas/": {
+      "passed": true,
+      "status": "200"
+    },
+    "https://www.postgresql.org/docs/current/": {
+      "passed": true,
+      "status": "200"
+    },
+    "https://www.nist.gov/cyberframework": {
+      "passed": true,
+      "status": "200"
+    },
+    "https://owasp.org/www-project-application-security-verification-standard/": {
+      "passed": true,
+      "status": "200"
+    },
+    "https://www.istqb.org/certifications/certified-tester-foundation-level": {
+      "passed": true,
+      "status": "200"
+    },
+    "https://web.dev/learn/performance": {
+      "passed": true,
+      "status": "200"
+    },
+    "https://developers.google.com/machine-learning/problem-framing/problem-framing": {
+      "passed": true,
+      "status": "200"
+    },
+    "https://airc.nist.gov/airmf-resources/airmf/": {
+      "passed": true,
+      "status": "200"
+    },
+    "https://airc.nist.gov/": {
+      "passed": true,
+      "status": "200"
+    },
+    "https://platform.openai.com/docs/guides": {
+      "passed": true,
+      "status": "200"
+    },
+    "https://arxiv.org/abs/2005.11401": {
+      "passed": true,
+      "status": "200"
+    },
+    "https://sre.google/sre-book/release-engineering/": {
+      "passed": true,
+      "status": "200"
+    },
+    "https://csrc.nist.gov/pubs/sp/800/61/r3/final": {
+      "passed": true,
+      "status": "200"
+    },
+    "https://opentelemetry.io/docs/concepts/signals/": {
+      "passed": true,
+      "status": "200"
+    },
+    "https://www.iso.org/standard/62085.html": {
+      "passed": true,
+      "status": "200"
+    }
+  }
+}

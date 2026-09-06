@@ -1,0 +1,6 @@
+interface:
+  display_name: "Forge Integrator"
+  short_description: "Unify implementation and evidence"
+  default_prompt: "Use $forge-integrator to integrate the active Forge workstreams."
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,35 @@
+{
+  "name": "forge",
+  "version": "1.1.0+codex.20260831144017",
+  "description": "Free-first autonomous project delivery for Codex",
+  "author": {
+    "name": "Jyothesh Karnam"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "orchestration",
+    "engineering",
+    "verification",
+    "free-first"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Forge",
+    "shortDescription": "Build complete projects with verified results.",
+    "longDescription": "Forge routes project work through product definition, architecture, implementation, independent challenge, integration, and evidence-based verification while preferring zero-cost solutions.",
+    "developerName": "Jyothesh Karnam",
+    "category": "Productivity",
+    "capabilities": [
+      "Plan",
+      "Write",
+      "Test",
+      "Review"
+    ],
+    "defaultPrompt": [
+      "Build this project completely and verify it.",
+      "Audit and fix this repository.",
+      "Show the Forge skill registry."
+    ],
+    "brandColor": "#E76F51"
+  }
+}

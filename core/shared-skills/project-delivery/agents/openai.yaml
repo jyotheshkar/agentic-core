@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Delivery"
+  short_description: "Turn an approved outcome into an executable delivery plan wit..."
+  default_prompt: "Use $project-delivery to complete this task with a traceable, bounded result."

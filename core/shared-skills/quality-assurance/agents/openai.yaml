@@ -1,0 +1,4 @@
+interface:
+  display_name: "Quality Assurance"
+  short_description: "Establish prevention, review, verification, acceptance, defec..."
+  default_prompt: "Use $quality-assurance to complete this task with a traceable, bounded result."

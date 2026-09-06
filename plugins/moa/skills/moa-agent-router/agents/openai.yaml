@@ -1,0 +1,4 @@
+interface:
+  display_name: "MOA Agent Router"
+  short_description: "Select the minimum sufficient agent mix"
+  default_prompt: "Use $moa-agent-router to choose the minimum sufficient agents and Minister depth."

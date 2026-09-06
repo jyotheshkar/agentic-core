@@ -1,0 +1,4 @@
+interface:
+  display_name: "Responsible AI Safety"
+  short_description: "Identify, measure, and manage AI risks across validity, safet..."
+  default_prompt: "Use $responsible-ai-safety to complete this task with a traceable, bounded result."

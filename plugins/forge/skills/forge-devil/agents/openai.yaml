@@ -1,0 +1,6 @@
+interface:
+  display_name: "Forge Devil"
+  short_description: "Challenge architecture and completion"
+  default_prompt: "Use $forge-devil to review the active Forge project independently."
+policy:
+  allow_implicit_invocation: false

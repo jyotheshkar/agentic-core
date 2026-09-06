@@ -1,0 +1,4 @@
+interface:
+  display_name: "Software Architecture"
+  short_description: "Choose and document software boundaries, components, interfac..."
+  default_prompt: "Use $software-architecture to complete this task with a traceable, bounded result."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scout Investigation Planner"
+  short_description: "Plan the cheapest reliable evidence path"
+  default_prompt: "Use $scout-investigation-planner to turn this contract into a bounded source and claim plan."

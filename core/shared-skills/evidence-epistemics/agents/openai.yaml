@@ -1,0 +1,4 @@
+interface:
+  display_name: "Evidence Epistemics"
+  short_description: "Calibrate claims to evidence and uncertainty"
+  default_prompt: "Use $evidence-epistemics to classify the evidence behind these claims."

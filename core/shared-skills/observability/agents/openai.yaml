@@ -1,0 +1,4 @@
+interface:
+  display_name: "Observability"
+  short_description: "Design telemetry that makes system behavior, user impact, fai..."
+  default_prompt: "Use $observability to complete this task with a traceable, bounded result."

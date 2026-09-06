@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scout Synthesis"
+  short_description: "Build a decision-ready evidence pack"
+  default_prompt: "Use $scout-synthesis to turn this validated ledger into a bounded evidence pack without making the final decision."

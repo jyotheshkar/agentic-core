@@ -1,0 +1,4 @@
+interface:
+  display_name: "Security Engineering"
+  short_description: "Threat-model and implement proportionate security controls ac..."
+  default_prompt: "Use $security-engineering to complete this task with a traceable, bounded result."

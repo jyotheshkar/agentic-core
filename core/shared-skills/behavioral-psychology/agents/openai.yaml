@@ -1,0 +1,4 @@
+interface:
+  display_name: "Behavioral Psychology"
+  short_description: "Analyze biases, motivation, and likely behavior"
+  default_prompt: "Use $behavioral-psychology to identify decision-relevant behavioral factors and safeguards."

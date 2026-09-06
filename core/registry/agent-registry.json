@@ -1,0 +1,251 @@
+{
+  "schema_version": "0.1.0",
+  "registry_version": "0.2.0",
+  "notes": "Autonomous agents are registered here. Installed capability plugins remain natively discoverable and are not promoted to agents without agent authority metadata.",
+  "agents": [
+    {
+      "id": "minister",
+      "name": "Minister",
+      "type": "decision-agent",
+      "description": "Evidence-aware decision and strategic judgment authority for the Personal AI OS.",
+      "capabilities": [
+        "decision",
+        "strategy",
+        "psychology",
+        "risk",
+        "evidence",
+        "reasoning",
+        "final-judgment"
+      ],
+      "triggers": [
+        "decide",
+        "compare",
+        "judge a plan",
+        "review strategic direction",
+        "final outcome review"
+      ],
+      "scope": "personal",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "authority": [
+        "strategy",
+        "decision",
+        "outcome-fit",
+        "final-judgment"
+      ],
+      "dependencies": [
+        "skill-broker",
+        "skill-registry"
+      ],
+      "requires_minister": false,
+      "supports_parallel": false,
+      "cost_profile": "FREE_FIRST",
+      "risk_profile": "MEDIUM",
+      "trust_level": "VERIFIED",
+      "version": "0.1.0+codex.20260831230702",
+      "source": {
+        "plugin": "minister",
+        "marketplace": "personal",
+        "path": "<RUNTIME_PATH_REDACTED>"
+      },
+      "notes": "MOA participation level DEEP maps to the current Minister COUNCIL runtime mode.",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "forge",
+      "name": "Forge",
+      "type": "build-agent",
+      "description": "Software delivery, architecture, implementation, integration, testing, and verification authority.",
+      "capabilities": [
+        "build",
+        "software-implementation",
+        "architecture",
+        "frontend",
+        "backend",
+        "ai-applications",
+        "testing",
+        "integration",
+        "verification",
+        "fix",
+        "technical-audit"
+      ],
+      "triggers": [
+        "build software",
+        "fix code",
+        "implement a product",
+        "technical audit",
+        "engineering design",
+        "launch software"
+      ],
+      "scope": "personal",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "authority": [
+        "engineering-implementation",
+        "software-architecture",
+        "integration",
+        "technical-verification"
+      ],
+      "dependencies": [
+        "skill-broker",
+        "skill-registry"
+      ],
+      "requires_minister": true,
+      "supports_parallel": true,
+      "cost_profile": "FREE_FIRST",
+      "risk_profile": "MEDIUM",
+      "trust_level": "VERIFIED",
+      "version": "1.1.0+codex.20260831144017",
+      "source": {
+        "plugin": "forge",
+        "marketplace": "personal",
+        "path": "<RUNTIME_PATH_REDACTED>"
+      },
+      "notes": "MOA supplies objective, constraints, Minister conditions, deliverable, and acceptance criteria. Forge owns engineering internals.",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "moa",
+      "name": "MOA",
+      "type": "orchestrator",
+      "description": "Master orchestration layer that frames outcomes and selects the minimum sufficient mixture of agents and skills.",
+      "capabilities": [
+        "intent-framing",
+        "problem-framing",
+        "capability-discovery",
+        "agent-routing",
+        "task-decomposition",
+        "orchestration",
+        "conflict-arbitration",
+        "completion-governance"
+      ],
+      "triggers": [
+        "orchestrate a task",
+        "choose agents",
+        "mixed decision and build",
+        "explain routing",
+        "agent health"
+      ],
+      "scope": "personal",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "authority": [
+        "scope",
+        "routing",
+        "sequencing",
+        "handoff",
+        "orchestration"
+      ],
+      "dependencies": [
+        "minister",
+        "skill-broker",
+        "skill-registry"
+      ],
+      "requires_minister": true,
+      "supports_parallel": true,
+      "cost_profile": "FREE_FIRST",
+      "risk_profile": "MEDIUM",
+      "trust_level": "VERIFIED",
+      "version": "0.1.0+codex.20260902025918",
+      "source": {
+        "plugin": "moa",
+        "marketplace": "personal",
+        "path": "<RUNTIME_PATH_REDACTED>"
+      },
+      "notes": "Composes installed skills in the current task. Separate plugin process invocation is not exposed by the platform.",
+      "last_validated": "2026-09-02"
+    },
+    {
+      "id": "scout",
+      "name": "Scout",
+      "type": "specialist-agent",
+      "description": "Current research, discovery, source verification, contradiction analysis, and decision-ready evidence authority.",
+      "capabilities": [
+        "research",
+        "discovery",
+        "source-discovery",
+        "source-verification",
+        "claim-verification",
+        "evidence-analysis",
+        "contradiction-resolution",
+        "freshness-analysis",
+        "research-synthesis",
+        "academic-research",
+        "technical-research",
+        "market-research"
+      ],
+      "triggers": [
+        "research a question",
+        "investigate current evidence",
+        "verify a claim",
+        "compare sources",
+        "find current opportunities",
+        "resolve conflicting information"
+      ],
+      "scope": "personal",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "authority": [
+        "research-planning",
+        "source-verification",
+        "claim-verification",
+        "evidence-completeness",
+        "research-synthesis"
+      ],
+      "dependencies": [
+        "skill-broker",
+        "skill-registry"
+      ],
+      "requires_minister": false,
+      "supports_parallel": true,
+      "cost_profile": "FREE_FIRST",
+      "risk_profile": "MEDIUM",
+      "trust_level": "VERIFIED",
+      "version": "1.0.0+codex.20260902030631",
+      "source": {
+        "plugin": "scout",
+        "marketplace": "personal",
+        "path": "<RUNTIME_PATH_REDACTED>"
+      },
+      "notes": "Scout owns evidence gathering and research completeness. Minister retains final strategic judgment, Forge retains engineering authority, and MOA retains orchestration authority.",
+      "last_validated": "2026-09-02"
+    },
+    {
+      "id": "devil",
+      "name": "Devil",
+      "type": "legacy-plugin",
+      "description": "Legacy adversarial decision plugin retained in source but not currently installed.",
+      "capabilities": [
+        "adversarial-review",
+        "premortem",
+        "bias-check"
+      ],
+      "triggers": [
+        "legacy devil review"
+      ],
+      "scope": "personal",
+      "status": "NOT_INSTALLED",
+      "enabled": false,
+      "installed": false,
+      "authority": [],
+      "dependencies": [],
+      "requires_minister": false,
+      "supports_parallel": false,
+      "cost_profile": "FREE",
+      "risk_profile": "LEGACY",
+      "trust_level": "LEGACY",
+      "version": "0.1.0",
+      "source": {
+        "plugin": "devil",
+        "marketplace": "personal",
+        "path": "<RUNTIME_PATH_REDACTED>"
+      },
+      "notes": "Do not select. Shared adversarial-red-team and Forge private review cover current workflows.",
+      "last_validated": "2026-09-01"
+    }
+  ]
+}

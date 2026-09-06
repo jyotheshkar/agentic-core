@@ -1,0 +1,16 @@
+{
+  "recorded_at": "2026-09-06",
+  "status": "PASS",
+  "direct_plugin_to_plugin_orchestration": "EMULATED",
+  "components": {
+    "shared_core": {"skills": 39, "tests_passed": 11, "tests_total": 11},
+    "minister": {"version": "0.1.0+codex.20260831230702", "skills": 3, "tests_passed": 14, "tests_total": 14},
+    "scout": {"version": "1.0.0+codex.20260902030631", "skills": 8, "tests_passed": 17, "tests_total": 17},
+    "forge": {"version": "1.1.0+codex.20260831144017", "skills": 7, "tests_passed": 21, "tests_total": 21},
+    "moa": {"version": "0.1.0+codex.20260902025918", "skills": 9, "tests_passed": 12, "tests_total": 12},
+    "devil": {"version": "0.1.0", "installed": false, "classification": "legacy"}
+  },
+  "total_tests_passed": 75,
+  "total_tests": 75,
+  "scope_note": "Deterministic repository and local-runtime tests only. Passing tests prove the covered behaviours, not universal correctness."
+}

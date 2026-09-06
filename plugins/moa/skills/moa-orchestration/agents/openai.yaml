@@ -1,0 +1,4 @@
+interface:
+  display_name: "MOA Orchestration"
+  short_description: "Coordinate bounded agent handoffs"
+  default_prompt: "Use $moa-orchestration to coordinate this execution graph and its handoffs."

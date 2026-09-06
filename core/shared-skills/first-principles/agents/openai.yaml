@@ -1,0 +1,4 @@
+interface:
+  display_name: "First Principles"
+  short_description: "Rebuild problems from fundamental truths"
+  default_prompt: "Use $first-principles to challenge the assumptions behind this problem."

@@ -1,0 +1,12 @@
+{
+  "decision": "PASS",
+  "imported_files": 211,
+  "registry_records": 39,
+  "domain_skills": 38,
+  "core_tests": {"passed": 75, "total": 75},
+  "repository_contract_tests": {"passed": 3, "total": 3},
+  "critical_findings": 0,
+  "high_findings": 0,
+  "initial_repository_path_failure": 1,
+  "initial_repository_path_failure_resolved": true
+}

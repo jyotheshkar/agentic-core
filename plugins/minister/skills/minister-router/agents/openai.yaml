@@ -1,0 +1,4 @@
+interface:
+  display_name: "Minister Router"
+  short_description: "Select decision depth and shared reasoning skills"
+  default_prompt: "Use $minister-router to route this active Minister decision."

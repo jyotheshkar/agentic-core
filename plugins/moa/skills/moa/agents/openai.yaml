@@ -1,0 +1,4 @@
+interface:
+  display_name: "MOA"
+  short_description: "Orchestrate the right agents and skills"
+  default_prompt: "Use $moa to frame this goal and orchestrate the minimum sufficient capabilities."

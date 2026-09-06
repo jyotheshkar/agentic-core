@@ -1,0 +1,6 @@
+interface:
+  display_name: "Forge Verification Gate"
+  short_description: "Block unsupported completion claims"
+  default_prompt: "Use $forge-verification-gate to verify the active Forge project."
+policy:
+  allow_implicit_invocation: false

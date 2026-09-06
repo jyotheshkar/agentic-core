@@ -1,0 +1,29 @@
+{
+  "name": "moa",
+  "version": "0.1.0+codex.20260902025918",
+  "description": "Mixture-of-agents orchestration for the Personal AI OS",
+  "author": {
+    "name": "Jyothesh Karnam"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "MOA",
+    "shortDescription": "Route complex goals through the right capabilities.",
+    "longDescription": "MOA frames the real objective, requires adaptive Minister judgment, selects the minimum sufficient agents and shared skills, coordinates execution, and governs completion.",
+    "developerName": "Jyothesh Karnam",
+    "category": "Productivity",
+    "capabilities": [
+      "Intent framing",
+      "Agent routing",
+      "Skill brokering",
+      "Execution orchestration",
+      "Completion governance"
+    ],
+    "defaultPrompt": [
+      "Decide whether this idea is worth building, then take it as far as possible.",
+      "Show registered agents and their capabilities.",
+      "Check MOA, Minister, Forge, and registry health."
+    ],
+    "brandColor": "#5B3FD6"
+  }
+}

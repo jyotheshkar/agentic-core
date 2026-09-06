@@ -1,0 +1,4 @@
+interface:
+  display_name: "MOA Task Decomposition"
+  short_description: "Build a dependency-aware execution graph"
+  default_prompt: "Use $moa-task-decomposition to turn this outcome into a verified execution graph."

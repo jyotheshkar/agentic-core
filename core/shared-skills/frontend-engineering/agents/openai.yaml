@@ -1,0 +1,4 @@
+interface:
+  display_name: "Frontend Engineering"
+  short_description: "Implement robust web interfaces with semantic structure, resp..."
+  default_prompt: "Use $frontend-engineering to complete this task with a traceable, bounded result."
