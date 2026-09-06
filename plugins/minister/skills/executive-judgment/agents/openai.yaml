@@ -1,0 +1,4 @@
+interface:
+  display_name: "Executive Judgment"
+  short_description: "Resolve conflicts and issue Minister's final verdict"
+  default_prompt: "Use $executive-judgment to synthesize the active Minister decision and issue one verdict."

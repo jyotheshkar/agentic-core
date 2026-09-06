@@ -1,0 +1,4 @@
+interface:
+  display_name: "Strategic Foresight"
+  short_description: "Test choices across horizons and future scenarios"
+  default_prompt: "Use $strategic-foresight to test this decision across time horizons and plausible futures."

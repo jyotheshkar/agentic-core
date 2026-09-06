@@ -1,0 +1,6 @@
+interface:
+  display_name: "Forge Architect"
+  short_description: "Choose simple resilient architecture"
+  default_prompt: "Use $forge-architect to design the active Forge project."
+policy:
+  allow_implicit_invocation: false

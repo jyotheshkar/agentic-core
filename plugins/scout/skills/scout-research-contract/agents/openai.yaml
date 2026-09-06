@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scout Research Contract"
+  short_description: "Bound research scope, evidence, and stopping rules"
+  default_prompt: "Use $scout-research-contract to define an auditable contract for this investigation."

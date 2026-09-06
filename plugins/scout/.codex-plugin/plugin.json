@@ -1,0 +1,30 @@
+{
+  "name": "scout",
+  "version": "1.0.0+codex.20260902030631",
+  "description": "Current research, source verification, and decision-ready evidence for Agentic Core.",
+  "author": {
+    "name": "Jyothesh Karnam"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Scout",
+    "shortDescription": "Verify current evidence before relying on it.",
+    "longDescription": "Scout plans bounded investigations, discovers and verifies sources, tracks claim provenance and freshness, exposes contradictions, and produces evidence packs for MOA, Minister, or Forge.",
+    "developerName": "Jyothesh Karnam",
+    "category": "Productivity",
+    "capabilities": [
+      "Research planning",
+      "Source discovery",
+      "Source verification",
+      "Claim verification",
+      "Contradiction analysis",
+      "Evidence synthesis"
+    ],
+    "defaultPrompt": [
+      "Investigate this claim using current primary sources.",
+      "Research this topic and produce a verified evidence pack.",
+      "Compare these options and identify decision-critical unknowns."
+    ],
+    "brandColor": "#276A72"
+  }
+}

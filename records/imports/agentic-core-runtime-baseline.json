@@ -1,0 +1,1487 @@
+{
+  "component": "agentic-core-runtime-baseline",
+  "mode": "apply",
+  "imported_at": "2026-09-05T16:18:24.336790+00:00",
+  "source_model": "live runtime remains authoritative",
+  "file_count": 211,
+  "files": [
+    {
+      "source": "<HOME>/.codex/ai-os/registry/skill-registry.json",
+      "destination": "core/registry/skill-registry.json",
+      "sha256": "d772d4485e53790e8b22177a1adaf9acaf61051591ac59d1a2636d1d784bfa5b",
+      "transform": "repository paths sanitised"
+    },
+    {
+      "source": "<HOME>/.codex/ai-os/registry/agent-registry.json",
+      "destination": "core/registry/agent-registry.json",
+      "sha256": "5161005ac5660cdae36dd3457d86976fabf6c001235fda27f82a18144c093746",
+      "transform": "repository paths sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\ai-os\\registry\\skill-registry.schema.json",
+      "destination": "core/registry/skill-registry.schema.json",
+      "sha256": "1a9b15fc2ea934f1b9242fa86cd5638a4ed9105724bdb2453f00428e50bb8bb8"
+    },
+    {
+      "source": "<HOME>\\.codex\\ai-os\\registry\\agent-registry.schema.json",
+      "destination": "core/registry/agent-registry.schema.json",
+      "sha256": "ab8247aedc7a01c7a69a0064f6287ffd7c68fb11af2893965d536ce9b460b979"
+    },
+    {
+      "source": "<HOME>\\.codex\\ai-os\\bin\\aios_skills.py",
+      "destination": "core/broker/aios_skills.py",
+      "source_sha256": "f76ff0c202aee7c61bf0396d4a52867adca38728ddb53ba37be07096fc53cfa6",
+      "destination_sha256": "f76ff0c202aee7c61bf0396d4a52867adca38728ddb53ba37be07096fc53cfa6",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\ai-os\\bin\\build_shared_library_v1.py",
+      "destination": "core/broker/build_shared_library_v1.py",
+      "source_sha256": "53a9e813ed5bce9867423effbc67e91929cc526b810e95fa1b7cb67fd175d083",
+      "destination_sha256": "53a9e813ed5bce9867423effbc67e91929cc526b810e95fa1b7cb67fd175d083",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\ai-os\\docs\\AI_OS_SKILL_ARCHITECTURE.md",
+      "destination": "core/docs/AI_OS_SKILL_ARCHITECTURE.md",
+      "source_sha256": "a8af65d3acb7637aedf1f705d61e04603d2e20515d2a4a4b8b9dbc9fdd41b256",
+      "destination_sha256": "c89894b2a2657d65bde1deb3fa02eee3200eb9ec02508b325e6486744c629570",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\ai-os\\docs\\ENVIRONMENT_INSPECTION.md",
+      "destination": "core/docs/ENVIRONMENT_INSPECTION.md",
+      "source_sha256": "def15e4633ced91b872bdd0eb2193f8403a1c60e4523c37110b1d01ffe025faa",
+      "destination_sha256": "1acf8e5aebefeebcb052b7b6a04b8a6772318aa6892d397cb6956cb30d87a8a6",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\ai-os\\docs\\HOW_PLUGINS_USE_SHARED_SKILLS.md",
+      "destination": "core/docs/HOW_PLUGINS_USE_SHARED_SKILLS.md",
+      "source_sha256": "0e28f85339dacaa4387838bfab80e5f0e03ff017e90b517596513455e4359315",
+      "destination_sha256": "24e0bcd03f2fdf509500d0c2286b455438525263fa121f07ea3c8be3733684f3",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\ai-os\\docs\\INTEGRATION_CONTRACT.md",
+      "destination": "core/docs/INTEGRATION_CONTRACT.md",
+      "source_sha256": "f484ca7c03b4856102b967a13845a684eb356946c4985a6cd341bb3b8ab28b72",
+      "destination_sha256": "f484ca7c03b4856102b967a13845a684eb356946c4985a6cd341bb3b8ab28b72",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\ai-os\\docs\\MAINTENANCE_WORKFLOW.md",
+      "destination": "core/docs/MAINTENANCE_WORKFLOW.md",
+      "source_sha256": "2f339c2092f013d9268aa1d243514191168df4873f363c809b5899cae09446ac",
+      "destination_sha256": "35cd6884fa90582c0709fe6b79c3f84930bbf27009db86259b128505374518de",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\ai-os\\docs\\SHARED_SKILL_LIBRARY_V1.md",
+      "destination": "core/docs/SHARED_SKILL_LIBRARY_V1.md",
+      "source_sha256": "5e5edb028fb79478b457011bd4d92f211ccf8920f26ab80c15cefdb1ad703ae3",
+      "destination_sha256": "584449db35f184acb8b65e357772bda57271e5749fe862266ada092786a6a9a8",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\ai-os\\docs\\SKILL_BROKER.md",
+      "destination": "core/docs/SKILL_BROKER.md",
+      "source_sha256": "8b8230939b06d3b8e78f1254664dbf2d781bc541a5fb809f6c9b2ee7567db389",
+      "destination_sha256": "8b8230939b06d3b8e78f1254664dbf2d781bc541a5fb809f6c9b2ee7567db389",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\ai-os\\docs\\SKILL_REGISTRY.md",
+      "destination": "core/docs/SKILL_REGISTRY.md",
+      "source_sha256": "6c1443ec05e63d7543afa292add66ab4a3d1b049fa5bf9eb474012e385b5288c",
+      "destination_sha256": "6c1443ec05e63d7543afa292add66ab4a3d1b049fa5bf9eb474012e385b5288c",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\ai-os\\docs\\SKILL_VALIDATION.md",
+      "destination": "core/docs/SKILL_VALIDATION.md",
+      "source_sha256": "b0148239b259f5eb541084f2dc982898fb34e28a7daf69a885d9ede440c363b7",
+      "destination_sha256": "5ef74174e2da3f0664ef111f8bfebaae7e5744eed26292511ecffb48796f562c",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\ai-os\\policies\\QUALITY_RUBRIC.md",
+      "destination": "core/policies/QUALITY_RUBRIC.md",
+      "source_sha256": "03ed69a86db2ce9f275cf435e521a7ef624b702ef22f36a39ba1f8d9eea41c48",
+      "destination_sha256": "03ed69a86db2ce9f275cf435e521a7ef624b702ef22f36a39ba1f8d9eea41c48",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\ai-os\\policies\\SECURITY.md",
+      "destination": "core/policies/SECURITY.md",
+      "source_sha256": "a69b6269b53f735f7ce2c36eb765bb36e267210969788fc1e0b58b3713a40bb0",
+      "destination_sha256": "a69b6269b53f735f7ce2c36eb765bb36e267210969788fc1e0b58b3713a40bb0",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\ai-os\\policies\\SKILL_AUTHORING_STANDARDS.md",
+      "destination": "core/policies/SKILL_AUTHORING_STANDARDS.md",
+      "source_sha256": "11f14a967b8acc12f421dae9e09cc110e705cc160ea5c26a4cfef48f712720d2",
+      "destination_sha256": "616ebdec415a6a7c6018c18f5cc51551664ab57fb4270c9686e54e7853a819b1",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\ai-os\\policies\\TRUST_MODEL.md",
+      "destination": "core/policies/TRUST_MODEL.md",
+      "source_sha256": "b6133b123de33c83f1a2a62be846dbc8cd5b0b9fcf88d1a3a14f8c66f8eb61b2",
+      "destination_sha256": "b6133b123de33c83f1a2a62be846dbc8cd5b0b9fcf88d1a3a14f8c66f8eb61b2",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\ai-os\\validation\\shared-library-v1-release-report.json",
+      "destination": "core/validation/shared-library-v1-release-report.json",
+      "source_sha256": "14aee6175357ca17b9226bc21a66e726db5961eed9078ff60a4e045f4816dbbe",
+      "destination_sha256": "f60bacdc48b7e93ea1f772977b6965bbc8058a379bae67ac14d2190311450514",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\ai-os\\validation\\shared-library-v1-second-verification-report.json",
+      "destination": "core/validation/shared-library-v1-second-verification-report.json",
+      "source_sha256": "14aee6175357ca17b9226bc21a66e726db5961eed9078ff60a4e045f4816dbbe",
+      "destination_sha256": "f60bacdc48b7e93ea1f772977b6965bbc8058a379bae67ac14d2190311450514",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\ai-os\\validation\\test_aios_skills.py",
+      "destination": "core/validation/test_aios_skills.py",
+      "source_sha256": "391304a7cda64507ac295a435e8c5469a6ffe7f5c50a1c7fac67bd363eef8e5e",
+      "destination_sha256": "391304a7cda64507ac295a435e8c5469a6ffe7f5c50a1c7fac67bd363eef8e5e",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\ai-os\\validation\\validate_shared_library_v1.py",
+      "destination": "core/validation/validate_shared_library_v1.py",
+      "source_sha256": "623703a3c1da5f5e25a178f82a9830ed27be18ecae6419dcd233b2d267a93d77",
+      "destination_sha256": "623703a3c1da5f5e25a178f82a9830ed27be18ecae6419dcd233b2d267a93d77",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\skill-broker\\agents\\openai.yaml",
+      "destination": "core/shared-skills/skill-broker/agents/openai.yaml",
+      "source_sha256": "f1536038be8b0ec5e52e53996c3d8d3c488c160e503d03fd3276360fe21b06f6",
+      "destination_sha256": "f1536038be8b0ec5e52e53996c3d8d3c488c160e503d03fd3276360fe21b06f6",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\skill-broker\\references\\output-contract.md",
+      "destination": "core/shared-skills/skill-broker/references/output-contract.md",
+      "source_sha256": "ff8a2bfdd70f5c220bf4425ff93a713dc68385aeec024a3e0c1225c2a75ced50",
+      "destination_sha256": "ff8a2bfdd70f5c220bf4425ff93a713dc68385aeec024a3e0c1225c2a75ced50",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\skill-broker\\references\\selection-policy.md",
+      "destination": "core/shared-skills/skill-broker/references/selection-policy.md",
+      "source_sha256": "af38a216c6d5d25f8103b29cb267b4a2ab0461cef94c3764dde0b5be5ad6edb7",
+      "destination_sha256": "af38a216c6d5d25f8103b29cb267b4a2ab0461cef94c3764dde0b5be5ad6edb7",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\skill-broker\\SKILL.md",
+      "destination": "core/shared-skills/skill-broker/SKILL.md",
+      "source_sha256": "a76b6647d31db9fc835f5a62c3c5b6bf3caa437ef18b8927669c18cfee65aae4",
+      "destination_sha256": "bcc0d1e4fb025fcd8ecac2ca408a0a5995139f4e8f48b55ec09444245755efe4",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\first-principles\\agents\\openai.yaml",
+      "destination": "core/shared-skills/first-principles/agents/openai.yaml",
+      "source_sha256": "435bff96e1f101c1ea101dc7a1326f265faf83abb7a499a9f8b6fd1219fe01e4",
+      "destination_sha256": "435bff96e1f101c1ea101dc7a1326f265faf83abb7a499a9f8b6fd1219fe01e4",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\first-principles\\references\\reasoning-method.md",
+      "destination": "core/shared-skills/first-principles/references/reasoning-method.md",
+      "source_sha256": "761933bf183267ba678cad69684f80049b067aa66331062b55143f13e099f182",
+      "destination_sha256": "761933bf183267ba678cad69684f80049b067aa66331062b55143f13e099f182",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\first-principles\\SKILL.md",
+      "destination": "core/shared-skills/first-principles/SKILL.md",
+      "source_sha256": "86ff57386f9d2b458d9205416de2cdde2b90e6e4c613f74d06aae402b329a98d",
+      "destination_sha256": "86ff57386f9d2b458d9205416de2cdde2b90e6e4c613f74d06aae402b329a98d",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\evidence-epistemics\\agents\\openai.yaml",
+      "destination": "core/shared-skills/evidence-epistemics/agents/openai.yaml",
+      "source_sha256": "19bc6a12535cf0800195aea40dcca3231cfe482633474a2b9bc46543b9381ba6",
+      "destination_sha256": "19bc6a12535cf0800195aea40dcca3231cfe482633474a2b9bc46543b9381ba6",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\evidence-epistemics\\references\\claim-classifications.md",
+      "destination": "core/shared-skills/evidence-epistemics/references/claim-classifications.md",
+      "source_sha256": "258cd76b112cf9a7839255059e136634732d45ea052938b2834005202d873857",
+      "destination_sha256": "258cd76b112cf9a7839255059e136634732d45ea052938b2834005202d873857",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\evidence-epistemics\\references\\source-evaluation.md",
+      "destination": "core/shared-skills/evidence-epistemics/references/source-evaluation.md",
+      "source_sha256": "dd9054c60f4ddb4b748b11452f8f89b3d6986ff4cb15877ba2b1299d6f964a40",
+      "destination_sha256": "dd9054c60f4ddb4b748b11452f8f89b3d6986ff4cb15877ba2b1299d6f964a40",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\evidence-epistemics\\SKILL.md",
+      "destination": "core/shared-skills/evidence-epistemics/SKILL.md",
+      "source_sha256": "6970e123e714b93db1ad2aeac0c5efdd6b9837d8a5c698b4a3ff366802a4f9f5",
+      "destination_sha256": "6970e123e714b93db1ad2aeac0c5efdd6b9837d8a5c698b4a3ff366802a4f9f5",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\systems-thinking\\agents\\openai.yaml",
+      "destination": "core/shared-skills/systems-thinking/agents/openai.yaml",
+      "source_sha256": "e4d977b2ef47fff1f48d4f167adc75fcc344b773bf050b8df0bc86d0e206587f",
+      "destination_sha256": "e4d977b2ef47fff1f48d4f167adc75fcc344b773bf050b8df0bc86d0e206587f",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\systems-thinking\\references\\systems-analysis-method.md",
+      "destination": "core/shared-skills/systems-thinking/references/systems-analysis-method.md",
+      "source_sha256": "86af6b89d4776e08604b26ffcf240e5a7c5ac6c4780b7abc462231b5e9fc3377",
+      "destination_sha256": "86af6b89d4776e08604b26ffcf240e5a7c5ac6c4780b7abc462231b5e9fc3377",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\systems-thinking\\SKILL.md",
+      "destination": "core/shared-skills/systems-thinking/SKILL.md",
+      "source_sha256": "ddc22dc9f48aaed26135af4eb0dbb26974f7f6b517a4f9cc22b0fda0d610aa0d",
+      "destination_sha256": "ddc22dc9f48aaed26135af4eb0dbb26974f7f6b517a4f9cc22b0fda0d610aa0d",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\behavioral-psychology\\agents\\openai.yaml",
+      "destination": "core/shared-skills/behavioral-psychology/agents/openai.yaml",
+      "source_sha256": "cde1d419969161a1c1db170ee923eb596b61c4a1b5e991234089ed4878c574fd",
+      "destination_sha256": "cde1d419969161a1c1db170ee923eb596b61c4a1b5e991234089ed4878c574fd",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\behavioral-psychology\\references\\bias-and-behavior-method.md",
+      "destination": "core/shared-skills/behavioral-psychology/references/bias-and-behavior-method.md",
+      "source_sha256": "fc561ccab52bd4bd6e98bf71ca1dd05cba04a4d86225175293489d3b99a2d894",
+      "destination_sha256": "fc561ccab52bd4bd6e98bf71ca1dd05cba04a4d86225175293489d3b99a2d894",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\behavioral-psychology\\SKILL.md",
+      "destination": "core/shared-skills/behavioral-psychology/SKILL.md",
+      "source_sha256": "9ea9565a719fc9c8991abdd4d9eaf6f1c0934efcc0b1570451463e4a7ffbeb65",
+      "destination_sha256": "9ea9565a719fc9c8991abdd4d9eaf6f1c0934efcc0b1570451463e4a7ffbeb65",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\decision-science\\agents\\openai.yaml",
+      "destination": "core/shared-skills/decision-science/agents/openai.yaml",
+      "source_sha256": "c7ba0977957fb5014cafab44b31ddef0ec1694a9315bbed636c3ef527d6bae20",
+      "destination_sha256": "c7ba0977957fb5014cafab44b31ddef0ec1694a9315bbed636c3ef527d6bae20",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\decision-science\\references\\comparative-decision-method.md",
+      "destination": "core/shared-skills/decision-science/references/comparative-decision-method.md",
+      "source_sha256": "cdf2c80f0febafe47932cf77ee8f07e7799725be74e8ada2a20353ece3a614c3",
+      "destination_sha256": "cdf2c80f0febafe47932cf77ee8f07e7799725be74e8ada2a20353ece3a614c3",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\decision-science\\SKILL.md",
+      "destination": "core/shared-skills/decision-science/SKILL.md",
+      "source_sha256": "78a44ceab269f645511c4fd48344f644dc25a668aab4c16e763b0c0a8700cc90",
+      "destination_sha256": "78a44ceab269f645511c4fd48344f644dc25a668aab4c16e763b0c0a8700cc90",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\strategic-foresight\\agents\\openai.yaml",
+      "destination": "core/shared-skills/strategic-foresight/agents/openai.yaml",
+      "source_sha256": "5b3f5299a94cabca66d352085894b4cbff16d2b5b4ce0153bb40726a50391fc6",
+      "destination_sha256": "5b3f5299a94cabca66d352085894b4cbff16d2b5b4ce0153bb40726a50391fc6",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\strategic-foresight\\references\\scenario-and-horizon-method.md",
+      "destination": "core/shared-skills/strategic-foresight/references/scenario-and-horizon-method.md",
+      "source_sha256": "422bda0fcc7a53bc1155ece98fd9a0d2a5ccf92a0c047f5620c5da808d68d856",
+      "destination_sha256": "422bda0fcc7a53bc1155ece98fd9a0d2a5ccf92a0c047f5620c5da808d68d856",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\strategic-foresight\\SKILL.md",
+      "destination": "core/shared-skills/strategic-foresight/SKILL.md",
+      "source_sha256": "39dbc20cf863280ca6d0ede41904f7296378b0649d605593284e4e1c8ff6d3cf",
+      "destination_sha256": "39dbc20cf863280ca6d0ede41904f7296378b0649d605593284e4e1c8ff6d3cf",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\game-theory-incentives\\agents\\openai.yaml",
+      "destination": "core/shared-skills/game-theory-incentives/agents/openai.yaml",
+      "source_sha256": "551df7423825e138d9ad27df780c9859be504016b7d9ce7466371b9e9e99c525",
+      "destination_sha256": "551df7423825e138d9ad27df780c9859be504016b7d9ce7466371b9e9e99c525",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\game-theory-incentives\\references\\strategic-interaction-method.md",
+      "destination": "core/shared-skills/game-theory-incentives/references/strategic-interaction-method.md",
+      "source_sha256": "00397614830219133ec3f7dd00c7ca2355ce6910d07932f51dd24cb23de0934f",
+      "destination_sha256": "00397614830219133ec3f7dd00c7ca2355ce6910d07932f51dd24cb23de0934f",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\game-theory-incentives\\SKILL.md",
+      "destination": "core/shared-skills/game-theory-incentives/SKILL.md",
+      "source_sha256": "6c1a60a751630d96e876219176670dc30853d51fc5700dd71af42fe53071eb80",
+      "destination_sha256": "6c1a60a751630d96e876219176670dc30853d51fc5700dd71af42fe53071eb80",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\risk-premortem\\agents\\openai.yaml",
+      "destination": "core/shared-skills/risk-premortem/agents/openai.yaml",
+      "source_sha256": "a52bbcf1ce3dfa0bcd8cd274593b87c5fbb803542e35f8842e45c3ef80d2d242",
+      "destination_sha256": "a52bbcf1ce3dfa0bcd8cd274593b87c5fbb803542e35f8842e45c3ef80d2d242",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\risk-premortem\\references\\risk-assessment-method.md",
+      "destination": "core/shared-skills/risk-premortem/references/risk-assessment-method.md",
+      "source_sha256": "6f1b839cde19bc6d4cc99fa42b0d5eff55ecb9fd7ae3be8c80fd966031e7f8dc",
+      "destination_sha256": "6f1b839cde19bc6d4cc99fa42b0d5eff55ecb9fd7ae3be8c80fd966031e7f8dc",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\risk-premortem\\SKILL.md",
+      "destination": "core/shared-skills/risk-premortem/SKILL.md",
+      "source_sha256": "6848176cc9690ed5d9729e0767f3b2c3653d0b73f9976cf8c3dcc02d14535d36",
+      "destination_sha256": "6848176cc9690ed5d9729e0767f3b2c3653d0b73f9976cf8c3dcc02d14535d36",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\adversarial-red-team\\agents\\openai.yaml",
+      "destination": "core/shared-skills/adversarial-red-team/agents/openai.yaml",
+      "source_sha256": "411c2cf30a8651c67ff6d7fb60d7a3c0dff98e92f1ea2c6d88b62e890886e998",
+      "destination_sha256": "411c2cf30a8651c67ff6d7fb60d7a3c0dff98e92f1ea2c6d88b62e890886e998",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\adversarial-red-team\\references\\red-team-protocol.md",
+      "destination": "core/shared-skills/adversarial-red-team/references/red-team-protocol.md",
+      "source_sha256": "eec018305a3e98a7c26d3121904b57837b890ceb4da94c46019e7d0fc61ba82e",
+      "destination_sha256": "eec018305a3e98a7c26d3121904b57837b890ceb4da94c46019e7d0fc61ba82e",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\adversarial-red-team\\SKILL.md",
+      "destination": "core/shared-skills/adversarial-red-team/SKILL.md",
+      "source_sha256": "a79f51e3162c6a6c5c35b22c7c16107bda6c09e66ade64787df00cd8e448f70d",
+      "destination_sha256": "a79f51e3162c6a6c5c35b22c7c16107bda6c09e66ade64787df00cd8e448f70d",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\research-planning\\agents\\openai.yaml",
+      "destination": "core/shared-skills/research-planning/agents/openai.yaml",
+      "source_sha256": "e59170ab649871e082f5561da4b9ccbd7a87a5a895b500cf14202e33d8d14a71",
+      "destination_sha256": "c2c07d7c6bb8be910f149ce4b8b82b38464f05eccf5e871dbb38608225c73061",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\research-planning\\SKILL.md",
+      "destination": "core/shared-skills/research-planning/SKILL.md",
+      "source_sha256": "cfc82e6ad4d4668e578c34a38a9e78af9b21f2a35f0d2f0f400cdbefd1122c80",
+      "destination_sha256": "0b458a2d7261cec3602ef41adf43c3822116691e2a5664383ac2d705b42080a8",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\source-discovery\\agents\\openai.yaml",
+      "destination": "core/shared-skills/source-discovery/agents/openai.yaml",
+      "source_sha256": "48f925b3ba1eb4eff5b5c8a7c06894209eac174a8fae1a22f52f635c653b545d",
+      "destination_sha256": "9d48cf5e511ea2f9f567957508ebd44378316d6d1c0514c6a1d3653c87b1f1d4",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\source-discovery\\SKILL.md",
+      "destination": "core/shared-skills/source-discovery/SKILL.md",
+      "source_sha256": "08c527f0e8bac9d2c0a122276b3cec798b7869197051f02c5c6dbe07dca4aaf7",
+      "destination_sha256": "e9c914a7557e6a8a35ac98ddb905bf8693ef4e44d59150c721518982cb72d1a2",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\source-verification\\agents\\openai.yaml",
+      "destination": "core/shared-skills/source-verification/agents/openai.yaml",
+      "source_sha256": "bf947b3f1a569db8aa06c0cc67e1d4c8c2eacf00ad25be27c18a00b927f2ca50",
+      "destination_sha256": "ae96a29388e9b2f630bb10c7b037ba996c2d2cc51404f5e953b1fbabb3beb99a",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\source-verification\\SKILL.md",
+      "destination": "core/shared-skills/source-verification/SKILL.md",
+      "source_sha256": "940d28564065d6f29b272d70eb9e3c481fdaf42a18f15ed315e3c46eb7b40de0",
+      "destination_sha256": "18135f252a43d8074435620077bd8af93813bcd0b696765ead777473cf464fcf",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\research-synthesis\\agents\\openai.yaml",
+      "destination": "core/shared-skills/research-synthesis/agents/openai.yaml",
+      "source_sha256": "1e2106663d7406c9941b14eb9b8299cebcf5710b84925f0f493fdae816d68c2f",
+      "destination_sha256": "3217846cfa94aafc0d722c869e90549821641298f62f80c9d7c8252903b56daa",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\research-synthesis\\SKILL.md",
+      "destination": "core/shared-skills/research-synthesis/SKILL.md",
+      "source_sha256": "144fe4712350831289806dbe2c4670733acb3c6898f436c82112a92ac233694d",
+      "destination_sha256": "07ae641d5f347567ce6acfe0122f73e5afb56824f5b8eedfafcc9ab229a000d7",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\product-discovery\\agents\\openai.yaml",
+      "destination": "core/shared-skills/product-discovery/agents/openai.yaml",
+      "source_sha256": "91aeb5393aa2f9d0497170a0ad7f83d160f887b51585f1042b6faa203f9980d9",
+      "destination_sha256": "188501932a3a67fc2220f82430c7fe714f99c4ae825fe804081f566dc5ad4ffd",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\product-discovery\\SKILL.md",
+      "destination": "core/shared-skills/product-discovery/SKILL.md",
+      "source_sha256": "6d9c4e64b4750506a6a429fe70f1b57ea21fabe918c71faffdf29b3502e97361",
+      "destination_sha256": "84c84a8641221945e1d668faf8d0822ee7110c1859b47f4efa2186a8129f89b3",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\requirements-engineering\\agents\\openai.yaml",
+      "destination": "core/shared-skills/requirements-engineering/agents/openai.yaml",
+      "source_sha256": "ad7919500f471ff47b29e81688928e166be846462e8eb35a97268618dd459807",
+      "destination_sha256": "c0bf507b8688bece7e7068b2c3de3d86472d58a810e57b3004bbfedba39aec42",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\requirements-engineering\\SKILL.md",
+      "destination": "core/shared-skills/requirements-engineering/SKILL.md",
+      "source_sha256": "450e7519f204d0b5d7beebb171f33ed0409a3694b906adcbee690eea305c1d47",
+      "destination_sha256": "8592f51d8d02886f5858a99f663449974f65ce4b84495d8f30e365bdfc4f0023",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\user-research\\agents\\openai.yaml",
+      "destination": "core/shared-skills/user-research/agents/openai.yaml",
+      "source_sha256": "0af8ddd16a30a62ca471daa1250d2da8bbe8ccdc2f6c990ceb774617fed3f615",
+      "destination_sha256": "a48c4be1a0b48184259f2e516166613908a7d21eb7d90c9129b44d0435487e13",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\user-research\\SKILL.md",
+      "destination": "core/shared-skills/user-research/SKILL.md",
+      "source_sha256": "081f40a2416838a2140c15139d2b1a62f13652b3ac9beca334c1187d6b036b71",
+      "destination_sha256": "96257c73e67dfce27d124e0da08a4ff78a58f8863cc82d49b022a2580ab1da63",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\experience-design\\agents\\openai.yaml",
+      "destination": "core/shared-skills/experience-design/agents/openai.yaml",
+      "source_sha256": "7811105d27ef65fbfa246893edcaeb8ec364b6a3d914df1768b81d1f6216d7ab",
+      "destination_sha256": "d67bb4f5789121059fa208fd0904ed4ea2ae720cebeaac4807ba94f64cc143d7",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\experience-design\\SKILL.md",
+      "destination": "core/shared-skills/experience-design/SKILL.md",
+      "source_sha256": "486590ac988049d77bc554b339f1b070e793d19428fc09e1f9e338ce8bc79867",
+      "destination_sha256": "2d40d000303e823c3c942fabeb0a87466b32a37ffb736169968a18377e652103",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\product-prioritization\\agents\\openai.yaml",
+      "destination": "core/shared-skills/product-prioritization/agents/openai.yaml",
+      "source_sha256": "4ba224c72a8600740e44aae96a11c345d7e4a4c0891f3e618298157a9fbfb491",
+      "destination_sha256": "0d0f6d14c0bf49694dfc503dfdca38183c039c82166b5fceb93d9b1d11f4ae31",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\product-prioritization\\SKILL.md",
+      "destination": "core/shared-skills/product-prioritization/SKILL.md",
+      "source_sha256": "132ae47d2195b9c5f6f47a5c08720610763614df69b4b86cb98a1417cc3cef20",
+      "destination_sha256": "c5c5bc34f1a7576a51747176015f5cd77cdd04cdd341414ca4e84bc4d4884a6c",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\software-architecture\\agents\\openai.yaml",
+      "destination": "core/shared-skills/software-architecture/agents/openai.yaml",
+      "source_sha256": "218fc2c01dcf46899c03788ee3a1644b5ee7fb21684246b167abb8dba1a59664",
+      "destination_sha256": "b7aa02d7e77670b2d3474a9db7aef745ac0e832c5b29042c86ca913089518bb7",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\software-architecture\\SKILL.md",
+      "destination": "core/shared-skills/software-architecture/SKILL.md",
+      "source_sha256": "cd4414d7ec4f37e76f17a3b054313a5b2db9874168f4733134bbf8bb6a50d26d",
+      "destination_sha256": "f9139468d5e09d5e00080986588b5e48450f2db23a11e84a84aa144ee2268aa5",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\frontend-engineering\\agents\\openai.yaml",
+      "destination": "core/shared-skills/frontend-engineering/agents/openai.yaml",
+      "source_sha256": "a97c7fe257ebff516a43e94374bdb1afa010339af2da78eed7a6dad154bfa031",
+      "destination_sha256": "5de46f985612483498c28d21660c079e95985bab708a48bafe7eba2e200953de",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\frontend-engineering\\SKILL.md",
+      "destination": "core/shared-skills/frontend-engineering/SKILL.md",
+      "source_sha256": "b27e5a9bdca3362215e12f6495cb7d06c55b6803b1b2a81f17f5892bd225ce9f",
+      "destination_sha256": "b7ac93a3dc3e6b59995eed54eaeb96fa79bec8f591c3261f1a47c61822b67e8f",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\backend-engineering\\agents\\openai.yaml",
+      "destination": "core/shared-skills/backend-engineering/agents/openai.yaml",
+      "source_sha256": "50eb722c0b6d5de88989eb2b1ef5fc69e71b8b39a7b35d82a876a3812f839a85",
+      "destination_sha256": "41e45c738041d41ab0da5446e93dca9c04a1a1f59991927b84503a84e6093739",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\backend-engineering\\SKILL.md",
+      "destination": "core/shared-skills/backend-engineering/SKILL.md",
+      "source_sha256": "d909d7da74911e318b32c0a54b1977eb876d052f31759b298761383b808dfde7",
+      "destination_sha256": "4a1389a48fbabdc60ad1fad454a380eabe852f8680ccc2b8426710522c4c7e8e",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\api-design\\agents\\openai.yaml",
+      "destination": "core/shared-skills/api-design/agents/openai.yaml",
+      "source_sha256": "2b2f9af7eb049e54968886fda757be1c5501d1536c25885ddbc8997a267a4407",
+      "destination_sha256": "95413b2feb2a68bdf9453af618b01fb7fa9fd065932e8612617e556d446d3782",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\api-design\\SKILL.md",
+      "destination": "core/shared-skills/api-design/SKILL.md",
+      "source_sha256": "2a645341cc1926b635455affae1523b4c89628a18ba6c6db2580b9a02c141010",
+      "destination_sha256": "149b53333fc7bbb82345162cc62020e7ac9b0662e13c7bdff7e169593afcd99b",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\database-engineering\\agents\\openai.yaml",
+      "destination": "core/shared-skills/database-engineering/agents/openai.yaml",
+      "source_sha256": "0d21f60a24966ca0908a77491934758f2911ecbce4a2672bbc42ebdcf1bfe743",
+      "destination_sha256": "275f4871ef904747c01d058a77134a91942f54a97fe5d311fb849c867b9479b6",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\database-engineering\\SKILL.md",
+      "destination": "core/shared-skills/database-engineering/SKILL.md",
+      "source_sha256": "a9c685800389caf1c7da4a68e967401f8452d019ad5916ceb554d26fb1531096",
+      "destination_sha256": "6562ff209a10ce15a5cbf21ec1f1f9ac9d87f8c57a0f8e91df99c7bd3efdcdbc",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\cloud-infrastructure\\agents\\openai.yaml",
+      "destination": "core/shared-skills/cloud-infrastructure/agents/openai.yaml",
+      "source_sha256": "5389b2d6c49e70c2171049cf94c317a0ef0a499683ebb0ea0e4624896423f8ea",
+      "destination_sha256": "3676bd67adacadb6177d175fb23706a9fb40fea2d36579fea5c8faf4a409e73d",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\cloud-infrastructure\\SKILL.md",
+      "destination": "core/shared-skills/cloud-infrastructure/SKILL.md",
+      "source_sha256": "11bf220fa8eb1ffb84ced526a07869134ce8b2b993eb7a3f674a1d63ae5783e3",
+      "destination_sha256": "e0601efe4a4a80d0152c3b68a73962f4d2218f78d82b57f38cf62a68bdba5987",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\security-engineering\\agents\\openai.yaml",
+      "destination": "core/shared-skills/security-engineering/agents/openai.yaml",
+      "source_sha256": "8eed90fbcfc8f9ec8f0028c7d046b9f94b235dd89a3dfd48ead834c31339e05e",
+      "destination_sha256": "cdf2020641d45085c5e67e0c457adca723fc35a55de801c37e5fa979ed943541",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\security-engineering\\SKILL.md",
+      "destination": "core/shared-skills/security-engineering/SKILL.md",
+      "source_sha256": "6a88a57c16891e8961f067dae17ea029601c52f63de940f86dd84e31e806a571",
+      "destination_sha256": "0eb6842c9534d9a06bbe885f59b1a66ce784e1094320475b15837a6b518f745d",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\test-engineering\\agents\\openai.yaml",
+      "destination": "core/shared-skills/test-engineering/agents/openai.yaml",
+      "source_sha256": "fb86f80f510ef871aabcf2fd79814771a199927e2a0fc8532f34d9e40c5dc0ad",
+      "destination_sha256": "b8cdcced6e5773c584b8ea571e88693d07a65caf92965d19537216b1146c34e0",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\test-engineering\\SKILL.md",
+      "destination": "core/shared-skills/test-engineering/SKILL.md",
+      "source_sha256": "a8f86da25b92a79c133cc0a2e73482eb2c809c142a974d1a7aa7cb73c37120df",
+      "destination_sha256": "b5d0df12cb8a2a0f300cb5a87e34b567b649b19b9d8f1990c00307a83b77d1a9",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\performance-engineering\\agents\\openai.yaml",
+      "destination": "core/shared-skills/performance-engineering/agents/openai.yaml",
+      "source_sha256": "9abe311df8b769adb0fa2a57bdc587426f91a9c68a7a523771607a3b7049846a",
+      "destination_sha256": "283ae62c0191e29596b693a2928c2ece4ad643a85d46be90d42598b1719d01e0",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\performance-engineering\\SKILL.md",
+      "destination": "core/shared-skills/performance-engineering/SKILL.md",
+      "source_sha256": "5ddb1e7b69bf85f45bdb8134ef148c46cf4f4df22280fdc80176d900f23f3eb4",
+      "destination_sha256": "0a4236c4af918850f4361c7a36e7d85ec3e30e1323db20238119b6837c3ba204",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\ml-problem-framing\\agents\\openai.yaml",
+      "destination": "core/shared-skills/ml-problem-framing/agents/openai.yaml",
+      "source_sha256": "4935421302316e14056b33b0b5ea9bac97f45aabe240d80bc7e28e9354b92eda",
+      "destination_sha256": "839da4093ff90caa20bc585e5595f461ebcad9e02c333a2c61aef5f9288c8c0b",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\ml-problem-framing\\SKILL.md",
+      "destination": "core/shared-skills/ml-problem-framing/SKILL.md",
+      "source_sha256": "33e851f371c23ddb9961f5a1da3ca407874c5972331f5fa6cf5ff50fac09ce73",
+      "destination_sha256": "75ff17cb8e0739ff7a6c2f80dcfd760c45ff87e25bccf4bdec82e4927c20d7eb",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\data-quality-engineering\\agents\\openai.yaml",
+      "destination": "core/shared-skills/data-quality-engineering/agents/openai.yaml",
+      "source_sha256": "794d5bf85b6327af79068014420d073189e47e803d481ed419ada8ee8bda547a",
+      "destination_sha256": "40e40203a5bfbbf269a509caaf6612d2f99c8c9ea0c00348fcc6e920779a318c",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\data-quality-engineering\\SKILL.md",
+      "destination": "core/shared-skills/data-quality-engineering/SKILL.md",
+      "source_sha256": "0a10015cb456d314359fcc2e95728af5f86b3dd549682bfd28f0efa41b2075e0",
+      "destination_sha256": "841ae8047f1d7285bd6b0210f1d49efe748eb365ff151d5ce63e86950dd2186b",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\model-evaluation\\agents\\openai.yaml",
+      "destination": "core/shared-skills/model-evaluation/agents/openai.yaml",
+      "source_sha256": "37b6fdbc4a0cdf060a4159f79daff196b4ff6042f6d5cf90d34dbafb0a982687",
+      "destination_sha256": "ae46752e4e0e2cf2e39831c6dfc6e9e29a01f7fa88257fa4e24db9915cebe4e0",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\model-evaluation\\SKILL.md",
+      "destination": "core/shared-skills/model-evaluation/SKILL.md",
+      "source_sha256": "1b0331f990193a2a5d831cf899ffad8b3eb9afffd4188f5bc6be6010e4f6071a",
+      "destination_sha256": "2b9f792a532c22aa34c5b96ecc5444d3a8b81afdc5858355bc7c82c04722c052",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\llm-engineering\\agents\\openai.yaml",
+      "destination": "core/shared-skills/llm-engineering/agents/openai.yaml",
+      "source_sha256": "c9dfd9bae96425a9b53126b88f880d3b495a2aa73836de9e35113d1aade1a3da",
+      "destination_sha256": "7945c296669a2af2005bceea05506364cf3f9c75f894aad227900170b0646db8",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\llm-engineering\\SKILL.md",
+      "destination": "core/shared-skills/llm-engineering/SKILL.md",
+      "source_sha256": "c4e2c694455a8048899eda55249e7620b64ad2b5d6824feeec7b4c047486733f",
+      "destination_sha256": "10fe26e1852ef77b1121d44855e2b8247ad655562a22f00783e8a0512e987d5f",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\retrieval-augmented-generation\\agents\\openai.yaml",
+      "destination": "core/shared-skills/retrieval-augmented-generation/agents/openai.yaml",
+      "source_sha256": "01e263967c33051ec7556051a7779229c4a02aa19bd9885a23abf0c2b7f7b32c",
+      "destination_sha256": "390b01b450b1c496121c538166b7df36c1b9818351a89a8762abd0722cab4546",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\retrieval-augmented-generation\\SKILL.md",
+      "destination": "core/shared-skills/retrieval-augmented-generation/SKILL.md",
+      "source_sha256": "47eb79778fd15e21c2ad3cb115c47d6a44b6572f6f6f961d3d3447ea30bf943c",
+      "destination_sha256": "2a4e9bddfcd90479012d5f3e9ae67aebb81db21b09efd2c28ef0e9b1277cb0ed",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\responsible-ai-safety\\agents\\openai.yaml",
+      "destination": "core/shared-skills/responsible-ai-safety/agents/openai.yaml",
+      "source_sha256": "0de7eb68393bcc996c1f89b410b377a4f0babff6b293da3876b87f974f144af0",
+      "destination_sha256": "dc9858d81efee6d6f2161721b178759461d2a6ff3bc8b4f7418aa09bdf972848",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\responsible-ai-safety\\SKILL.md",
+      "destination": "core/shared-skills/responsible-ai-safety/SKILL.md",
+      "source_sha256": "b40459564efda121b670ea634b03973e60d837a4028c5c21894f726baade32be",
+      "destination_sha256": "a39bc847d9c140fe82499620423703a52ae463310cac9ebd91bade3158083b60",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\project-delivery\\agents\\openai.yaml",
+      "destination": "core/shared-skills/project-delivery/agents/openai.yaml",
+      "source_sha256": "e05531e6bcce26d2dd5ccfe0e136bf83bb9d6932856c4534d6cab83c336a4312",
+      "destination_sha256": "7bbbe30deb38c3af981ce01bdd4afb894581c329b6a9711a65bdcd7ec646d4fa",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\project-delivery\\SKILL.md",
+      "destination": "core/shared-skills/project-delivery/SKILL.md",
+      "source_sha256": "6b4152ce4ca36316a9230637c3260efa04c86852bbd283fc9a139f84efa166bd",
+      "destination_sha256": "549c89897c77d9ab048d80d524ad204bf989723fbab4b6961537df750feeb58e",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\release-readiness\\agents\\openai.yaml",
+      "destination": "core/shared-skills/release-readiness/agents/openai.yaml",
+      "source_sha256": "ef8fa5244d2e84c9f686347dd97812ca878d6a96c7f7007cf6d45582325b04d3",
+      "destination_sha256": "cf42b70bcee45502026d2692bd6ecdfc5ceab88d3cf95988272f779ebc17cd98",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\release-readiness\\SKILL.md",
+      "destination": "core/shared-skills/release-readiness/SKILL.md",
+      "source_sha256": "3bf811e8f3a581a848ca8db2bdc2f6a0a9f427d8c73f08826010ee94fa4c4b18",
+      "destination_sha256": "40739f12b91e592c5572367329304ac021c8bf4e8857efcb432036cda746f6ea",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\incident-response\\agents\\openai.yaml",
+      "destination": "core/shared-skills/incident-response/agents/openai.yaml",
+      "source_sha256": "cc1ee0c86c5e8c7401420ae0966846b6004010b6a6d03f358050e6c9f1567902",
+      "destination_sha256": "a8936b0c7011612c0adb231e06efed2622665dc9f47600f4d7d269b70d703c8c",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\incident-response\\SKILL.md",
+      "destination": "core/shared-skills/incident-response/SKILL.md",
+      "source_sha256": "f80bd2da87671c3e5f5d0f177c6f4200be4700a283746f00ec47edbb1066e774",
+      "destination_sha256": "7613af12356212cda2ae46bf8f29dba8656546a162b61564b7240243b6b7f257",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\observability\\agents\\openai.yaml",
+      "destination": "core/shared-skills/observability/agents/openai.yaml",
+      "source_sha256": "fcba9f48a32f5546fb1d8dd0bd26e99b4e56b8c56eca55cf703d0db34e794641",
+      "destination_sha256": "667a426b1a3263d672754a25dbb2563a4da68d4d7f03c9799fcda06a83725615",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\observability\\SKILL.md",
+      "destination": "core/shared-skills/observability/SKILL.md",
+      "source_sha256": "b007de6c02eedfdfc078a7b6ec8300f09615638e84acd93b3bffa24bbd08966e",
+      "destination_sha256": "04419560c67755b342c6886611f845016477913cf57fa75f5d5269acbb922705",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\quality-assurance\\agents\\openai.yaml",
+      "destination": "core/shared-skills/quality-assurance/agents/openai.yaml",
+      "source_sha256": "74a70f593eea0fbb81d61caae2a8ef132d0e153098fb671c5fbd8353211f102d",
+      "destination_sha256": "2579153842a4c5d714c8d555f170e37b36e6a73fc9eba03a186e8e5ee62f3444",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\.codex\\skills\\quality-assurance\\SKILL.md",
+      "destination": "core/shared-skills/quality-assurance/SKILL.md",
+      "source_sha256": "d72cb965e279a7fc3d5be6d0c304157732833e4deecb703c9c07af1065e0247d",
+      "destination_sha256": "d72cb965e279a7fc3d5be6d0c304157732833e4deecb703c9c07af1065e0247d",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\minister\\.codex-plugin\\plugin.json",
+      "destination": "plugins/minister/.codex-plugin/plugin.json",
+      "source_sha256": "7731f56f1d9e89258a9f52db9f4389c784f0db937d2694a9d5b8d2cafccb5fbf",
+      "destination_sha256": "3e13dc38ee52ec30bb86d695f81f49009225fd7268a0240e69f69cb6004b4ad4",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\plugins\\minister\\AGENTS.md",
+      "destination": "plugins/minister/AGENTS.md",
+      "source_sha256": "4e5e910f6e6f360f8b7a0c6afd7e8552c9de5a139ad4c9891ce8da997a7cb76e",
+      "destination_sha256": "4e5e910f6e6f360f8b7a0c6afd7e8552c9de5a139ad4c9891ce8da997a7cb76e",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\minister\\README.md",
+      "destination": "plugins/minister/README.md",
+      "source_sha256": "ca1cb10afb1f0ea5539ebf21c50ffd038f70aa907022bfe228c4cf98a8d6a8a8",
+      "destination_sha256": "ca1cb10afb1f0ea5539ebf21c50ffd038f70aa907022bfe228c4cf98a8d6a8a8",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\minister\\references\\decision-contract.md",
+      "destination": "plugins/minister/references/decision-contract.md",
+      "source_sha256": "ceccbc13c6c4cd1d86f2004f4e6f4df7a6f868ba6bf766f8a47a91e526423325",
+      "destination_sha256": "ceccbc13c6c4cd1d86f2004f4e6f4df7a6f868ba6bf766f8a47a91e526423325",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\minister\\references\\shared-skill-integration.md",
+      "destination": "plugins/minister/references/shared-skill-integration.md",
+      "source_sha256": "ca47e20657f18cc88497a465fa12a0c5c2bec548a38920a55c035ce3385b7048",
+      "destination_sha256": "ca47e20657f18cc88497a465fa12a0c5c2bec548a38920a55c035ce3385b7048",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\minister\\scripts\\route_minister.py",
+      "destination": "plugins/minister/scripts/route_minister.py",
+      "source_sha256": "f27638c38f91de9527a71d03d5a63a7a5050a2393b0fd07bc0ecfd95ed783835",
+      "destination_sha256": "f27638c38f91de9527a71d03d5a63a7a5050a2393b0fd07bc0ecfd95ed783835",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\minister\\scripts\\test_minister.py",
+      "destination": "plugins/minister/scripts/test_minister.py",
+      "source_sha256": "6bb526432a1d2a3b573e30dad1f0445ae0324fe1d95aaaf32207653f4c15ab8b",
+      "destination_sha256": "6bb526432a1d2a3b573e30dad1f0445ae0324fe1d95aaaf32207653f4c15ab8b",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\minister\\skills\\executive-judgment\\agents\\openai.yaml",
+      "destination": "plugins/minister/skills/executive-judgment/agents/openai.yaml",
+      "source_sha256": "4bd000199da49e60bf57d3e32ebfec74400e239da62f4a82e200a54d05b8e6eb",
+      "destination_sha256": "4bd000199da49e60bf57d3e32ebfec74400e239da62f4a82e200a54d05b8e6eb",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\minister\\skills\\executive-judgment\\SKILL.md",
+      "destination": "plugins/minister/skills/executive-judgment/SKILL.md",
+      "source_sha256": "7709a7d0d3edad637c632a2d3313d8940969bb6fb7fb2452b58bd6258604d7fc",
+      "destination_sha256": "7709a7d0d3edad637c632a2d3313d8940969bb6fb7fb2452b58bd6258604d7fc",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\minister\\skills\\minister\\agents\\openai.yaml",
+      "destination": "plugins/minister/skills/minister/agents/openai.yaml",
+      "source_sha256": "21b88210ab5ae4acb874f6fc03b8ccb450ed087946a8177c1843f443be4c6035",
+      "destination_sha256": "21b88210ab5ae4acb874f6fc03b8ccb450ed087946a8177c1843f443be4c6035",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\minister\\skills\\minister\\SKILL.md",
+      "destination": "plugins/minister/skills/minister/SKILL.md",
+      "source_sha256": "8685e304916a40b8b45ce00f44061201ff8441289866b22dfb618e58ab0cedb2",
+      "destination_sha256": "8685e304916a40b8b45ce00f44061201ff8441289866b22dfb618e58ab0cedb2",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\minister\\skills\\minister-router\\agents\\openai.yaml",
+      "destination": "plugins/minister/skills/minister-router/agents/openai.yaml",
+      "source_sha256": "b33aaf27f8a684b872b7ef7c84688e8da189b0c19da62838b1ea51033be4818a",
+      "destination_sha256": "b33aaf27f8a684b872b7ef7c84688e8da189b0c19da62838b1ea51033be4818a",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\minister\\skills\\minister-router\\SKILL.md",
+      "destination": "plugins/minister/skills/minister-router/SKILL.md",
+      "source_sha256": "86de8ddee3ffbcf810daacc3e4869e1c38294e5348b438401f3f112373bebd4a",
+      "destination_sha256": "86de8ddee3ffbcf810daacc3e4869e1c38294e5348b438401f3f112373bebd4a",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\scout\\.codex-plugin\\plugin.json",
+      "destination": "plugins/scout/.codex-plugin/plugin.json",
+      "source_sha256": "d47ac0163e8a36789214208af235df7384c9735028e92508ee09e76c8f6ed082",
+      "destination_sha256": "f8f7908fd06da657ddaeaf692896b3222b616fd5923e67f02b674c875919e8ca",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\plugins\\scout\\references\\architecture.md",
+      "destination": "plugins/scout/references/architecture.md",
+      "source_sha256": "8ecb2907c4374767fc312c58247aaaca18b382826200d4d45ba1e5c220d45b5b",
+      "destination_sha256": "1f5d610d8ded4e475e049aab0ce97439cb69b37db59e12fc3621c67e2df481b6",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\plugins\\scout\\references\\citation-contract.md",
+      "destination": "plugins/scout/references/citation-contract.md",
+      "source_sha256": "7c0a630e5a2a575fa367d30f8fdda06fb04c16fa2f58897803a865ea718ec234",
+      "destination_sha256": "e2a91a1539e65285c48600d311b5d3e83098c94b0f141231c1d8031eadbd719b",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\plugins\\scout\\references\\completion-contract.md",
+      "destination": "plugins/scout/references/completion-contract.md",
+      "source_sha256": "a9ee2585def49013a694902b74b390078e92a3c547631b4d2247712671267857",
+      "destination_sha256": "a9ee2585def49013a694902b74b390078e92a3c547631b4d2247712671267857",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\scout\\references\\domain-rules.md",
+      "destination": "plugins/scout/references/domain-rules.md",
+      "source_sha256": "b40e21a28a3d4f90c083a4e5ed4b1b60255eb1b26d094f83a3a0286767121a0c",
+      "destination_sha256": "b40e21a28a3d4f90c083a4e5ed4b1b60255eb1b26d094f83a3a0286767121a0c",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\scout\\references\\evidence-model.md",
+      "destination": "plugins/scout/references/evidence-model.md",
+      "source_sha256": "cf3eec72ec152152237e718f5978adfeed3137748abb14b49ef8bc2ac5d1f01e",
+      "destination_sha256": "5dd861c586d3e444dcc06bed06fac40cb885d5bb891fe21a50c1de57d4c37a69",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\plugins\\scout\\references\\freshness-policy.md",
+      "destination": "plugins/scout/references/freshness-policy.md",
+      "source_sha256": "c491f165b2f88e3e5a20f928a30978774a00973f948b7303202cb924777cb045",
+      "destination_sha256": "0753f6057283bf07f8d1190854dfb88dedc6ff975d64c1bf7b50c603f60a391b",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\plugins\\scout\\references\\handoff-contract.md",
+      "destination": "plugins/scout/references/handoff-contract.md",
+      "source_sha256": "9782d140cd17ff77b3613ca79cbdc32e0f963ac67aa21acb68c35cf6cd76c2e3",
+      "destination_sha256": "1e88d298168718cd58e9a72e2da5380d66d5b5ec27b97faea2b85ab2699ea1a9",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\plugins\\scout\\references\\research-modes.md",
+      "destination": "plugins/scout/references/research-modes.md",
+      "source_sha256": "13206659c8ceaed23bb2df7c647f3cde25467fc668781b9b701b93af442e0d0f",
+      "destination_sha256": "b5a6e330362305d00df5cc9d5d93f161b49d1fca0175c47dae100a5c574a67b7",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\plugins\\scout\\references\\safety-policy.md",
+      "destination": "plugins/scout/references/safety-policy.md",
+      "source_sha256": "855ec9caab1bb7496edf140e69588e44b35a968ea06159ffcc220118b80c8368",
+      "destination_sha256": "b63ad26460a4061dade5eb0ac077a3c1ca8898a0d0a622efa800b4a359887c05",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\plugins\\scout\\references\\source-hierarchy.md",
+      "destination": "plugins/scout/references/source-hierarchy.md",
+      "source_sha256": "d7901d12170952ad023eaa37ecd362bbc525781ff8ec5a880d46dd6081dafd69",
+      "destination_sha256": "f8babdefb8e40da17f628dd95ffa0cba2628c1ee3ae17537ba6a8e0279e66b23",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\plugins\\scout\\scripts\\scout_core.py",
+      "destination": "plugins/scout/scripts/scout_core.py",
+      "source_sha256": "0013b754c701c08cb6e767610c656704242d0a81b8d378483dcedf82d2207e00",
+      "destination_sha256": "0013b754c701c08cb6e767610c656704242d0a81b8d378483dcedf82d2207e00",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\scout\\scripts\\test_scout.py",
+      "destination": "plugins/scout/scripts/test_scout.py",
+      "source_sha256": "0c68683ef53497a215511341d7e3803fd777084d2edbef79c8fd8a0bb2922e59",
+      "destination_sha256": "0c68683ef53497a215511341d7e3803fd777084d2edbef79c8fd8a0bb2922e59",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\scout\\skills\\scout\\agents\\openai.yaml",
+      "destination": "plugins/scout/skills/scout/agents/openai.yaml",
+      "source_sha256": "7f20af901ce995338d333ead4cb7e89c426ab21e13573c80d4511145fe1eaf0a",
+      "destination_sha256": "45ea93d965715b7806db46eb190a8c99f9e1eab41d125e0bb3248b899fccd728",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\plugins\\scout\\skills\\scout\\SKILL.md",
+      "destination": "plugins/scout/skills/scout/SKILL.md",
+      "source_sha256": "9843f2bf51be6123ab863c4da78d062af7f63145bd7a39e911c0a67f20ddff1b",
+      "destination_sha256": "9843f2bf51be6123ab863c4da78d062af7f63145bd7a39e911c0a67f20ddff1b",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\scout\\skills\\scout-completion-gate\\agents\\openai.yaml",
+      "destination": "plugins/scout/skills/scout-completion-gate/agents/openai.yaml",
+      "source_sha256": "8008d0f96be6e7c8fd95cdfa6ac2a91988f96ee4fc6d92d70ffc9672bfe8b321",
+      "destination_sha256": "8008d0f96be6e7c8fd95cdfa6ac2a91988f96ee4fc6d92d70ffc9672bfe8b321",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\scout\\skills\\scout-completion-gate\\SKILL.md",
+      "destination": "plugins/scout/skills/scout-completion-gate/SKILL.md",
+      "source_sha256": "6effea8dd0790c63e3d9804925ac984226a40b920ce2ab5e5df6a995112fbf6d",
+      "destination_sha256": "6effea8dd0790c63e3d9804925ac984226a40b920ce2ab5e5df6a995112fbf6d",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\scout\\skills\\scout-contradiction-resolution\\agents\\openai.yaml",
+      "destination": "plugins/scout/skills/scout-contradiction-resolution/agents/openai.yaml",
+      "source_sha256": "5d1105774989213217c4b265d3f390f3a280cdc7c5f3de6a4bb30133a6385848",
+      "destination_sha256": "72d8e825c368696b8a3b111af30473baacaea296c034012eea7248eb3bfc4488",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\plugins\\scout\\skills\\scout-contradiction-resolution\\SKILL.md",
+      "destination": "plugins/scout/skills/scout-contradiction-resolution/SKILL.md",
+      "source_sha256": "5a31910328513c31247165a9db662d9bcd1d554de15cc203c5b13ebcbb720d25",
+      "destination_sha256": "08a0b16765d3f2bfc5833a03c12b547e4771e179ef999d30ebac5e29267c806f",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\plugins\\scout\\skills\\scout-evidence-ledger\\agents\\openai.yaml",
+      "destination": "plugins/scout/skills/scout-evidence-ledger/agents/openai.yaml",
+      "source_sha256": "c291e8263f27ac4966cc646707c6633d39fa334ef0ec27e0cb93a149ebea183e",
+      "destination_sha256": "b33850f71c1547d3c38af791b30229e7bfc388005238de3165d3b007c5c6ccb6",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\plugins\\scout\\skills\\scout-evidence-ledger\\SKILL.md",
+      "destination": "plugins/scout/skills/scout-evidence-ledger/SKILL.md",
+      "source_sha256": "8059c7706720ba003420bcba6b683d809967d4974fe8accbcc502b07b5b8535f",
+      "destination_sha256": "9969a2d58af0bdcf3a9cbf758051ac9a484df89e4735b235f40cb7d8aceb48de",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\plugins\\scout\\skills\\scout-investigation-planner\\agents\\openai.yaml",
+      "destination": "plugins/scout/skills/scout-investigation-planner/agents/openai.yaml",
+      "source_sha256": "9d5c207a3314236d55967b645d9f2aad98f94e233bf9c73e20c224736088c83a",
+      "destination_sha256": "9d5c207a3314236d55967b645d9f2aad98f94e233bf9c73e20c224736088c83a",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\scout\\skills\\scout-investigation-planner\\SKILL.md",
+      "destination": "plugins/scout/skills/scout-investigation-planner/SKILL.md",
+      "source_sha256": "6f8cba9834339d38929fbebf822355b06ecb132378f440aa2bebfe5ce809b0a9",
+      "destination_sha256": "5ff7d5fa7ada663504abc5b536506254ff4398749b7c68fa1b0506f82b16c7cb",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\plugins\\scout\\skills\\scout-research-contract\\agents\\openai.yaml",
+      "destination": "plugins/scout/skills/scout-research-contract/agents/openai.yaml",
+      "source_sha256": "161a298010d807fec03f3efc96c8e8626401a15c4c4cd6ec7c323b12d3dab18d",
+      "destination_sha256": "0edd5aa60305d2cd02b96887efd6667206ef94f1634f015f3a3cb4f5c7464e8b",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\plugins\\scout\\skills\\scout-research-contract\\SKILL.md",
+      "destination": "plugins/scout/skills/scout-research-contract/SKILL.md",
+      "source_sha256": "860cce2d8e4ff12c357d94d72c824692ac7333aad152d9acc4e5e3499edb07f1",
+      "destination_sha256": "8b24b2971440e57fa9e984a17bb4ac00fa89cc1e2468479be24b4dde57d8468f",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\plugins\\scout\\skills\\scout-router\\agents\\openai.yaml",
+      "destination": "plugins/scout/skills/scout-router/agents/openai.yaml",
+      "source_sha256": "b8463841634bf3ba2dab07ba355028fa40cf118b12efe37a6fb8698a4ba9cd31",
+      "destination_sha256": "a45ee259d347ee1b4869b62632e73590fe61494641280a22a4e5dd06d3324234",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\plugins\\scout\\skills\\scout-router\\SKILL.md",
+      "destination": "plugins/scout/skills/scout-router/SKILL.md",
+      "source_sha256": "634f383b8ffa284cc6b8dd996c3fda4df35a7a57454a853c7a4b659400be72f7",
+      "destination_sha256": "3d81e6b13fc55ca664b7146d756f0406327a0c823b26f51e7422299e7ca0c52b",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\plugins\\scout\\skills\\scout-synthesis\\agents\\openai.yaml",
+      "destination": "plugins/scout/skills/scout-synthesis/agents/openai.yaml",
+      "source_sha256": "6f137c75568ff0f3bd2c069694a9052244d7c9fe3a7aab10e18a890044f17b4b",
+      "destination_sha256": "057d0146f58678b9d15540db5f5719fa4e6b3cdcf7221c54d6e7fe07da9f2f3c",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\plugins\\scout\\skills\\scout-synthesis\\SKILL.md",
+      "destination": "plugins/scout/skills/scout-synthesis/SKILL.md",
+      "source_sha256": "c7ac0c090e8d14f736fc804dab7b997a21e05e5aa99d7a84e57d4ae0015d79be",
+      "destination_sha256": "e54c34ff0e4247a52868bb894d24a09f4ab1dbcb6b4acdf9570b71a1a5fac4ca",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\plugins\\forge\\.codex-plugin\\plugin.json",
+      "destination": "plugins/forge/.codex-plugin/plugin.json",
+      "source_sha256": "61e6965d8c1c2749d868edfc53e8546fe00ea844b75d4cbd389fbb6e0f2582e2",
+      "destination_sha256": "6101f20c55456bdca1f0c1e234419c17367628dd5c6887471bf90cacb6e0835e",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\plugins\\forge\\AGENTS.md",
+      "destination": "plugins/forge/AGENTS.md",
+      "source_sha256": "c35a9d99643ea056d2f173abd9d5736f415cf970162dc8753d6693bb06e0c82e",
+      "destination_sha256": "c35a9d99643ea056d2f173abd9d5736f415cf970162dc8753d6693bb06e0c82e",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\forge\\README.md",
+      "destination": "plugins/forge/README.md",
+      "source_sha256": "a31925b98dd1dd63a0cf4911e76469c9314a95583d7ab0be715e143681d875bb",
+      "destination_sha256": "a31925b98dd1dd63a0cf4911e76469c9314a95583d7ab0be715e143681d875bb",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\forge\\references\\execution-policy.md",
+      "destination": "plugins/forge/references/execution-policy.md",
+      "source_sha256": "68b159b954470cffe6ff2133e0c246e369f7972e1c24b24932c2765df76526bb",
+      "destination_sha256": "68b159b954470cffe6ff2133e0c246e369f7972e1c24b24932c2765df76526bb",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\forge\\references\\free-first-policy.md",
+      "destination": "plugins/forge/references/free-first-policy.md",
+      "source_sha256": "4ae836ae0facc33f55fadd3ff60636560926757688e7a44e114516a872be3faa",
+      "destination_sha256": "4ae836ae0facc33f55fadd3ff60636560926757688e7a44e114516a872be3faa",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\forge\\references\\review-policy.md",
+      "destination": "plugins/forge/references/review-policy.md",
+      "source_sha256": "1a9a8385e04bf6518cdaadd11c7ecb752a9eb468cd98236495d9ca662ec5cb21",
+      "destination_sha256": "1a9a8385e04bf6518cdaadd11c7ecb752a9eb468cd98236495d9ca662ec5cb21",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\forge\\references\\shared-skill-integration.md",
+      "destination": "plugins/forge/references/shared-skill-integration.md",
+      "source_sha256": "698e34fde09624fcfdedd56354186cae82d0d0a0ebf02f142c71c58dacc2b237",
+      "destination_sha256": "698e34fde09624fcfdedd56354186cae82d0d0a0ebf02f142c71c58dacc2b237",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\forge\\references\\skill-registry.md",
+      "destination": "plugins/forge/references/skill-registry.md",
+      "source_sha256": "575dee199f30ad6787f1caa3ad040b46173bbf086ababab30444979c273872ef",
+      "destination_sha256": "92e10c89d0bbb6fad354f4ea7038c4645a47b7de15d36c2b4292c9946e099990",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\plugins\\forge\\references\\verification-contract.md",
+      "destination": "plugins/forge/references/verification-contract.md",
+      "source_sha256": "c455c408ec993a3abf0af2df023e629a62938064378ef3b6adb3a3b6b68cc818",
+      "destination_sha256": "c455c408ec993a3abf0af2df023e629a62938064378ef3b6adb3a3b6b68cc818",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\forge\\scripts\\route_forge.py",
+      "destination": "plugins/forge/scripts/route_forge.py",
+      "source_sha256": "48ed56c1826d628b331ddbab752d8f02e7701e75e91549144c50f96a2aaa19e4",
+      "destination_sha256": "48ed56c1826d628b331ddbab752d8f02e7701e75e91549144c50f96a2aaa19e4",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\forge\\scripts\\test_forge.py",
+      "destination": "plugins/forge/scripts/test_forge.py",
+      "source_sha256": "a94d3ddaaad8f02d661eb810a9486b8ca9905bf1b648e1c6419746efe8fdf208",
+      "destination_sha256": "a94d3ddaaad8f02d661eb810a9486b8ca9905bf1b648e1c6419746efe8fdf208",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\forge\\scripts\\verify_gate.py",
+      "destination": "plugins/forge/scripts/verify_gate.py",
+      "source_sha256": "34071bdfb5e0a464a79c329eb16afb3762e4a8542d368eab00bffd7734edf8f3",
+      "destination_sha256": "34071bdfb5e0a464a79c329eb16afb3762e4a8542d368eab00bffd7734edf8f3",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\forge\\skills\\forge\\agents\\openai.yaml",
+      "destination": "plugins/forge/skills/forge/agents/openai.yaml",
+      "source_sha256": "e72c57e5f6a58aa8f5b75f71962fd20311e2ae016a70df3483c4612af740d2c0",
+      "destination_sha256": "e72c57e5f6a58aa8f5b75f71962fd20311e2ae016a70df3483c4612af740d2c0",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\forge\\skills\\forge\\SKILL.md",
+      "destination": "plugins/forge/skills/forge/SKILL.md",
+      "source_sha256": "ec7ea7b4cc494d1b916d4490954828647254932a4361385fe427c65729be149a",
+      "destination_sha256": "ec7ea7b4cc494d1b916d4490954828647254932a4361385fe427c65729be149a",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\forge\\skills\\forge-architect\\agents\\openai.yaml",
+      "destination": "plugins/forge/skills/forge-architect/agents/openai.yaml",
+      "source_sha256": "ee0b36211ae0330930743b424cf8449d3bfbf71a9c1f5e3d2014933fbeb0c4b4",
+      "destination_sha256": "ee0b36211ae0330930743b424cf8449d3bfbf71a9c1f5e3d2014933fbeb0c4b4",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\forge\\skills\\forge-architect\\SKILL.md",
+      "destination": "plugins/forge/skills/forge-architect/SKILL.md",
+      "source_sha256": "543a509dafae1283c4b6630f6de231b088e2494dfcf9be8ad5d5fdb8e0a8ffc6",
+      "destination_sha256": "543a509dafae1283c4b6630f6de231b088e2494dfcf9be8ad5d5fdb8e0a8ffc6",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\forge\\skills\\forge-devil\\agents\\openai.yaml",
+      "destination": "plugins/forge/skills/forge-devil/agents/openai.yaml",
+      "source_sha256": "1af57fb3b5768797cab1fcd847808dd4d1e02a315239b5da868d74fde5b9043c",
+      "destination_sha256": "1af57fb3b5768797cab1fcd847808dd4d1e02a315239b5da868d74fde5b9043c",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\forge\\skills\\forge-devil\\SKILL.md",
+      "destination": "plugins/forge/skills/forge-devil/SKILL.md",
+      "source_sha256": "f4c5d705fa623c2e245e5d05e5db526c0e6d3cb2edfb97a0bd9bc4413fb66633",
+      "destination_sha256": "f4c5d705fa623c2e245e5d05e5db526c0e6d3cb2edfb97a0bd9bc4413fb66633",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\forge\\skills\\forge-integrator\\agents\\openai.yaml",
+      "destination": "plugins/forge/skills/forge-integrator/agents/openai.yaml",
+      "source_sha256": "ba92b4c69ab85a413c12fd3a8547bc3d0e17c903f65ecf1534a50e9dadf7ce2e",
+      "destination_sha256": "ba92b4c69ab85a413c12fd3a8547bc3d0e17c903f65ecf1534a50e9dadf7ce2e",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\forge\\skills\\forge-integrator\\SKILL.md",
+      "destination": "plugins/forge/skills/forge-integrator/SKILL.md",
+      "source_sha256": "d0c73e9e2ffd439665382cb2fe7a76531becb5959657ff800710bb950eeac1ec",
+      "destination_sha256": "d0c73e9e2ffd439665382cb2fe7a76531becb5959657ff800710bb950eeac1ec",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\forge\\skills\\forge-product\\agents\\openai.yaml",
+      "destination": "plugins/forge/skills/forge-product/agents/openai.yaml",
+      "source_sha256": "15ef62fc402a1552bb8be794fb599d72b88ee754aa49ce04f3cf3383c4369b81",
+      "destination_sha256": "15ef62fc402a1552bb8be794fb599d72b88ee754aa49ce04f3cf3383c4369b81",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\forge\\skills\\forge-product\\SKILL.md",
+      "destination": "plugins/forge/skills/forge-product/SKILL.md",
+      "source_sha256": "84a65e14a94366243d89f4ce8c5d720ddc25ebc2426f38c6b4adc73564f04e28",
+      "destination_sha256": "84a65e14a94366243d89f4ce8c5d720ddc25ebc2426f38c6b4adc73564f04e28",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\forge\\skills\\forge-router\\agents\\openai.yaml",
+      "destination": "plugins/forge/skills/forge-router/agents/openai.yaml",
+      "source_sha256": "bd972c1fa3b3623c7f72d9d9a9c59b1869a651d10d1c55f32e1fba57106fafff",
+      "destination_sha256": "bd972c1fa3b3623c7f72d9d9a9c59b1869a651d10d1c55f32e1fba57106fafff",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\forge\\skills\\forge-router\\SKILL.md",
+      "destination": "plugins/forge/skills/forge-router/SKILL.md",
+      "source_sha256": "7708665fbae4873be69e2afbb783a07d6ddf51e6c5efa8c20b32da30746a5c65",
+      "destination_sha256": "7708665fbae4873be69e2afbb783a07d6ddf51e6c5efa8c20b32da30746a5c65",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\forge\\skills\\forge-verification-gate\\agents\\openai.yaml",
+      "destination": "plugins/forge/skills/forge-verification-gate/agents/openai.yaml",
+      "source_sha256": "4b5d41fe3aa263ff6304f8ba8888383787b1e82e104cbc67c7249317a4383dc6",
+      "destination_sha256": "4b5d41fe3aa263ff6304f8ba8888383787b1e82e104cbc67c7249317a4383dc6",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\forge\\skills\\forge-verification-gate\\SKILL.md",
+      "destination": "plugins/forge/skills/forge-verification-gate/SKILL.md",
+      "source_sha256": "9a015dff61eafc79da97bd2bf03a532ee3576d8e1f64cb58c7c05acdf815601b",
+      "destination_sha256": "9a015dff61eafc79da97bd2bf03a532ee3576d8e1f64cb58c7c05acdf815601b",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\moa\\.codex-plugin\\plugin.json",
+      "destination": "plugins/moa/.codex-plugin/plugin.json",
+      "source_sha256": "deac595f341cf3823ffd25e5da7f00319ab7a791804fc104e84b893e2db7cb1a",
+      "destination_sha256": "0ebf14da1b99fc674f35f0f33bc3b383e4266b68ea669aa55356f6cc4ae66009",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\plugins\\moa\\references\\agent-registry-contract.md",
+      "destination": "plugins/moa/references/agent-registry-contract.md",
+      "source_sha256": "ecbc8b49c4a763493d4c9d34fb01d636b5dd104ed64dd5cca456024a716b6e9b",
+      "destination_sha256": "ecbc8b49c4a763493d4c9d34fb01d636b5dd104ed64dd5cca456024a716b6e9b",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\moa\\references\\architecture.md",
+      "destination": "plugins/moa/references/architecture.md",
+      "source_sha256": "67120012793bef4093a22b10c7904446e80e48f56620b43cbdfc875a7de71add",
+      "destination_sha256": "67120012793bef4093a22b10c7904446e80e48f56620b43cbdfc875a7de71add",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\moa\\references\\completion-contract.md",
+      "destination": "plugins/moa/references/completion-contract.md",
+      "source_sha256": "5f178afd5fd825743df170dc4bb96da95050d1c30189387f5a01bb00287d0a88",
+      "destination_sha256": "5f178afd5fd825743df170dc4bb96da95050d1c30189387f5a01bb00287d0a88",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\moa\\references\\handoff-contract.md",
+      "destination": "plugins/moa/references/handoff-contract.md",
+      "source_sha256": "5d88791791979e5abbd740babe53150aa231fa358164ac3f9e5b1684148d5b4a",
+      "destination_sha256": "5d88791791979e5abbd740babe53150aa231fa358164ac3f9e5b1684148d5b4a",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\moa\\references\\safety-policy.md",
+      "destination": "plugins/moa/references/safety-policy.md",
+      "source_sha256": "b80e7bc9c320d3c5c1a10634ccc6ce6523fcfb312d0f2cfe4d8c7664e8fc21f6",
+      "destination_sha256": "b80e7bc9c320d3c5c1a10634ccc6ce6523fcfb312d0f2cfe4d8c7664e8fc21f6",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\moa\\scripts\\moa_core.py",
+      "destination": "plugins/moa/scripts/moa_core.py",
+      "source_sha256": "5059403b6a8680e7bab51e14a62a754822be5294a7f12a291ff50f11d69852ff",
+      "destination_sha256": "5059403b6a8680e7bab51e14a62a754822be5294a7f12a291ff50f11d69852ff",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\moa\\scripts\\test_moa.py",
+      "destination": "plugins/moa/scripts/test_moa.py",
+      "source_sha256": "e987a489cde8a53a461def4d890189b3f3a35e6a99389df342703604c0c9e0e5",
+      "destination_sha256": "e987a489cde8a53a461def4d890189b3f3a35e6a99389df342703604c0c9e0e5",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\moa\\skills\\moa\\agents\\openai.yaml",
+      "destination": "plugins/moa/skills/moa/agents/openai.yaml",
+      "source_sha256": "88758ba464d760c7bfd15f11a8d7d37f5a23f880f81aee0986e17c8fc2ec589d",
+      "destination_sha256": "88758ba464d760c7bfd15f11a8d7d37f5a23f880f81aee0986e17c8fc2ec589d",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\moa\\skills\\moa\\SKILL.md",
+      "destination": "plugins/moa/skills/moa/SKILL.md",
+      "source_sha256": "02cdc15ac92794637f1386da8685922d8537437b4c672facd0d7791d665ebd06",
+      "destination_sha256": "02cdc15ac92794637f1386da8685922d8537437b4c672facd0d7791d665ebd06",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\moa\\skills\\moa-agent-router\\agents\\openai.yaml",
+      "destination": "plugins/moa/skills/moa-agent-router/agents/openai.yaml",
+      "source_sha256": "a9c702ebebf9aaa979ce7b2ddab8a45c2c5cac5af4faf365faf0a0ac385bc437",
+      "destination_sha256": "a9c702ebebf9aaa979ce7b2ddab8a45c2c5cac5af4faf365faf0a0ac385bc437",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\moa\\skills\\moa-agent-router\\SKILL.md",
+      "destination": "plugins/moa/skills/moa-agent-router/SKILL.md",
+      "source_sha256": "21764365c9e3a80f465cf04039739ba5340499a98a806397e9d3b5f9532caa10",
+      "destination_sha256": "21764365c9e3a80f465cf04039739ba5340499a98a806397e9d3b5f9532caa10",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\moa\\skills\\moa-capability-discovery\\agents\\openai.yaml",
+      "destination": "plugins/moa/skills/moa-capability-discovery/agents/openai.yaml",
+      "source_sha256": "207a80603f5b4e757c49aca8ea1655cbbb26fde8d4b0741facd10bde005bf7a2",
+      "destination_sha256": "207a80603f5b4e757c49aca8ea1655cbbb26fde8d4b0741facd10bde005bf7a2",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\moa\\skills\\moa-capability-discovery\\SKILL.md",
+      "destination": "plugins/moa/skills/moa-capability-discovery/SKILL.md",
+      "source_sha256": "912338a2c35cda9d740c46d10728e766a51d5fa6287945c8fa53f8c5d0f8e688",
+      "destination_sha256": "f61b4f91c541d1e9a88ab06e23cb7eb3b3680915390a82a679a570d54bf99393",
+      "transform": "private home path sanitised"
+    },
+    {
+      "source": "<HOME>\\plugins\\moa\\skills\\moa-completion-governance\\agents\\openai.yaml",
+      "destination": "plugins/moa/skills/moa-completion-governance/agents/openai.yaml",
+      "source_sha256": "263ceabf699dbc69f8088f3f239f82afa3670dc1a0a822db650f76a7fadf68ca",
+      "destination_sha256": "263ceabf699dbc69f8088f3f239f82afa3670dc1a0a822db650f76a7fadf68ca",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\moa\\skills\\moa-completion-governance\\SKILL.md",
+      "destination": "plugins/moa/skills/moa-completion-governance/SKILL.md",
+      "source_sha256": "15992e598132c0c3f5ee60e13ee435ec099c7c33b502d9c6b978141ef9ed907e",
+      "destination_sha256": "15992e598132c0c3f5ee60e13ee435ec099c7c33b502d9c6b978141ef9ed907e",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\moa\\skills\\moa-conflict-arbitration\\agents\\openai.yaml",
+      "destination": "plugins/moa/skills/moa-conflict-arbitration/agents/openai.yaml",
+      "source_sha256": "386e0e0b1e55747ca39aae82bdc57b309cdc1c2f10c4d4c49d9c8fc520fed4c8",
+      "destination_sha256": "386e0e0b1e55747ca39aae82bdc57b309cdc1c2f10c4d4c49d9c8fc520fed4c8",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\moa\\skills\\moa-conflict-arbitration\\SKILL.md",
+      "destination": "plugins/moa/skills/moa-conflict-arbitration/SKILL.md",
+      "source_sha256": "58847d448e8751d22be2ede303bd7e062cadd7b95b11332797d7cc6d377cf367",
+      "destination_sha256": "58847d448e8751d22be2ede303bd7e062cadd7b95b11332797d7cc6d377cf367",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\moa\\skills\\moa-intent-psychology\\agents\\openai.yaml",
+      "destination": "plugins/moa/skills/moa-intent-psychology/agents/openai.yaml",
+      "source_sha256": "d2a806c95da9bc61afe3add12c9fa1b734a5ba13da9472c40cca5cd6e6ff0d35",
+      "destination_sha256": "d2a806c95da9bc61afe3add12c9fa1b734a5ba13da9472c40cca5cd6e6ff0d35",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\moa\\skills\\moa-intent-psychology\\SKILL.md",
+      "destination": "plugins/moa/skills/moa-intent-psychology/SKILL.md",
+      "source_sha256": "f6afed5ab18e1384380bff4fd8585cbb6793aefbc60a198015713d93343bf501",
+      "destination_sha256": "f6afed5ab18e1384380bff4fd8585cbb6793aefbc60a198015713d93343bf501",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\moa\\skills\\moa-orchestration\\agents\\openai.yaml",
+      "destination": "plugins/moa/skills/moa-orchestration/agents/openai.yaml",
+      "source_sha256": "5d8ac8556b1200acc13ab712812f60f242c3f3df7a4b97a7aa6632d6593fdf9e",
+      "destination_sha256": "5d8ac8556b1200acc13ab712812f60f242c3f3df7a4b97a7aa6632d6593fdf9e",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\moa\\skills\\moa-orchestration\\SKILL.md",
+      "destination": "plugins/moa/skills/moa-orchestration/SKILL.md",
+      "source_sha256": "4d4204c4ae3df60894ffd4ac7c895a03f7ed80fd8976416835d3d8c366f4be50",
+      "destination_sha256": "4d4204c4ae3df60894ffd4ac7c895a03f7ed80fd8976416835d3d8c366f4be50",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\moa\\skills\\moa-problem-framing\\agents\\openai.yaml",
+      "destination": "plugins/moa/skills/moa-problem-framing/agents/openai.yaml",
+      "source_sha256": "e5713aec8ef5e740a0ec3d92d84b3e77da673e20cb8c7640d925f746bc5e6e28",
+      "destination_sha256": "e5713aec8ef5e740a0ec3d92d84b3e77da673e20cb8c7640d925f746bc5e6e28",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\moa\\skills\\moa-problem-framing\\SKILL.md",
+      "destination": "plugins/moa/skills/moa-problem-framing/SKILL.md",
+      "source_sha256": "6fbdd75eb5954f616e04af3b1b480891557c20d7c0065490c0be9164fe6c7a33",
+      "destination_sha256": "6fbdd75eb5954f616e04af3b1b480891557c20d7c0065490c0be9164fe6c7a33",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\moa\\skills\\moa-task-decomposition\\agents\\openai.yaml",
+      "destination": "plugins/moa/skills/moa-task-decomposition/agents/openai.yaml",
+      "source_sha256": "0473fff461ca8d8ddb3efcd3a883db6d50ac41c8ca73a6cd00f6cf713dcd8dfa",
+      "destination_sha256": "0473fff461ca8d8ddb3efcd3a883db6d50ac41c8ca73a6cd00f6cf713dcd8dfa",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\moa\\skills\\moa-task-decomposition\\SKILL.md",
+      "destination": "plugins/moa/skills/moa-task-decomposition/SKILL.md",
+      "source_sha256": "832411d93bba74fe8e071404c3cdea8e5609ebf52589e4a2765dc3283eaa3675",
+      "destination_sha256": "832411d93bba74fe8e071404c3cdea8e5609ebf52589e4a2765dc3283eaa3675",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\devil\\.codex-plugin\\plugin.json",
+      "destination": "plugins/legacy/devil/.codex-plugin/plugin.json",
+      "source_sha256": "d78a7453be3de8804e678055858dbd11032d61ef13c693e248f1f931f17837a4",
+      "destination_sha256": "d78a7453be3de8804e678055858dbd11032d61ef13c693e248f1f931f17837a4",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\devil\\README.md",
+      "destination": "plugins/legacy/devil/README.md",
+      "source_sha256": "5a2e11977934a76fa0724d777cbc17832510f4bd366567809ad16caecf4cb73f",
+      "destination_sha256": "5a2e11977934a76fa0724d777cbc17832510f4bd366567809ad16caecf4cb73f",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\devil\\scripts\\validate_behavior.py",
+      "destination": "plugins/legacy/devil/scripts/validate_behavior.py",
+      "source_sha256": "d04dcf7e22af160999ea681d6dbb7edb21632b64f2afe7329b1120b81f647fc5",
+      "destination_sha256": "d04dcf7e22af160999ea681d6dbb7edb21632b64f2afe7329b1120b81f647fc5",
+      "transform": "none"
+    },
+    {
+      "source": "<HOME>\\plugins\\devil\\skills\\devil\\SKILL.md",
+      "destination": "plugins/legacy/devil/skills/devil/SKILL.md",
+      "source_sha256": "0de9faa27ab45d744e6ab13216fa75901151ebb5b3873c728c9139d7823cfa55",
+      "destination_sha256": "0de9faa27ab45d744e6ab13216fa75901151ebb5b3873c728c9139d7823cfa55",
+      "transform": "none"
+    }
+  ],
+  "exclusions": [
+    "cache directories",
+    "runtime logs",
+    "database files",
+    "credentials and authentication state",
+    "unregistered user skills"
+  ]
+}

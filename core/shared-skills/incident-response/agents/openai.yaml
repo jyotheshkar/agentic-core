@@ -1,0 +1,4 @@
+interface:
+  display_name: "Incident Response"
+  short_description: "Coordinate detection, triage, containment, recovery, evidence..."
+  default_prompt: "Use $incident-response to complete this task with a traceable, bounded result."

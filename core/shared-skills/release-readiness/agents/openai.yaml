@@ -1,0 +1,4 @@
+interface:
+  display_name: "Release Readiness"
+  short_description: "Assess whether a change is ready to release using evidence fo..."
+  default_prompt: "Use $release-readiness to complete this task with a traceable, bounded result."

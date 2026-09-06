@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://personal-ai-os.local/agent-registry.schema.json",
+  "title": "Personal AI OS Agent Registry",
+  "type": "object",
+  "required": ["schema_version", "registry_version", "agents"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"type": "string"},
+    "registry_version": {"type": "string"},
+    "notes": {"type": "string"},
+    "agents": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/agent"}
+    }
+  },
+  "$defs": {
+    "agent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "name", "type", "description", "capabilities", "triggers",
+        "scope", "status", "enabled", "installed", "authority", "dependencies",
+        "requires_minister", "supports_parallel", "cost_profile", "risk_profile",
+        "trust_level", "version", "source", "notes", "last_validated"
+      ],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+        "name": {"type": "string", "minLength": 1},
+        "type": {"enum": ["orchestrator", "decision-agent", "build-agent", "legacy-plugin", "specialist-agent"]},
+        "description": {"type": "string", "minLength": 1},
+        "capabilities": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "triggers": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "scope": {"enum": ["personal", "shared", "public"]},
+        "status": {"enum": ["AVAILABLE", "NOT_INSTALLED", "DISABLED", "BLOCKED", "PLANNED"]},
+        "enabled": {"type": "boolean"},
+        "installed": {"type": "boolean"},
+        "authority": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "dependencies": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "requires_minister": {"type": "boolean"},
+        "supports_parallel": {"type": "boolean"},
+        "cost_profile": {"enum": ["FREE", "FREE_FIRST", "VARIABLE", "UNKNOWN"]},
+        "risk_profile": {"enum": ["LOW", "MEDIUM", "HIGH", "LEGACY"]},
+        "trust_level": {"enum": ["VERIFIED", "AUTHORITATIVE", "COMMUNITY", "EXPERIMENTAL", "LEGACY"]},
+        "version": {"type": "string"},
+        "source": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["plugin", "marketplace", "path"],
+          "properties": {
+            "plugin": {"type": "string"},
+            "marketplace": {"type": "string"},
+            "path": {"type": "string"}
+          }
+        },
+        "notes": {"type": "string"},
+        "last_validated": {"type": "string", "format": "date"}
+      }
+    }
+  }
+}

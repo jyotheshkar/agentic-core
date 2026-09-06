@@ -1,0 +1,4 @@
+interface:
+  display_name: "Retrieval Augmented Generation"
+  short_description: "Design retrieval-augmented generation systems with grounded c..."
+  default_prompt: "Use $retrieval-augmented-generation to complete this task with a traceable, bounded result."

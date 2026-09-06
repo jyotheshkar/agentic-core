@@ -1,0 +1,5 @@
+interface:
+  display_name: "Scout"
+  short_description: "Verify current evidence and expose unknowns"
+  brand_color: "#276A72"
+  default_prompt: "Use $scout to investigate this claim with current primary sources and a traceable evidence pack."

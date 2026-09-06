@@ -1,0 +1,4 @@
+interface:
+  display_name: "Backend Engineering"
+  short_description: "Implement server-side domain logic, persistence boundaries, c..."
+  default_prompt: "Use $backend-engineering to complete this task with a traceable, bounded result."

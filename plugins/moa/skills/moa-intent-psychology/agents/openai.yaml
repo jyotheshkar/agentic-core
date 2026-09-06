@@ -1,0 +1,4 @@
+interface:
+  display_name: "MOA Intent Psychology"
+  short_description: "Identify the objective behind a request"
+  default_prompt: "Use $moa-intent-psychology to identify routing-relevant behavioral context."

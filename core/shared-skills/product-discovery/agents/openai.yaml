@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Discovery"
+  short_description: "Determine whether a product problem is real, valuable, reacha..."
+  default_prompt: "Use $product-discovery to complete this task with a traceable, bounded result."

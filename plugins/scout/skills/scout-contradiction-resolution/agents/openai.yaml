@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scout Contradiction Resolution"
+  short_description: "Resolve or expose conflicting evidence"
+  default_prompt: "Use $scout-contradiction-resolution to test whether these sources truly conflict and what remains unresolved."

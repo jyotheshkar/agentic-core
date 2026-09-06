@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Broker"
+  short_description: "Select trusted skills with minimal context"
+  default_prompt: "Use $skill-broker to choose the minimum sufficient shared skills for this task."

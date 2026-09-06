@@ -1,0 +1,4 @@
+interface:
+  display_name: "MOA Conflict Arbitration"
+  short_description: "Resolve conflicts by domain authority"
+  default_prompt: "Use $moa-conflict-arbitration to resolve this agent disagreement by authority."

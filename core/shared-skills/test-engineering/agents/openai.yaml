@@ -1,0 +1,4 @@
+interface:
+  display_name: "Test Engineering"
+  short_description: "Design an efficient test strategy across unit, integration, c..."
+  default_prompt: "Use $test-engineering to complete this task with a traceable, bounded result."

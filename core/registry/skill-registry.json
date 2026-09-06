@@ -1,0 +1,2232 @@
+{
+  "schema_version": "0.1.0",
+  "registry_version": "1.0.0",
+  "skills": [
+    {
+      "id": "skill-broker",
+      "name": "Skill Broker",
+      "description": "Selects the minimum sufficient trusted shared skills for a task and reports missing capabilities.",
+      "category": "orchestration-infrastructure",
+      "capabilities": [
+        "skill-discovery",
+        "capability-matching",
+        "minimum-sufficient-routing",
+        "trust-aware-ranking",
+        "overlap-detection",
+        "missing-capability-reporting"
+      ],
+      "triggers": [
+        "select skills for a task",
+        "find a registered capability",
+        "route shared expertise",
+        "identify missing capability",
+        "avoid duplicate skills"
+      ],
+      "location": "core/shared-skills/skill-broker",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/skill-broker",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "0.1.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "Forge",
+        "Minister",
+        "MOA",
+        "Scout",
+        "Audit",
+        "Fix",
+        "Design",
+        "Launch",
+        "Lab"
+      ],
+      "activation_cost": "LOW",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 67,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Registry-backed meta-skill. Full skill content is loaded only when selected.",
+      "last_validated": "2026-08-31"
+    },
+    {
+      "id": "first-principles",
+      "name": "First Principles",
+      "description": "Breaks a problem into fundamental truths, tests inherited assumptions, and reconstructs the simplest viable formulation.",
+      "category": "reasoning",
+      "capabilities": [
+        "first-principles-analysis",
+        "assumption-challenge",
+        "problem-decomposition",
+        "constraint-audit",
+        "problem-reframing"
+      ],
+      "triggers": [
+        "challenge fundamental assumptions",
+        "test unsupported assumptions",
+        "separate facts from convention",
+        "reframe a stuck problem",
+        "find artificial constraints",
+        "reconstruct from fundamentals"
+      ],
+      "location": "core/shared-skills/first-principles",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/first-principles",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "0.1.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "Forge",
+        "Minister",
+        "MOA",
+        "Scout",
+        "Audit",
+        "Design",
+        "Lab"
+      ],
+      "activation_cost": "LOW",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 65,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Use when inherited assumptions or artificial constraints materially affect the solution.",
+      "last_validated": "2026-08-31"
+    },
+    {
+      "id": "evidence-epistemics",
+      "name": "Evidence and Epistemics",
+      "description": "Classifies claims by evidential strength, calibrates uncertainty, resolves contradictions, and identifies what would change a conclusion.",
+      "category": "reasoning",
+      "capabilities": [
+        "evidence-quality-analysis",
+        "claim-classification",
+        "source-hierarchy-analysis",
+        "uncertainty-calibration",
+        "contradiction-analysis",
+        "causality-check"
+      ],
+      "triggers": [
+        "evaluate unsupported assumptions",
+        "classify evidence strength",
+        "separate fact from inference",
+        "resolve contradictory sources",
+        "calibrate confidence",
+        "test causal claim"
+      ],
+      "location": "core/shared-skills/evidence-epistemics",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/evidence-epistemics",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "0.1.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "Forge",
+        "Minister",
+        "MOA",
+        "Scout",
+        "Audit",
+        "Lab"
+      ],
+      "activation_cost": "LOW",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 68,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Avoids false precision and distinguishes current evidence from stale evidence.",
+      "last_validated": "2026-08-31"
+    },
+    {
+      "id": "systems-thinking",
+      "name": "Systems Thinking",
+      "description": "Maps boundaries, dependencies, feedback, delays, bottlenecks, leverage points, and second-order consequences without overcomplicating simple problems.",
+      "category": "reasoning",
+      "capabilities": [
+        "systems-analysis",
+        "dependency-mapping",
+        "feedback-loop-analysis",
+        "second-order-effects",
+        "bottleneck-analysis",
+        "leverage-point-analysis"
+      ],
+      "triggers": [
+        "identify system-wide consequences",
+        "map dependencies and bottlenecks",
+        "analyze feedback loops",
+        "find second-order effects",
+        "compare local and global optimization",
+        "identify leverage points"
+      ],
+      "location": "core/shared-skills/systems-thinking",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/systems-thinking",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "0.1.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "Forge",
+        "Minister",
+        "MOA",
+        "Scout",
+        "Audit",
+        "Fix",
+        "Design",
+        "Launch",
+        "Lab"
+      ],
+      "activation_cost": "LOW",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 65,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Use only when interactions or downstream effects matter; skip for isolated one-step tasks.",
+      "last_validated": "2026-08-31"
+    },
+    {
+      "id": "behavioral-psychology",
+      "name": "Behavioral Psychology",
+      "description": "Analyzes decision-relevant biases, motivation, cognitive load, social pressure, and likely behavior without diagnosis or claims about hidden mental states.",
+      "category": "reasoning",
+      "capabilities": [
+        "behavioral-analysis",
+        "cognitive-bias-analysis",
+        "motivation-analysis",
+        "decision-fatigue-analysis",
+        "interpersonal-dynamics",
+        "debiasing-design"
+      ],
+      "triggers": [
+        "identify decision-relevant bias",
+        "analyze likely human behavior",
+        "test sunk cost reasoning",
+        "assess motivation and follow-through",
+        "reduce decision fatigue",
+        "design a debiasing safeguard"
+      ],
+      "location": "core/shared-skills/behavioral-psychology",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/behavioral-psychology",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "0.1.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "Minister",
+        "Forge",
+        "MOA",
+        "Scout",
+        "Audit",
+        "Design"
+      ],
+      "activation_cost": "LOW",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 67,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Decision psychology only. Prohibits diagnosis, manipulation, mind-reading, and unsupported motive claims.",
+      "last_validated": "2026-08-31"
+    },
+    {
+      "id": "decision-science",
+      "name": "Decision Science",
+      "description": "Compares alternatives using evidence states, expected value, opportunity cost, reversibility, regret, option value, thresholds, and sensitivity analysis.",
+      "category": "reasoning",
+      "capabilities": [
+        "comparative-decision-analysis",
+        "expected-value-analysis",
+        "opportunity-cost-analysis",
+        "reversibility-analysis",
+        "sensitivity-analysis",
+        "threshold-analysis",
+        "alternative-generation"
+      ],
+      "triggers": [
+        "compare consequential options",
+        "estimate expected value",
+        "analyze opportunity cost",
+        "test decision sensitivity",
+        "identify a decision threshold",
+        "rank alternatives under uncertainty"
+      ],
+      "location": "core/shared-skills/decision-science",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/decision-science",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "0.1.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "Minister",
+        "Forge",
+        "MOA",
+        "Scout",
+        "Audit",
+        "Lab"
+      ],
+      "activation_cost": "LOW",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 69,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Separates known, estimated, and unknown inputs and rejects false numerical precision.",
+      "last_validated": "2026-08-31"
+    },
+    {
+      "id": "strategic-foresight",
+      "name": "Strategic Foresight",
+      "description": "Tests decisions across time horizons, scenarios, path dependencies, lock-in, optionality, compounding effects, and plausible surprises.",
+      "category": "reasoning",
+      "capabilities": [
+        "strategic-foresight",
+        "scenario-planning",
+        "time-horizon-analysis",
+        "path-dependency-analysis",
+        "optionality-analysis",
+        "timing-analysis"
+      ],
+      "triggers": [
+        "compare future scenarios",
+        "analyze long-term consequences",
+        "test path dependency and lock-in",
+        "preserve future optionality",
+        "choose decision timing",
+        "identify scenario signposts"
+      ],
+      "location": "core/shared-skills/strategic-foresight",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/strategic-foresight",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "0.1.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "Minister",
+        "Forge",
+        "MOA",
+        "Scout",
+        "Audit",
+        "Design",
+        "Launch"
+      ],
+      "activation_cost": "MEDIUM",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 67,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Builds plausible scenarios and signposts without presenting scenarios as forecasts.",
+      "last_validated": "2026-08-31"
+    },
+    {
+      "id": "game-theory-incentives",
+      "name": "Game Theory and Incentives",
+      "description": "Analyzes actors, incentives, power, information asymmetry, bargaining position, signals, commitments, likely responses, and counter-moves.",
+      "category": "reasoning",
+      "capabilities": [
+        "incentive-analysis",
+        "strategic-interaction-analysis",
+        "bargaining-analysis",
+        "information-asymmetry-analysis",
+        "signaling-analysis",
+        "principal-agent-analysis"
+      ],
+      "triggers": [
+        "map actor incentives",
+        "analyze bargaining leverage",
+        "predict likely counter-moves",
+        "test information asymmetry",
+        "assess credible commitments",
+        "analyze a principal-agent problem"
+      ],
+      "location": "core/shared-skills/game-theory-incentives",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/game-theory-incentives",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "0.1.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "Minister",
+        "MOA",
+        "Scout",
+        "Audit",
+        "Launch"
+      ],
+      "activation_cost": "MEDIUM",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 66,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Uses ordinary incentive analysis unless formal game structure changes the decision.",
+      "last_validated": "2026-08-31"
+    },
+    {
+      "id": "risk-premortem",
+      "name": "Risk Premortem",
+      "description": "Assumes a plan failed, identifies material causes, and prioritizes controls using likelihood, impact, detectability, recoverability, reversibility, and early warnings.",
+      "category": "reasoning",
+      "capabilities": [
+        "premortem-analysis",
+        "risk-assessment",
+        "failure-mode-analysis",
+        "tail-risk-analysis",
+        "control-design",
+        "early-warning-design",
+        "stop-condition-design"
+      ],
+      "triggers": [
+        "run a plan premortem",
+        "identify material failure modes",
+        "rank risks by severity",
+        "design risk controls",
+        "identify early warning signals",
+        "define plan stop conditions"
+      ],
+      "location": "core/shared-skills/risk-premortem",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/risk-premortem",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "0.1.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "Minister",
+        "Forge",
+        "MOA",
+        "Scout",
+        "Audit",
+        "Fix",
+        "Launch"
+      ],
+      "activation_cost": "MEDIUM",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 68,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Prioritizes plausible concentrated risks and requires mechanisms, owners, and warning signals for controls.",
+      "last_validated": "2026-08-31"
+    },
+    {
+      "id": "adversarial-red-team",
+      "name": "Adversarial Red Team",
+      "description": "Steelmans and stress-tests decisions by attacking assumptions, evidence, incentives, timelines, contradictions, failure modes, and omitted alternatives without issuing the final verdict.",
+      "category": "reasoning",
+      "capabilities": [
+        "adversarial-analysis",
+        "steelman-analysis",
+        "assumption-attack",
+        "contradiction-challenge",
+        "disconfirming-evidence-search",
+        "alternative-challenge"
+      ],
+      "triggers": [
+        "red team a proposed decision",
+        "steelman and attack a plan",
+        "challenge emerging consensus",
+        "find decisive contradictions",
+        "search for disconfirming evidence",
+        "construct the strongest opposing case"
+      ],
+      "location": "core/shared-skills/adversarial-red-team",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/adversarial-red-team",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "0.1.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "Minister",
+        "Forge",
+        "MOA",
+        "Audit",
+        "Devil"
+      ],
+      "activation_cost": "MEDIUM",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 68,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Advisory only. It explicitly does not issue Minister's final decision.",
+      "last_validated": "2026-08-31"
+    },
+    {
+      "id": "research-planning",
+      "name": "Research Planning",
+      "description": "Design a bounded, reproducible research plan with answerable questions, evidence criteria, search scope, stopping rules, and traceable outputs. Use before substantial source collection, not for a single known lookup.",
+      "category": "research",
+      "capabilities": [
+        "research-plan-design",
+        "research-question-framing",
+        "evidence-inclusion-design",
+        "research-stopping-rule-design"
+      ],
+      "triggers": [
+        "design a research plan",
+        "define evidence inclusion criteria",
+        "set a research stopping rule"
+      ],
+      "location": "core/shared-skills/research-planning",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/research-planning",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "MOA",
+        "Minister",
+        "Forge",
+        "Scout"
+      ],
+      "activation_cost": "MEDIUM",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 64,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Canonical AI OS v1.0 skill. Evidence basis: https://www.prisma-statement.org/prisma-2020",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "source-discovery",
+      "name": "Source Discovery",
+      "description": "Find candidate primary and authoritative sources through query expansion, citation chaining, metadata services, and source-type targeting. Use when relevant evidence is not already known, not when one supplied source only needs reading.",
+      "category": "research",
+      "capabilities": [
+        "source-discovery",
+        "query-expansion",
+        "citation-chaining",
+        "metadata-retrieval"
+      ],
+      "triggers": [
+        "find authoritative sources",
+        "expand a literature search",
+        "trace citations and metadata"
+      ],
+      "location": "core/shared-skills/source-discovery",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/source-discovery",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "MOA",
+        "Minister",
+        "Forge",
+        "Scout"
+      ],
+      "activation_cost": "MEDIUM",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 64,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Canonical AI OS v1.0 skill. Evidence basis: https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "source-verification",
+      "name": "Source Verification",
+      "description": "Verify provenance, authority, currency, claim support, and cross-source consistency for decision-relevant evidence. Use when facts may be disputed, time-sensitive, consequential, or vulnerable to secondary-source distortion.",
+      "category": "research",
+      "capabilities": [
+        "source-provenance-verification",
+        "claim-source-alignment",
+        "source-currency-check",
+        "cross-source-corroboration"
+      ],
+      "triggers": [
+        "verify source provenance",
+        "check whether evidence supports a claim",
+        "corroborate a disputed fact"
+      ],
+      "location": "core/shared-skills/source-verification",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/source-verification",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "MOA",
+        "Minister",
+        "Forge",
+        "Scout"
+      ],
+      "activation_cost": "MEDIUM",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 64,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Canonical AI OS v1.0 skill. Evidence basis: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "research-synthesis",
+      "name": "Research Synthesis",
+      "description": "Synthesize heterogeneous evidence into a traceable answer that separates findings, contradictions, uncertainty, applicability, and decision implications. Use after meaningful evidence collection, not as a substitute for source verification.",
+      "category": "research",
+      "capabilities": [
+        "research-synthesis",
+        "evidence-matrix-synthesis",
+        "contradiction-synthesis",
+        "research-gap-analysis"
+      ],
+      "triggers": [
+        "synthesize research findings",
+        "reconcile contradictory evidence",
+        "summarize an evidence matrix"
+      ],
+      "location": "core/shared-skills/research-synthesis",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/research-synthesis",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "MOA",
+        "Minister",
+        "Forge",
+        "Scout"
+      ],
+      "activation_cost": "MEDIUM",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 64,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Canonical AI OS v1.0 skill. Evidence basis: https://www.prisma-statement.org/prisma-2020",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "product-discovery",
+      "name": "Product Discovery",
+      "description": "Determine whether a product problem is real, valuable, reachable, and suitable for intervention before committing to a build. Use for uncertain product ideas and discovery phases, not for a fully decided trivial implementation.",
+      "category": "product-design",
+      "capabilities": [
+        "product-discovery",
+        "problem-opportunity-validation",
+        "user-segment-framing",
+        "solution-assumption-mapping"
+      ],
+      "triggers": [
+        "validate a product problem",
+        "run product discovery",
+        "test a product opportunity"
+      ],
+      "location": "core/shared-skills/product-discovery",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/product-discovery",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "MOA",
+        "Minister",
+        "Forge"
+      ],
+      "activation_cost": "MEDIUM",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 64,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Canonical AI OS v1.0 skill. Evidence basis: https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "requirements-engineering",
+      "name": "Requirements Engineering",
+      "description": "Turn stakeholder needs into consistent, testable, prioritized requirements with scope, constraints, interfaces, and traceability. Use when ambiguity or multiple stakeholders could cause implementation drift.",
+      "category": "product-design",
+      "capabilities": [
+        "requirements-engineering",
+        "acceptance-criteria-design",
+        "requirements-traceability",
+        "scope-constraint-analysis"
+      ],
+      "triggers": [
+        "define testable requirements",
+        "create acceptance criteria",
+        "resolve requirement ambiguity"
+      ],
+      "location": "core/shared-skills/requirements-engineering",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/requirements-engineering",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "MOA",
+        "Minister",
+        "Forge"
+      ],
+      "activation_cost": "MEDIUM",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 64,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Canonical AI OS v1.0 skill. Evidence basis: https://insights.sei.cmu.edu/library/software-requirements/",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "user-research",
+      "name": "User Research",
+      "description": "Plan and interpret ethical user research that answers product questions through appropriate participant selection and methods. Use when user behavior or needs are uncertain, not to infer users from stakeholder opinion alone.",
+      "category": "product-design",
+      "capabilities": [
+        "user-research-planning",
+        "participant-sampling-design",
+        "research-method-selection",
+        "qualitative-evidence-analysis"
+      ],
+      "triggers": [
+        "plan user interviews",
+        "select user research methods",
+        "analyze user research evidence"
+      ],
+      "location": "core/shared-skills/user-research",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/user-research",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "MOA",
+        "Minister",
+        "Forge"
+      ],
+      "activation_cost": "MEDIUM",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 64,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Canonical AI OS v1.0 skill. Evidence basis: https://www.gov.uk/service-manual/user-research",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "experience-design",
+      "name": "Experience Design",
+      "description": "Design coherent user flows, information architecture, interaction states, accessibility behavior, and service recovery around a validated outcome. Use for end-to-end experience design, not isolated visual decoration.",
+      "category": "product-design",
+      "capabilities": [
+        "experience-design",
+        "user-flow-design",
+        "information-architecture",
+        "accessibility-design"
+      ],
+      "triggers": [
+        "design an end-to-end user flow",
+        "create information architecture",
+        "design accessible interaction states"
+      ],
+      "location": "core/shared-skills/experience-design",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/experience-design",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "MOA",
+        "Forge"
+      ],
+      "activation_cost": "MEDIUM",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 64,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Canonical AI OS v1.0 skill. Evidence basis: https://www.w3.org/TR/wcag/",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "product-prioritization",
+      "name": "Product Prioritization",
+      "description": "Prioritize product opportunities and work using value, evidence, effort, risk, dependencies, reversibility, and strategic fit. Use when choices compete for scarce capacity, not to manufacture false numeric certainty.",
+      "category": "product-design",
+      "capabilities": [
+        "product-prioritization",
+        "roadmap-sequencing",
+        "value-effort-analysis",
+        "dependency-aware-prioritization"
+      ],
+      "triggers": [
+        "prioritize product features",
+        "sequence a product roadmap",
+        "compare value and delivery effort"
+      ],
+      "location": "core/shared-skills/product-prioritization",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/product-prioritization",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "MOA",
+        "Minister",
+        "Forge"
+      ],
+      "activation_cost": "LOW",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 64,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Canonical AI OS v1.0 skill. Evidence basis: https://www.gov.uk/service-manual/agile-delivery",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "software-architecture",
+      "name": "Software Architecture",
+      "description": "Choose and document software boundaries, components, interfaces, data flows, quality attributes, and tradeoffs at the minimum necessary complexity. Use for durable or multi-component systems, not tiny isolated edits.",
+      "category": "engineering",
+      "capabilities": [
+        "software-architecture",
+        "component-boundary-design",
+        "quality-attribute-tradeoff",
+        "architecture-decision-recording"
+      ],
+      "triggers": [
+        "design software architecture",
+        "choose system boundaries",
+        "evaluate architecture tradeoffs"
+      ],
+      "location": "core/shared-skills/software-architecture",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/software-architecture",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "Forge",
+        "MOA"
+      ],
+      "activation_cost": "MEDIUM",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 64,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Canonical AI OS v1.0 skill. Evidence basis: https://www.sei.cmu.edu/our-work/software-architecture/",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "frontend-engineering",
+      "name": "Frontend Engineering",
+      "description": "Implement robust web interfaces with semantic structure, responsive behavior, accessibility, predictable state, and maintainable component boundaries. Use for browser-facing implementation, not visual design decisions alone.",
+      "category": "engineering",
+      "capabilities": [
+        "frontend-engineering",
+        "responsive-interface-implementation",
+        "accessible-component-engineering",
+        "client-state-design"
+      ],
+      "triggers": [
+        "implement a web frontend",
+        "build accessible components",
+        "repair responsive interface behavior"
+      ],
+      "location": "core/shared-skills/frontend-engineering",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/frontend-engineering",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "Forge",
+        "MOA"
+      ],
+      "activation_cost": "MEDIUM",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 64,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Canonical AI OS v1.0 skill. Evidence basis: https://developer.mozilla.org/en-US/docs/Learn_web_development",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "backend-engineering",
+      "name": "Backend Engineering",
+      "description": "Implement server-side domain logic, persistence boundaries, concurrency, authorization, resilience, and operational behavior. Use for backend services and workflows, not when a static or client-only solution is sufficient.",
+      "category": "engineering",
+      "capabilities": [
+        "backend-engineering",
+        "domain-service-design",
+        "transaction-boundary-design",
+        "service-resilience-engineering"
+      ],
+      "triggers": [
+        "implement a backend service",
+        "design server-side domain logic",
+        "build a resilient application service"
+      ],
+      "location": "core/shared-skills/backend-engineering",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/backend-engineering",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "Forge",
+        "MOA"
+      ],
+      "activation_cost": "MEDIUM",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 64,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Canonical AI OS v1.0 skill. Evidence basis: https://12factor.net/",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "api-design",
+      "name": "API Design",
+      "description": "Design evolvable APIs with clear resources, operations, schemas, errors, compatibility rules, authentication boundaries, and machine-readable contracts. Use for service interfaces, not internal function naming alone.",
+      "category": "engineering",
+      "capabilities": [
+        "api-design",
+        "openapi-contract-design",
+        "api-versioning-strategy",
+        "api-error-modeling"
+      ],
+      "triggers": [
+        "design a service API",
+        "write an OpenAPI contract",
+        "define API compatibility rules"
+      ],
+      "location": "core/shared-skills/api-design",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/api-design",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "Forge",
+        "MOA"
+      ],
+      "activation_cost": "MEDIUM",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 64,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Canonical AI OS v1.0 skill. Evidence basis: https://spec.openapis.org/oas/",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "database-engineering",
+      "name": "Database Engineering",
+      "description": "Design data models, constraints, queries, indexes, migrations, retention, and recovery around domain invariants and workload evidence. Use when persistence behavior materially affects correctness or performance.",
+      "category": "engineering",
+      "capabilities": [
+        "database-engineering",
+        "relational-data-modeling",
+        "index-query-design",
+        "safe-migration-design"
+      ],
+      "triggers": [
+        "design a database schema",
+        "plan a safe data migration",
+        "optimize a database query"
+      ],
+      "location": "core/shared-skills/database-engineering",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/database-engineering",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "Forge",
+        "MOA"
+      ],
+      "activation_cost": "MEDIUM",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 64,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Canonical AI OS v1.0 skill. Evidence basis: https://www.postgresql.org/docs/current/",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "cloud-infrastructure",
+      "name": "Cloud Infrastructure",
+      "description": "Design and provision secure, observable, recoverable infrastructure with explicit environments, identity, networking, configuration, cost, and rollback. Use only when deployment infrastructure is required.",
+      "category": "engineering",
+      "capabilities": [
+        "cloud-infrastructure",
+        "infrastructure-as-code-design",
+        "cloud-identity-boundary-design",
+        "infrastructure-recovery-design"
+      ],
+      "triggers": [
+        "design cloud infrastructure",
+        "write infrastructure as code",
+        "plan cloud recovery controls"
+      ],
+      "location": "core/shared-skills/cloud-infrastructure",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/cloud-infrastructure",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "Forge",
+        "MOA"
+      ],
+      "activation_cost": "HIGH",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 64,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Canonical AI OS v1.0 skill. Evidence basis: https://www.nist.gov/cyberframework",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "security-engineering",
+      "name": "Security Engineering",
+      "description": "Threat-model and implement proportionate security controls across identity, data, interfaces, dependencies, secrets, logging, and abuse cases. Use for material trust boundaries or explicit security work, not ritual activation on every edit.",
+      "category": "engineering",
+      "capabilities": [
+        "security-engineering",
+        "threat-modeling",
+        "secure-control-design",
+        "application-security-verification"
+      ],
+      "triggers": [
+        "threat model an application",
+        "implement application security controls",
+        "verify a security-sensitive workflow"
+      ],
+      "location": "core/shared-skills/security-engineering",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/security-engineering",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "Forge",
+        "MOA",
+        "Minister"
+      ],
+      "activation_cost": "MEDIUM",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 64,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Canonical AI OS v1.0 skill. Evidence basis: https://owasp.org/www-project-application-security-verification-standard/",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "test-engineering",
+      "name": "Test Engineering",
+      "description": "Design an efficient test strategy across unit, integration, contract, system, regression, and exploratory checks based on risk and observable behavior. Use when verification scope or test architecture needs deliberate design.",
+      "category": "engineering",
+      "capabilities": [
+        "test-engineering",
+        "risk-based-test-design",
+        "contract-test-design",
+        "regression-strategy-design"
+      ],
+      "triggers": [
+        "design a test strategy",
+        "create risk-based tests",
+        "build contract and regression tests"
+      ],
+      "location": "core/shared-skills/test-engineering",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/test-engineering",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "Forge",
+        "MOA"
+      ],
+      "activation_cost": "MEDIUM",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 64,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Canonical AI OS v1.0 skill. Evidence basis: https://www.istqb.org/certifications/certified-tester-foundation-level",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "performance-engineering",
+      "name": "Performance Engineering",
+      "description": "Define performance objectives, instrument workloads, measure bottlenecks, and validate improvements under representative conditions. Use when latency, throughput, resource use, or scale materially affects the outcome.",
+      "category": "engineering",
+      "capabilities": [
+        "performance-engineering",
+        "load-test-design",
+        "performance-bottleneck-analysis",
+        "capacity-evidence-analysis"
+      ],
+      "triggers": [
+        "diagnose a performance bottleneck",
+        "design a load test",
+        "validate latency and throughput targets"
+      ],
+      "location": "core/shared-skills/performance-engineering",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/performance-engineering",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "Forge",
+        "MOA"
+      ],
+      "activation_cost": "MEDIUM",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 64,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Canonical AI OS v1.0 skill. Evidence basis: https://web.dev/learn/performance",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "ml-problem-framing",
+      "name": "ML Problem Framing",
+      "description": "Determine whether machine learning is appropriate and translate a real-world outcome into model objective, output, baseline, data needs, and success measures. Use before model selection or training.",
+      "category": "ai",
+      "capabilities": [
+        "ml-problem-framing",
+        "non-ml-baseline-design",
+        "model-objective-definition",
+        "ml-success-metric-design"
+      ],
+      "triggers": [
+        "frame a machine learning problem",
+        "decide whether ML is appropriate",
+        "define model and product success metrics"
+      ],
+      "location": "core/shared-skills/ml-problem-framing",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/ml-problem-framing",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "MOA",
+        "Minister",
+        "Forge"
+      ],
+      "activation_cost": "MEDIUM",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 64,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Canonical AI OS v1.0 skill. Evidence basis: https://developers.google.com/machine-learning/problem-framing/problem-framing",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "data-quality-engineering",
+      "name": "Data Quality Engineering",
+      "description": "Assess and improve dataset fitness through schema, lineage, coverage, representativeness, leakage, label quality, drift, privacy, and reproducible validation. Use for ML or analytical datasets with material quality risk.",
+      "category": "ai",
+      "capabilities": [
+        "data-quality-engineering",
+        "dataset-lineage-analysis",
+        "data-leakage-detection",
+        "dataset-drift-analysis"
+      ],
+      "triggers": [
+        "audit training data quality",
+        "detect dataset leakage",
+        "analyze data coverage and drift"
+      ],
+      "location": "core/shared-skills/data-quality-engineering",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/data-quality-engineering",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "MOA",
+        "Forge",
+        "Minister"
+      ],
+      "activation_cost": "MEDIUM",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 64,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Canonical AI OS v1.0 skill. Evidence basis: https://airc.nist.gov/airmf-resources/airmf/",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "model-evaluation",
+      "name": "Model Evaluation",
+      "description": "Design and execute model evaluation tied to use-case risks, baselines, slices, uncertainty, robustness, and human impact. Use when a model decision requires evidence beyond one aggregate metric.",
+      "category": "ai",
+      "capabilities": [
+        "model-evaluation",
+        "evaluation-slice-design",
+        "model-robustness-testing",
+        "evaluation-uncertainty-analysis"
+      ],
+      "triggers": [
+        "design a model evaluation",
+        "test model robustness and slices",
+        "compare a model against baselines"
+      ],
+      "location": "core/shared-skills/model-evaluation",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/model-evaluation",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "MOA",
+        "Minister",
+        "Forge"
+      ],
+      "activation_cost": "MEDIUM",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 64,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Canonical AI OS v1.0 skill. Evidence basis: https://airc.nist.gov/",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "llm-engineering",
+      "name": "LLM Engineering",
+      "description": "Design reliable language-model workflows using task contracts, model selection, prompting, tools, structured outputs, evaluation, guardrails, and cost controls. Use for LLM-backed product behavior, not ordinary deterministic logic.",
+      "category": "ai",
+      "capabilities": [
+        "llm-engineering",
+        "prompt-contract-design",
+        "structured-model-output-design",
+        "llm-tool-use-design"
+      ],
+      "triggers": [
+        "design an LLM workflow",
+        "create a structured model contract",
+        "engineer reliable tool-using prompts"
+      ],
+      "location": "core/shared-skills/llm-engineering",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/llm-engineering",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "Forge",
+        "MOA",
+        "Minister"
+      ],
+      "activation_cost": "MEDIUM",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 64,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Canonical AI OS v1.0 skill. Evidence basis: https://platform.openai.com/docs/guides",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "retrieval-augmented-generation",
+      "name": "Retrieval Augmented Generation",
+      "description": "Design retrieval-augmented generation systems with grounded corpora, indexing, retrieval evaluation, citation behavior, context assembly, and abstention. Use when answers must draw from controlled evidence.",
+      "category": "ai",
+      "capabilities": [
+        "retrieval-augmented-generation",
+        "retrieval-pipeline-design",
+        "grounding-evaluation",
+        "context-assembly-design"
+      ],
+      "triggers": [
+        "design a RAG system",
+        "evaluate retrieval grounding",
+        "build citation-aware generation"
+      ],
+      "location": "core/shared-skills/retrieval-augmented-generation",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/retrieval-augmented-generation",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "Forge",
+        "MOA",
+        "Minister"
+      ],
+      "activation_cost": "MEDIUM",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 64,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Canonical AI OS v1.0 skill. Evidence basis: https://arxiv.org/abs/2005.11401",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "responsible-ai-safety",
+      "name": "Responsible AI Safety",
+      "description": "Identify, measure, and manage AI risks across validity, safety, security, privacy, transparency, fairness, human oversight, and lifecycle monitoring. Use for consequential AI design or deployment decisions.",
+      "category": "ai",
+      "capabilities": [
+        "responsible-ai-safety",
+        "ai-risk-management",
+        "ai-harm-assessment",
+        "ai-lifecycle-control-design"
+      ],
+      "triggers": [
+        "assess AI system risks",
+        "design responsible AI controls",
+        "plan AI safety monitoring"
+      ],
+      "location": "core/shared-skills/responsible-ai-safety",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/responsible-ai-safety",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "MOA",
+        "Minister",
+        "Forge"
+      ],
+      "activation_cost": "HIGH",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 64,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Canonical AI OS v1.0 skill. Evidence basis: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "project-delivery",
+      "name": "Project Delivery",
+      "description": "Turn an approved outcome into an executable delivery plan with milestones, dependencies, owners, risks, evidence gates, and adaptation points. Use for coordinated multi-step delivery, not tiny one-step work.",
+      "category": "operations-quality",
+      "capabilities": [
+        "project-delivery",
+        "milestone-planning",
+        "delivery-dependency-management",
+        "delivery-risk-control"
+      ],
+      "triggers": [
+        "plan project delivery",
+        "coordinate delivery milestones",
+        "manage delivery dependencies and risks"
+      ],
+      "location": "core/shared-skills/project-delivery",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/project-delivery",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "MOA",
+        "Forge",
+        "Minister"
+      ],
+      "activation_cost": "MEDIUM",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 64,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Canonical AI OS v1.0 skill. Evidence basis: https://www.gov.uk/service-manual/agile-delivery",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "release-readiness",
+      "name": "Release Readiness",
+      "description": "Assess whether a change is ready to release using evidence for functionality, security, performance, operability, migration, rollback, support, and ownership. Use before consequential releases, not as ceremonial approval.",
+      "category": "operations-quality",
+      "capabilities": [
+        "release-readiness",
+        "go-live-evidence-review",
+        "rollback-readiness",
+        "operational-acceptance-review"
+      ],
+      "triggers": [
+        "assess release readiness",
+        "run a go-live review",
+        "verify rollback and support readiness"
+      ],
+      "location": "core/shared-skills/release-readiness",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/release-readiness",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "MOA",
+        "Forge",
+        "Minister"
+      ],
+      "activation_cost": "MEDIUM",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 64,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Canonical AI OS v1.0 skill. Evidence basis: https://sre.google/sre-book/release-engineering/",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "incident-response",
+      "name": "Incident Response",
+      "description": "Coordinate detection, triage, containment, recovery, evidence preservation, communication, and learning during a service or security incident. Use for active or simulated incidents, not ordinary defect work.",
+      "category": "operations-quality",
+      "capabilities": [
+        "incident-response",
+        "incident-triage",
+        "containment-recovery-planning",
+        "incident-evidence-preservation"
+      ],
+      "triggers": [
+        "respond to a production incident",
+        "triage a security incident",
+        "plan incident containment and recovery"
+      ],
+      "location": "core/shared-skills/incident-response",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/incident-response",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "MOA",
+        "Forge",
+        "Minister"
+      ],
+      "activation_cost": "HIGH",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 64,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Canonical AI OS v1.0 skill. Evidence basis: https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "observability",
+      "name": "Observability",
+      "description": "Design telemetry that makes system behavior, user impact, failures, and performance diagnosable through correlated traces, metrics, logs, and context. Use for systems that need operational diagnosis or reliability evidence.",
+      "category": "operations-quality",
+      "capabilities": [
+        "observability",
+        "telemetry-design",
+        "service-level-indicator-design",
+        "trace-metric-log-correlation"
+      ],
+      "triggers": [
+        "design system observability",
+        "define service level indicators",
+        "correlate traces metrics and logs"
+      ],
+      "location": "core/shared-skills/observability",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/observability",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "MOA",
+        "Forge"
+      ],
+      "activation_cost": "MEDIUM",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 64,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Canonical AI OS v1.0 skill. Evidence basis: https://opentelemetry.io/docs/concepts/signals/",
+      "last_validated": "2026-09-01"
+    },
+    {
+      "id": "quality-assurance",
+      "name": "Quality Assurance",
+      "description": "Establish prevention, review, verification, acceptance, defect, and continuous-improvement controls across a delivery lifecycle. Use when quality must be governed across workstreams, not as a synonym for final testing.",
+      "category": "operations-quality",
+      "capabilities": [
+        "quality-assurance",
+        "quality-gate-design",
+        "defect-governance",
+        "continuous-quality-improvement"
+      ],
+      "triggers": [
+        "design a quality assurance plan",
+        "define delivery quality gates",
+        "govern defects and corrective actions"
+      ],
+      "location": "core/shared-skills/quality-assurance",
+      "scope": "shared",
+      "publisher": {
+        "name": "personal-ai-os",
+        "type": "personal"
+      },
+      "source": {
+        "type": "local",
+        "uri": "core/shared-skills/quality-assurance",
+        "repository": "agentic-core",
+        "commit": null
+      },
+      "version": "1.0.0",
+      "license": "UNLICENSED",
+      "trust_level": "VERIFIED",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "dependencies": [],
+      "conflicts": [],
+      "recommended_agents": [
+        "MOA",
+        "Forge",
+        "Minister"
+      ],
+      "activation_cost": "MEDIUM",
+      "compatibility": {
+        "runtime": "codex-agent-skills",
+        "minimum_version": "0.151.0-alpha.7.2",
+        "notes": "User-scoped skill discovered from CODEX_HOME/skills."
+      },
+      "quality": {
+        "score": 64,
+        "maximum": 75,
+        "rubric_version": "0.1.0"
+      },
+      "notes": "Canonical AI OS v1.0 skill. Evidence basis: https://committee.iso.org/quality-management/principles",
+      "last_validated": "2026-09-01"
+    }
+  ]
+}

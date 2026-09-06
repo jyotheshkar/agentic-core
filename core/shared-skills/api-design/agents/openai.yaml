@@ -1,0 +1,4 @@
+interface:
+  display_name: "API Design"
+  short_description: "Design evolvable APIs with clear resources, operations, schem..."
+  default_prompt: "Use $api-design to complete this task with a traceable, bounded result."

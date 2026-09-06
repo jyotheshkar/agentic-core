@@ -1,0 +1,4 @@
+interface:
+  display_name: "Systems Thinking"
+  short_description: "Trace system effects and leverage points"
+  default_prompt: "Use $systems-thinking to map dependencies and downstream consequences."

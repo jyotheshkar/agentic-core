@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scout Evidence Ledger"
+  short_description: "Track every material claim to its evidence"
+  default_prompt: "Use $scout-evidence-ledger to record claim provenance, freshness, limits, and status."

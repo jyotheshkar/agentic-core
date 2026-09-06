@@ -1,0 +1,6 @@
+interface:
+  display_name: "Forge Router"
+  short_description: "Select the minimum sufficient capabilities"
+  default_prompt: "Use $forge-router to route this active Forge request."
+policy:
+  allow_implicit_invocation: false

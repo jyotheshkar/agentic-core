@@ -1,0 +1,27 @@
+{
+  "name": "devil",
+  "version": "0.1.0",
+  "description": "Rigorous devil's advocate analysis and decision stress testing.",
+  "author": {
+    "name": "Jyothesh Karnam"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Devil",
+    "shortDescription": "Stress-test decisions before you commit.",
+    "longDescription": "An independent critical analyst that steelmans, red teams, checks evidence, tests failure modes, compares alternatives, and reaches a clear verdict.",
+    "developerName": "Jyothesh Karnam",
+    "category": "Productivity",
+    "capabilities": [
+      "Decision analysis",
+      "Research",
+      "Risk assessment"
+    ],
+    "defaultPrompt": [
+      "@Devil attack this plan",
+      "@Devil decide between these options",
+      "@Devil make this plan stronger"
+    ],
+    "brandColor": "#8B1E1E"
+  }
+}

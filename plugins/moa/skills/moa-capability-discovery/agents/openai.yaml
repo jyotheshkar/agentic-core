@@ -1,0 +1,4 @@
+interface:
+  display_name: "MOA Capability Discovery"
+  short_description: "Discover trusted available capabilities"
+  default_prompt: "Use $moa-capability-discovery to inspect available agents and shared skills."

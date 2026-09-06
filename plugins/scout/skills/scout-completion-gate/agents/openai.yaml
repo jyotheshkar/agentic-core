@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scout Completion Gate"
+  short_description: "Block unsupported research completion claims"
+  default_prompt: "Use $scout-completion-gate to test whether this evidence pack can honestly be called complete."

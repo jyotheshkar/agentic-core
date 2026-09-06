@@ -14,13 +14,19 @@ jobs:
           python-version: '3.12'
       - name: Validate repository
         run: python scripts/validate-repository.py
-      - name: Run repository-contained Python tests
+      - name: Validate imported shared core
+        run: python -B core/validation/test_aios_skills.py
+      - name: Run repository contract tests
+        run: python -B -m unittest discover -s evals -p 'test_*.py'
+      - name: Run product tests
         shell: bash
         run: |
-          set -euo pipefail
-          while IFS= read -r test_file; do
-            python -B "$test_file"
-          done < <(find . -type f -name 'test_*.py' -not -path './.git/*' | sort)
+          if [ -f products/job-searching-agent/package.json ]; then
+            cd products/job-searching-agent
+            npm ci
+            npm test
+            npm run build
+          fi
       - name: Reject private or generated files
         shell: pwsh
         run: ./scripts/check-secrets.ps1

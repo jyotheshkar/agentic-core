@@ -1,0 +1,4 @@
+interface:
+  display_name: "User Research"
+  short_description: "Plan and interpret ethical user research that answers product..."
+  default_prompt: "Use $user-research to complete this task with a traceable, bounded result."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Game Theory Incentives"
+  short_description: "Analyze incentives, leverage, moves, and responses"
+  default_prompt: "Use $game-theory-incentives to map the actors, leverage, likely responses, and best strategic move."

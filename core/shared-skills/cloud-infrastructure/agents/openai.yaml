@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cloud Infrastructure"
+  short_description: "Design and provision secure, observable, recoverable infrastr..."
+  default_prompt: "Use $cloud-infrastructure to complete this task with a traceable, bounded result."

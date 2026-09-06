@@ -1,0 +1,4 @@
+interface:
+  display_name: "Adversarial Red Team"
+  short_description: "Steelman and rigorously attack a decision or plan"
+  default_prompt: "Use $adversarial-red-team to steelman this proposal, attack its strongest assumptions, and find better alternatives."

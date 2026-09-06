@@ -1,0 +1,4 @@
+interface:
+  display_name: "Risk Premortem"
+  short_description: "Find failure causes, controls, and warning signals"
+  default_prompt: "Use $risk-premortem to assume this plan failed and identify the most material preventable causes."

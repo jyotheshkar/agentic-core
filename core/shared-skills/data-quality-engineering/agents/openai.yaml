@@ -1,0 +1,4 @@
+interface:
+  display_name: "Data Quality Engineering"
+  short_description: "Assess and improve dataset fitness through schema, lineage, c..."
+  default_prompt: "Use $data-quality-engineering to complete this task with a traceable, bounded result."

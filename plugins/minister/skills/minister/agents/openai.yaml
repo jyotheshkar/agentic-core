@@ -1,0 +1,4 @@
+interface:
+  display_name: "Minister"
+  short_description: "Issue a clear, evidence-calibrated decision"
+  default_prompt: "Use $minister to decide what I should actually do."

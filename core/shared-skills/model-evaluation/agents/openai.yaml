@@ -1,0 +1,4 @@
+interface:
+  display_name: "Model Evaluation"
+  short_description: "Design and execute model evaluation tied to use-case risks, b..."
+  default_prompt: "Use $model-evaluation to complete this task with a traceable, bounded result."

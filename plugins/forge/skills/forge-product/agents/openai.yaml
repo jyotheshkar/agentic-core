@@ -1,0 +1,6 @@
+interface:
+  display_name: "Forge Product"
+  short_description: "Define testable product outcomes"
+  default_prompt: "Use $forge-product to define the active Forge Product Contract."
+policy:
+  allow_implicit_invocation: false

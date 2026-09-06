@@ -1,0 +1,4 @@
+interface:
+  display_name: "Source Verification"
+  short_description: "Verify provenance, authority, currency, claim support, and cr..."
+  default_prompt: "Use $source-verification to complete this task with a traceable, bounded result."

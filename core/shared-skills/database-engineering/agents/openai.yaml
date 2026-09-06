@@ -1,0 +1,4 @@
+interface:
+  display_name: "Database Engineering"
+  short_description: "Design data models, constraints, queries, indexes, migrations..."
+  default_prompt: "Use $database-engineering to complete this task with a traceable, bounded result."

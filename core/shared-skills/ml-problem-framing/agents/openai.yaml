@@ -1,0 +1,4 @@
+interface:
+  display_name: "ML Problem Framing"
+  short_description: "Determine whether machine learning is appropriate and transla..."
+  default_prompt: "Use $ml-problem-framing to complete this task with a traceable, bounded result."

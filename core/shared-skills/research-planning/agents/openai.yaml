@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Planning"
+  short_description: "Design a bounded, reproducible research plan with answerable..."
+  default_prompt: "Use $research-planning to complete this task with a traceable, bounded result."

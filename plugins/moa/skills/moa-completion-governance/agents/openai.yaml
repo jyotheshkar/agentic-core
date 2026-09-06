@@ -1,0 +1,4 @@
+interface:
+  display_name: "MOA Completion Governance"
+  short_description: "Verify that the outcome is achieved"
+  default_prompt: "Use $moa-completion-governance to decide whether this outcome is genuinely complete."

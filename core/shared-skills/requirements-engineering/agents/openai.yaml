@@ -1,0 +1,4 @@
+interface:
+  display_name: "Requirements Engineering"
+  short_description: "Turn stakeholder needs into consistent, testable, prioritized..."
+  default_prompt: "Use $requirements-engineering to complete this task with a traceable, bounded result."

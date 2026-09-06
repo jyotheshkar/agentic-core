@@ -1,0 +1,28 @@
+{
+  "name": "minister",
+  "version": "0.1.0+codex.20260831230702",
+  "description": "Evidence-aware decision authority for the Personal AI OS",
+  "author": {
+    "name": "Jyothesh Karnam"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Minister",
+    "shortDescription": "Make difficult decisions with calibrated judgment.",
+    "longDescription": "Minister routes consequential decisions through the minimum sufficient shared reasoning skills, resolves conflicts, and issues one evidence-calibrated executive verdict.",
+    "developerName": "Jyothesh Karnam",
+    "category": "Productivity",
+    "capabilities": [
+      "Decision analysis",
+      "Strategic judgment",
+      "Risk assessment",
+      "Evidence synthesis"
+    ],
+    "defaultPrompt": [
+      "Decide what I should actually do.",
+      "Compare these options and give me a verdict.",
+      "Review this Forge plan before I proceed."
+    ],
+    "brandColor": "#243B53"
+  }
+}
