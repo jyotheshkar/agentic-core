@@ -10,7 +10,7 @@ The permitted recovery path is `REWORK`, `DEFER`, or `BLOCKED` back to `IN_PROGR
 
 ## Governing contracts
 
-- Authority: MOA routes and governs completion. Minister is mandatory for substantive judgment and final outcome judgment. Scout owns evidence. Forge owns engineering. Audit is an independent workflow role. The user controls consequential external action.
+- Authority: MOA routes and governs completion. Minister is mandatory for substantive judgment and final outcome judgment. Scout owns evidence. Forge owns engineering. Audit is the standalone independent-assurance agent. The user controls consequential external action.
 - Handoffs: every handoff carries the nine required fields in the handoff contract. Minister conditions survive every downstream handoff.
 - Registry and broker: the Agent Registry advertises routable authorities. The Skill Broker chooses the smallest trusted shared skill set. Disabled, unavailable, or uninstalled records are not selectable.
 - Conflict arbitration: MOA identifies the dispute, then assigns it to the domain authority: Minister for strategy, Scout for evidence, Forge for implementation, and MOA for scope or orchestration.

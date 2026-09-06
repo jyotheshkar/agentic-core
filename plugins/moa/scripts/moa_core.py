@@ -118,7 +118,7 @@ def validate_agent_registry(data: dict[str, Any]) -> list[str]:
             errors.append(f"available agent is disabled: {agent['id']}")
         if agent["status"] == "NOT_INSTALLED" and agent["installed"]:
             errors.append(f"not-installed agent marked installed: {agent['id']}")
-    for core in ("minister", "forge", "moa"):
+    for core in ("minister", "scout", "forge", "audit", "moa"):
         if core not in ids:
             errors.append(f"missing core agent: {core}")
     return errors
@@ -180,8 +180,7 @@ def make_node(node_id: str, task: str, agent: str, skills: list[str], dependenci
     }
 
 
-def execution_graph(task_type: str, selected_agents: list[str], skills: list[str], conditional_build: bool = False,
-                    independent_audit: bool = False) -> list[dict[str, Any]]:
+def execution_graph(task_type: str, selected_agents: list[str], skills: list[str], conditional_build: bool = False) -> list[dict[str, Any]]:
     graph = [make_node("minister-initial", "Judge direction before execution", "Minister", skills, [], False, "initial verdict and conditions", "Minister verdict present")]
     previous = "minister-initial"
     if "Scout" in selected_agents:
@@ -194,8 +193,8 @@ def execution_graph(task_type: str, selected_agents: list[str], skills: list[str
         graph.append(make_node("forge-execution", build_task, "Forge", skills, [previous], False, "verified engineering deliverable", "Forge verification gate passes"))
         graph.append(make_node("verification", "Verify acceptance criteria", "Verification", [], ["forge-execution"], False, "current test evidence", "required checks pass"))
         previous = "verification"
-    if independent_audit:
-        graph.append(make_node("audit-review", "Independently assess evidence quality, policy conformance, release claims, and residual risks", "Audit", ["evidence-epistemics", "quality-assurance", "release-readiness"], [previous], False, "independent audit record", "audit preserves limitations and does not duplicate Scout or Forge"))
+    if "Audit" in selected_agents:
+        graph.append(make_node("audit-review", "Independently assure supplied evidence, policy conformance, release claims, and residual risks", "Audit", ["audit-evidence-policy", "audit-release-gate"], [previous], False, "inspectable audit findings and recommendation", "Audit preserves its non-overlap contract"))
         previous = "audit-review"
     graph.append(make_node("minister-final", "Judge outcome fit and unresolved risk", "Minister", skills, [previous], False, "APPROVE, conditions, REWORK, REJECT, or DEFER", "material limitations are not blindly approved"))
     graph.append(make_node("completion", "Determine whether user outcome is achieved", "MOA", [], ["minister-final"], False, "completion status and evidence", "completion contract satisfied"))
@@ -244,7 +243,7 @@ def route_task(task: str, agent_data: dict[str, Any] | None = None, skill_data: 
         else:
             missing.append("dedicated research agent")
 
-    implementation_types = {"BUILD", "FIX", "AUDIT", "DESIGN", "LAUNCH", "EXPERIMENT", "MIXED"}
+    implementation_types = {"BUILD", "FIX", "DESIGN", "LAUNCH", "EXPERIMENT", "MIXED"}
     if task_type in implementation_types:
         forge = next((agent for agent in agents if agent["id"] == "forge"), None)
         if forge:
@@ -259,7 +258,13 @@ def route_task(task: str, agent_data: dict[str, Any] | None = None, skill_data: 
     if any(signal in text for signal in ("kubernetes", "kafka", "microservices")) and any(signal in text for signal in ("tiny", "small", "portfolio")):
         conditions.append("Challenge unnecessary infrastructure and pass a simplified architecture to Forge")
 
-    independent_audit = task_type in {"AUDIT", "LAUNCH"} or any(signal in text for signal in ("release readiness", "independent audit", "security review"))
+    audit_needed = task_type in {"AUDIT", "LAUNCH"} or any(signal in text for signal in ("release readiness", "independent audit", "security review", "completion claim"))
+    if audit_needed:
+        audit = next((agent for agent in agents if agent["id"] == "audit"), None)
+        if audit:
+            selected_agents.append("Audit")
+        else:
+            missing.append("independent assurance agent")
 
     selected_agents = list(dict.fromkeys(selected_agents))
     missing.extend(broker["missing_capabilities"])
@@ -274,8 +279,8 @@ def route_task(task: str, agent_data: dict[str, Any] | None = None, skill_data: 
         "required_shared_capabilities": broker["required_capabilities"],
         "conditions": conditions,
         "missing_capabilities": list(dict.fromkeys(missing)),
-        "selected_workflows": ["independent-audit"] if independent_audit else [],
-        "execution_graph": execution_graph(task_type, selected_agents, skills, conditional_build, independent_audit),
+        "selected_workflows": [],
+        "execution_graph": execution_graph(task_type, selected_agents, skills, conditional_build),
         "handoffs": [handoff(normalized, agent, conditions, "bounded result", ["acceptance criteria met", "verification evidence supplied"]) for agent in selected_agents],
         "direct_plugin_to_plugin_orchestration": "EMULATED",
         "routing_note": "Installed skills are composed in the current Codex task; separate plugin process invocation is unavailable.",
@@ -345,6 +350,7 @@ def health() -> dict[str, Any]:
         "moa_source": (PLUGIN_ROOT / ".codex-plugin" / "plugin.json").exists(),
         "minister_source": (USER_HOME / "plugins" / "minister" / ".codex-plugin" / "plugin.json").exists(),
         "forge_source": (USER_HOME / "plugins" / "forge" / ".codex-plugin" / "plugin.json").exists(),
+        "audit_source": (USER_HOME / "plugins" / "audit" / ".codex-plugin" / "plugin.json").exists(),
         "agent_registry": AGENT_REGISTRY.exists(),
         "skill_registry": SKILL_REGISTRY.exists(),
         "skill_broker": (USER_HOME / ".codex" / "skills" / "skill-broker" / "SKILL.md").exists(),
@@ -352,7 +358,7 @@ def health() -> dict[str, Any]:
     errors = validate_agent_registry(load_json(AGENT_REGISTRY)) if checks["agent_registry"] else ["agent registry missing"]
     native = native_plugin_list()
     discovered = set(native.get("installed_plugins", []))
-    checks["installed_state_consistent"] = native.get("status") == "SUPPORTED" and {"moa", "minister", "forge"}.issubset(discovered)
+    checks["installed_state_consistent"] = native.get("status") == "SUPPORTED" and {"moa", "minister", "scout", "forge", "audit"}.issubset(discovered)
     return {
         "status": "PASS" if all(checks.values()) and not errors else "FAIL",
         "checks": checks,

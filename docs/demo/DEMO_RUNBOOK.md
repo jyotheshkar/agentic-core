@@ -9,7 +9,7 @@ Demonstrate one safe, host-mediated MOA-directed core workflow. Use synthetic ar
 1. Show the Agent Registry and Skill Broker. Confirm MOA, Minister, Scout, and Forge are active, Devil is legacy, and the core control plane is `EMULATED_HOST_MEDIATED`.
 2. Frame the request: harden and verify the Agentic Core control plane while preserving authority boundaries.
 3. Show Minister’s initial conditions: retain host-mediated disclosure, preserve user authority, and reject unsupported completion.
-4. Show MOA’s minimum sufficient route and the bounded Scout, Forge, and Audit handoffs in the demo record.
+4. Show MOA’s minimum sufficient route and the bounded Scout, Forge, and standalone Audit plugin handoffs in the demo record.
 5. Show conflict arbitration: passing tests do not prove native plugin-to-plugin execution.
 6. Run `python -B core/control-plane/aios_control.py validate-run records/integration/core-control-plane-demo.json`.
 7. Run the regression suite and the secret/private-path scan.

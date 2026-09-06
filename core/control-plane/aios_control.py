@@ -139,6 +139,8 @@ def validate_run(run: dict[str, Any]) -> list[str]:
         errors.append("routing must record MOA orchestration")
     if "Minister" not in routing.get("selected_agents", []):
         errors.append("routing must record mandatory Minister participation")
+    if "Audit" not in routing.get("selected_agents", []):
+        errors.append("routing must record standalone Audit assurance")
     for index, handoff in enumerate(run["handoffs"]):
         errors.extend(f"handoff {index}: {error}" for error in validate_handoff(handoff))
     names = {component.get("name") for component in run["components"] if isinstance(component, dict)}
@@ -178,7 +180,7 @@ def demo_run() -> dict[str, Any]:
         "composition": "EMULATED_HOST_MEDIATED",
         "request_framing": {"outcome": "A safe, evidence-governed core release candidate", "non_goals": ["external product work", "external actions"]},
         "minister": {"initial_conditions": ["Preserve authority boundaries", "Do not claim native agent execution"], "final_judgment": "APPROVE WITH CONDITIONS"},
-        "routing": {"selected_agents": ["MOA", "Minister", "Scout", "Forge"], "selected_shared_skills": ["skill-broker", "evidence-epistemics", "quality-assurance", "release-readiness"]},
+        "routing": {"selected_agents": ["MOA", "Minister", "Scout", "Forge", "Audit"], "selected_shared_skills": ["skill-broker", "evidence-epistemics", "quality-assurance", "release-readiness"]},
         "handoffs": handoffs,
         "components": [{"name": name, "status": "PASS"} for name in ("Scout", "Forge", "Audit", "Verification")],
         "conflict_arbitration": {"dispute": "whether a passing test suite proves native composition", "authority": "MOA", "decision": "No, label composition EMULATED_HOST_MEDIATED"},

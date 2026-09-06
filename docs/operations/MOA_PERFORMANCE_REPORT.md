@@ -2,9 +2,9 @@
 
 ## Observed core-hardening run
 
-MOA’s actual routing implementation and diagnostics were exercised for the core work. Its installed health check reported `PASS`, seven checks true, native plugin discovery supported, and direct composition `EMULATED`. The routing regression covered pure decision, build, research, conditional build, missing specialist, minimal routing, conflict ownership, audit workflow, and bounded experiment workflow cases.
+MOA’s actual routing implementation and diagnostics were exercised for the core work. Its installed health check reported `PASS`, eight checks true, native plugin discovery supported, and direct composition `EMULATED`. The routing regression covered pure decision, build, research, conditional build, missing specialist, minimal routing, conflict ownership, standalone Audit routing, launch assurance, and bounded experiment workflow cases.
 
-The realised mixture for the integration record was MOA, mandatory Minister, Scout, Forge, independent Audit workflow, Verification, and the broker-selected `skill-broker`, `evidence-epistemics`, `quality-assurance`, and `release-readiness` methods. The implementation also used repository validation, component regressions, plugin manifest validation, installed cache parity checking, desktop plugin discovery, and secret/private-path scanning.
+The realised mixture for the integration record was MOA, mandatory Minister, Scout, Forge, standalone Audit, Verification, and the broker-selected `skill-broker`, `evidence-epistemics`, `quality-assurance`, and `release-readiness` methods. The implementation also used repository validation, component regressions, plugin manifest validation, installed cache parity checking, desktop plugin discovery, and secret/private-path scanning.
 
 ## Counterfactual, qualitative and deliberately non-inflated
 

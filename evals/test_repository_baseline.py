@@ -12,7 +12,8 @@ class RepositoryBaselineTests(unittest.TestCase):
     def test_agent_registry_has_expected_authority_components(self) -> None:
         registry = json.loads((ROOT / "core/registry/agent-registry.json").read_text(encoding="utf-8"))
         agents = {agent["id"]: agent for agent in registry["agents"]}
-        self.assertEqual({"minister", "scout", "forge", "moa", "devil"}, set(agents))
+        self.assertEqual({"minister", "scout", "forge", "moa", "audit", "devil"}, set(agents))
+        self.assertEqual({"minister", "scout", "forge", "moa", "audit"}, {agent_id for agent_id, agent in agents.items() if agent["enabled"] and agent["status"] == "AVAILABLE"})
         self.assertFalse(agents["devil"]["enabled"])
 
     def test_skill_registry_has_39_unique_records(self) -> None:

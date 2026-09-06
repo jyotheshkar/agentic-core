@@ -17,7 +17,7 @@ For `agents`, `skills`, `health`, or `explain routing <task>`, run `python ../..
 2. Invoke `$minister` for every substantive task. Use MOA participation levels LIGHT, STANDARD, DEEP, or CRITICAL. For compatibility with the current Minister plugin, pass DEEP as Minister COUNCIL and label the MOA level DEEP.
 3. Invoke `$moa-capability-discovery` and `$moa-agent-router`. Consult the AI OS Agent Registry and `$skill-broker`; select the minimum sufficient enabled mixture. Never invent a plugin or select a disabled record.
 4. Use `$scout` for current research, source or claim verification, contradiction analysis, and research completeness. Pure research does not select Forge. When research must precede implementation, route Scout before `$forge` and preserve verified facts, versions, constraints, and unknowns in the Forge handoff.
-5. For multi-step work, invoke `$moa-task-decomposition` and `$moa-orchestration`. Pass bounded handoffs. Use `$forge` for implementation, repair, or engineering work without reproducing Forge internals.
+5. For multi-step work, invoke `$moa-task-decomposition` and `$moa-orchestration`. Pass bounded handoffs. Use `$forge` for implementation, repair, or engineering work without reproducing Forge internals. Select `$audit` as the standalone assurance agent for supplied-artifact audits, release readiness, and completion claims; do not ask Audit to replace Scout, Forge, Minister, or MOA.
 6. Preserve material Minister conditions. Resolve disagreements with `$moa-conflict-arbitration`, based on domain authority rather than votes.
 7. After execution, obtain Minister final judgment at appropriate depth and invoke `$moa-completion-governance`. A returned artifact is not proof that the user outcome is achieved.
 

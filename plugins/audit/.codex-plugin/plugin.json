@@ -1,0 +1,29 @@
+{
+  "name": "audit",
+  "version": "0.1.0+codex.20260906144555",
+  "description": "Independent assurance for Agentic Core evidence, policy, release readiness, and completion claims",
+  "author": {
+    "name": "Jyothesh Karnam"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Audit",
+    "shortDescription": "Independently assure evidence, policy, and release claims.",
+    "longDescription": "Audit independently assesses bounded Agentic Core artifacts, handoffs, evidence, policy conformance, release readiness, and completion claims without replacing Scout, Forge, Minister, or MOA.",
+    "developerName": "Jyothesh Karnam",
+    "category": "Productivity",
+    "capabilities": [
+      "Evidence assurance",
+      "Policy conformance review",
+      "Release readiness assurance",
+      "Residual-risk reporting",
+      "Completion-claim assurance"
+    ],
+    "defaultPrompt": [
+      "Audit this Agentic Core evidence pack and state approval, rework, or defer.",
+      "Review the release-readiness record without conducting primary research or changing code.",
+      "Show Audit health and its assurance boundaries."
+    ],
+    "brandColor": "#0F766E"
+  }
+}

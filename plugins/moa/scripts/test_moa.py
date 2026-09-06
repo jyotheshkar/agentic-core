@@ -107,15 +107,22 @@ def test_l() -> None:
 def test_m() -> None:
     route = route_task("@MOA Audit release readiness for this core system.")
     audit = next((node for node in route["execution_graph"] if node["id"] == "audit-review"), None)
-    check(route["selected_workflows"] == ["independent-audit"], "audit was incorrectly promoted to a standalone agent")
-    check(audit is not None and audit["assigned_agent"] == "Audit", "independent audit node missing")
-    check(audit["dependencies"] == ["verification"], "audit must follow verification")
+    check(route["selected_agents"] == ["Minister", "Audit"], "Audit was not selected as the standalone assurance agent")
+    check(audit is not None and audit["assigned_agent"] == "Audit", "Audit plugin node missing")
+    check(audit["dependencies"] == ["minister-initial"], "standalone Audit must not require Forge implementation")
 
 
 def test_n() -> None:
     route = route_task("@MOA Run a bounded local experiment for this hypothesis.")
     check(route["task_type"] == "EXPERIMENT", "experiment task class missing")
     check(route["selected_agents"] == ["Minister", "Forge"], "experiment should be composed through Forge")
+
+
+def test_o() -> None:
+    route = route_task("@MOA Launch and publish this verified release.")
+    check(route["selected_agents"] == ["Minister", "Forge", "Audit"], "launch omitted Audit assurance")
+    audit = next(node for node in route["execution_graph"] if node["id"] == "audit-review")
+    check(audit["dependencies"] == ["verification"], "launch assurance must follow verification")
 
 
 TESTS = [
@@ -133,6 +140,7 @@ TESTS = [
     ("L MOA HEALTH", test_l),
     ("M INDEPENDENT AUDIT WORKFLOW", test_m),
     ("N LAB WORKFLOW", test_n),
+    ("O LAUNCH ASSURANCE", test_o),
 ]
 
 

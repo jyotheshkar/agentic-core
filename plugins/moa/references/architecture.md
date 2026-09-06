@@ -21,5 +21,6 @@ MOA composes installed skills in the current Codex task. The platform does not e
 - Minister: what should be done and whether the outcome is strategically acceptable.
 - Scout: what current evidence establishes, contradicts, or leaves unknown.
 - Forge: how software is designed and implemented.
+- Audit: independent assurance of supplied artifacts, evidence, policy conformance, release readiness, residual risks, and completion claims.
 - Shared skills: advisory specialist methods.
 - Verification: evidence that acceptance criteria are met.

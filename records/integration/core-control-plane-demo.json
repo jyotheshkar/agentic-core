@@ -11,7 +11,7 @@
     "final_judgment": "APPROVE WITH CONDITIONS"
   },
   "routing": {
-    "selected_agents": ["MOA", "Minister", "Scout", "Forge"],
+    "selected_agents": ["MOA", "Minister", "Scout", "Forge", "Audit"],
     "selected_shared_skills": ["skill-broker", "evidence-epistemics", "quality-assurance", "release-readiness"]
   },
   "handoffs": [

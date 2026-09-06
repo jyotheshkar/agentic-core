@@ -183,11 +183,13 @@ def test_p_agent_registry_health() -> None:
     data = load_json(AGENT_REGISTRY)
     ids = [x["id"] for x in data["agents"]]
     scout = next(x for x in data["agents"] if x["id"] == "scout")
+    audit = next(x for x in data["agents"] if x["id"] == "audit")
     devil = next(x for x in data["agents"] if x["id"] == "devil")
     check(len(ids) == len(set(ids)), "duplicate agent ID")
     check(Path(scout["source"]["path"]).exists(), "Scout source path missing")
     check(scout["enabled"] and scout["installed"] and scout["status"] == "AVAILABLE", "Scout registry state inconsistent")
-    check(not devil["enabled"] and not devil["installed"], "legacy Devil became selectable")
+    check(audit["enabled"] and audit["installed"] and audit["status"] == "AVAILABLE", "Audit registry state inconsistent")
+    check(not devil["enabled"] and devil["installed"] and devil["status"] == "DISABLED", "legacy Devil became selectable")
 
 
 def test_q_research_contract_scope() -> None:

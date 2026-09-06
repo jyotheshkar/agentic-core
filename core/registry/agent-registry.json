@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "registry_version": "0.2.1",
+  "registry_version": "0.3.0",
   "notes": "Autonomous agents are registered here. Installed capability plugins remain natively discoverable and are not promoted to agents without agent authority metadata.",
   "agents": [
     {
@@ -149,7 +149,7 @@
       "cost_profile": "FREE_FIRST",
       "risk_profile": "MEDIUM",
       "trust_level": "VERIFIED",
-      "version": "0.1.0+codex.20260906142235",
+      "version": "0.1.0+codex.20260906144048",
       "source": {
         "plugin": "moa",
         "marketplace": "personal",
@@ -205,14 +205,65 @@
       "cost_profile": "FREE_FIRST",
       "risk_profile": "MEDIUM",
       "trust_level": "VERIFIED",
-      "version": "1.0.0+codex.20260902030631",
+      "version": "1.0.0+codex.20260906144856",
       "source": {
         "plugin": "scout",
         "marketplace": "personal",
         "path": "<RUNTIME_PATH_REDACTED>"
       },
       "notes": "Scout owns evidence gathering and research completeness. Minister retains final strategic judgment, Forge retains engineering authority, and MOA retains orchestration authority.",
-      "last_validated": "2026-09-02"
+      "last_validated": "2026-09-06"
+    },
+    {
+      "id": "audit",
+      "name": "Audit",
+      "type": "specialist-agent",
+      "description": "Independent assurance authority for supplied evidence, policy conformance, release readiness, residual risk, and completion claims.",
+      "capabilities": [
+        "independent-assurance",
+        "evidence-assurance",
+        "policy-conformance-review",
+        "release-readiness-assurance",
+        "residual-risk-assessment",
+        "completion-claim-assurance"
+      ],
+      "triggers": [
+        "audit an evidence pack",
+        "assess release readiness",
+        "review a completion claim",
+        "independent assurance review",
+        "audit policy conformance"
+      ],
+      "scope": "personal",
+      "status": "AVAILABLE",
+      "enabled": true,
+      "installed": true,
+      "authority": [
+        "independent-assurance",
+        "evidence-assurance",
+        "policy-conformance-review",
+        "release-readiness-assurance",
+        "residual-risk-assessment",
+        "completion-claim-assurance"
+      ],
+      "dependencies": [
+        "minister",
+        "skill-broker",
+        "skill-registry"
+      ],
+      "requires_minister": true,
+      "supports_parallel": true,
+      "cost_profile": "FREE_FIRST",
+      "risk_profile": "MEDIUM",
+      "trust_level": "VERIFIED",
+      "version": "0.1.0+codex.20260906144555",
+      "source": {
+        "plugin": "audit",
+        "marketplace": "personal",
+        "path": "<RUNTIME_PATH_REDACTED>"
+      },
+      "notes": "Audits supplied artifacts and handoffs. It must not conduct Scout primary research, replace Forge implementation, make Minister strategic judgment, or replace MOA orchestration.",
+      "last_validated": "2026-09-06"
     },
     {
       "id": "devil",
