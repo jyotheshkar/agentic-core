@@ -218,7 +218,7 @@
       "id": "devil",
       "name": "Devil",
       "type": "legacy-plugin",
-      "description": "Legacy adversarial decision plugin retained in source but not currently installed.",
+      "description": "Legacy adversarial decision plugin retained as an installed but non-routable compatibility record.",
       "capabilities": [
         "adversarial-review",
         "premortem",
@@ -228,9 +228,9 @@
         "legacy devil review"
       ],
       "scope": "personal",
-      "status": "NOT_INSTALLED",
+      "status": "DISABLED",
       "enabled": false,
-      "installed": false,
+      "installed": true,
       "authority": [],
       "dependencies": [],
       "requires_minister": false,
@@ -244,8 +244,8 @@
         "marketplace": "personal",
         "path": "<RUNTIME_PATH_REDACTED>"
       },
-      "notes": "Do not select. Shared adversarial-red-team and Forge private review cover current workflows.",
-      "last_validated": "2026-09-01"
+      "notes": "Installed in the desktop marketplace but deliberately non-routable in Agentic Core. Shared adversarial-red-team and Forge private review cover current workflows.",
+      "last_validated": "2026-09-06"
     }
   ]
 }

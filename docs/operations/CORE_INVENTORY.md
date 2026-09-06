@@ -10,7 +10,7 @@ Status: current local evidence, 2026-09-06. The authoritative sanitised records 
 | Minister | Installed, enabled, verified | `0.1.0+codex.20260831230702`, 3 private skills | Strategic and final judgment |
 | Scout | Installed, enabled, verified | `1.0.0+codex.20260902030631`, 8 private skills | Current evidence, provenance, freshness, contradiction, completeness |
 | Forge | Installed, enabled, verified | `1.1.0+codex.20260831144017`, 7 private skills | Engineering, integration, technical verification |
-| Devil | Legacy, not installed, non-routable | `0.1.0`, 1 private skill | Retained source only, replaced by shared adversarial review and Forge review |
+| Devil | Legacy, installed but non-routable | `0.1.0`, 1 private skill | Retained compatibility plugin, deliberately disabled in the Agent Registry and replaced by shared adversarial review and Forge review |
 | Audit | Composed independent workflow, not a plugin | Control-plane and shared-skill contracts | Evidence quality, policy conformance, release claims, residual risks |
 | Fix, Design, Launch, Lab | Composed workflows, not plugins | MOA routes Minister, Scout, Forge, Verification, and Audit as needed | See [capability-family decisions](../architecture/CAPABILITY_FAMILY_DECISIONS.md) |
 

@@ -8,7 +8,7 @@
     "scout": {"version": "1.0.0+codex.20260902030631", "skills": 8, "tests_passed": 17, "tests_total": 17},
     "forge": {"version": "1.1.0+codex.20260831144017", "skills": 7, "tests_passed": 21, "tests_total": 21},
     "moa": {"version": "0.1.0+codex.20260906142235", "skills": 9, "tests_passed": 14, "tests_total": 14},
-    "devil": {"version": "0.1.0", "installed": false, "classification": "legacy"}
+    "devil": {"version": "0.1.0", "installed": true, "routable": false, "classification": "legacy"}
   },
   "control_plane": {"tests_passed": 6, "tests_total": 6, "composition": "EMULATED_HOST_MEDIATED"},
   "total_tests_passed": 86,
