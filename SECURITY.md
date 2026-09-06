@@ -2,15 +2,13 @@
 
 ## Protected assets
 
-Credentials, authentication state, private job records, CVs, correspondence, local databases, and confidential employer information must remain outside Git.
+Credentials, authentication state, private records, correspondence, local databases, and confidential employer information must remain outside Git.
 
 ## Controls
 
 - Allowlist-only source imports with dry-run and hash manifests.
-- Owner-only Site access for Job Searching Agent.
-- D1 runtime data is separate from repository fixtures.
-- Prepared statements and server-side authorization protect writes.
-- CI uses synthetic data and cannot send email, contact employers, or submit applications.
+- External consumer systems retain their own access controls and runtime data. They are not imported or exercised by this core repository.
+- CI uses synthetic data and cannot send messages, submit forms, or perform external actions.
 
 ## Reporting
 

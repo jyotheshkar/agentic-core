@@ -1,0 +1,82 @@
+{
+  "run_id": "demo-core-control-plane-v1",
+  "evidence_kind": "SYNTHETIC_CONTRACT_DEMONSTRATION",
+  "composition": "EMULATED_HOST_MEDIATED",
+  "request_framing": {
+    "outcome": "A safe, evidence-governed core release candidate",
+    "non_goals": ["external product work", "external actions"]
+  },
+  "minister": {
+    "initial_conditions": ["Preserve authority boundaries", "Do not claim native agent execution"],
+    "final_judgment": "APPROVE WITH CONDITIONS"
+  },
+  "routing": {
+    "selected_agents": ["MOA", "Minister", "Scout", "Forge"],
+    "selected_shared_skills": ["skill-broker", "evidence-epistemics", "quality-assurance", "release-readiness"]
+  },
+  "handoffs": [
+    {
+      "OBJECTIVE": "Verify the current core architecture claims",
+      "CONTEXT": "Minister requires evidence before implementation",
+      "INPUTS": ["sanitised repository snapshot"],
+      "CONSTRAINTS": ["No external action", "No credentials or paid services", "Host-mediated composition only"],
+      "REQUIRED OUTPUT": "Provenance-aware evidence handoff",
+      "ACCEPTANCE CRITERIA": ["freshness stated", "limitations stated"],
+      "AUTHORITY": "Scout",
+      "KNOWN RISKS": ["stale runtime state"],
+      "WHAT NOT TO DO": ["make the final strategic judgment"]
+    },
+    {
+      "OBJECTIVE": "Implement control-plane contract hardening",
+      "CONTEXT": "Use Scout findings and Minister conditions",
+      "INPUTS": ["verified architecture evidence", "Minister conditions"],
+      "CONSTRAINTS": ["No external action", "No credentials or paid services", "Host-mediated composition only"],
+      "REQUIRED OUTPUT": "Tested source and tests",
+      "ACCEPTANCE CRITERIA": ["all control-plane tests pass", "no secret data"],
+      "AUTHORITY": "Forge",
+      "KNOWN RISKS": ["scope expansion"],
+      "WHAT NOT TO DO": ["claim native plugin composition"]
+    },
+    {
+      "OBJECTIVE": "Independently assess release claim",
+      "CONTEXT": "Review evidence after Forge verification",
+      "INPUTS": ["test results", "audit ledger"],
+      "CONSTRAINTS": ["No external action", "No credentials or paid services", "Host-mediated composition only"],
+      "REQUIRED OUTPUT": "Residual-risk report",
+      "ACCEPTANCE CRITERIA": ["policy conformance checked", "limitations retained"],
+      "AUTHORITY": "Audit",
+      "KNOWN RISKS": ["confirmation bias"],
+      "WHAT NOT TO DO": ["duplicate Scout research or Forge implementation"]
+    }
+  ],
+  "components": [
+    {"name": "Scout", "status": "PASS"},
+    {"name": "Forge", "status": "PASS"},
+    {"name": "Audit", "status": "PASS"},
+    {"name": "Verification", "status": "PASS"}
+  ],
+  "conflict_arbitration": {
+    "dispute": "whether a passing test suite proves native composition",
+    "authority": "MOA",
+    "decision": "No, label composition EMULATED_HOST_MEDIATED"
+  },
+  "audit_events": [
+    {"type": "REQUEST_FRAMED", "mode": "SYNTHETIC_DEMONSTRATION", "previous_hash": "GENESIS", "hash": "42b7416d9e32f982df3470453eb03033afe7af526b0e37ec3adaeb4c0fd926e0"},
+    {"type": "MINISTER_CONDITIONS", "mode": "SYNTHETIC_DEMONSTRATION", "previous_hash": "42b7416d9e32f982df3470453eb03033afe7af526b0e37ec3adaeb4c0fd926e0", "hash": "b034e9ec63067b58d46385eaacd46e751926bcabeb2117d88a67bba351a35bca"},
+    {"type": "CAPABILITY_DISCOVERED", "mode": "SYNTHETIC_DEMONSTRATION", "previous_hash": "b034e9ec63067b58d46385eaacd46e751926bcabeb2117d88a67bba351a35bca", "hash": "a488b6ac03323d974d73aba097b7096dd955cb6228ea1b85e977bd155c5d7b77"},
+    {"type": "SCOUT_HANDOFF", "mode": "SYNTHETIC_DEMONSTRATION", "previous_hash": "a488b6ac03323d974d73aba097b7096dd955cb6228ea1b85e977bd155c5d7b77", "hash": "c165342a796a55e64051fdf9d51ddf8b197f91fe58ec54de6470621c1789f232"},
+    {"type": "FORGE_HANDOFF", "mode": "SYNTHETIC_DEMONSTRATION", "previous_hash": "c165342a796a55e64051fdf9d51ddf8b197f91fe58ec54de6470621c1789f232", "hash": "eaeb594cde3a778ffd801380c44fed6a979a28d68678cd4aaf9cbe737dcc806e"},
+    {"type": "AUDIT_REVIEW", "mode": "SYNTHETIC_DEMONSTRATION", "previous_hash": "eaeb594cde3a778ffd801380c44fed6a979a28d68678cd4aaf9cbe737dcc806e", "hash": "dc334e045bf505f8394aa8db86763c68a230d34072eca3e556cbf78616bbe149"},
+    {"type": "CONFLICT_ARBITRATED", "mode": "SYNTHETIC_DEMONSTRATION", "previous_hash": "dc334e045bf505f8394aa8db86763c68a230d34072eca3e556cbf78616bbe149", "hash": "d44b3c4fea9b66c1d42f01fd21660789e9151af3e003f7c01035fd5e6e60f216"},
+    {"type": "VERIFIED", "mode": "SYNTHETIC_DEMONSTRATION", "previous_hash": "d44b3c4fea9b66c1d42f01fd21660789e9151af3e003f7c01035fd5e6e60f216", "hash": "b8878ba61f1b00b99e0c1f9562f2fa9fe3fa03e1701c18590ac6e57c424ab4a6"},
+    {"type": "MINISTER_FINAL", "mode": "SYNTHETIC_DEMONSTRATION", "previous_hash": "b8878ba61f1b00b99e0c1f9562f2fa9fe3fa03e1701c18590ac6e57c424ab4a6", "hash": "9f0327cfbb26315ff2ad18f0d3e79152d5d59e63066cf91e537e04d80fed06a1"},
+    {"type": "COMPLETION_GOVERNED", "mode": "SYNTHETIC_DEMONSTRATION", "previous_hash": "9f0327cfbb26315ff2ad18f0d3e79152d5d59e63066cf91e537e04d80fed06a1", "hash": "5dd5d65a6544dd627a02a0613c57440edb3871d00dec60fa9594660fb01cf5e4"}
+  ],
+  "completion": {
+    "deliverable": true,
+    "verification_passed": true,
+    "material_limitations": ["Native plugin-to-plugin process execution is unavailable"],
+    "high_risks": 0,
+    "status": "PASS"
+  }
+}

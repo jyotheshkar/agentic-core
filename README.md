@@ -6,12 +6,10 @@ This repository is the sanitised engineering record. Installed runtime plugins r
 
 ## Current milestone
 
-M0 establishes the private repository, safety controls, reproducible validation, and source-of-truth boundaries. Job Searching Agent V3.0 is the first integrated product.
+The current milestone hardens the private core control plane: authority boundaries, registries, bounded handoffs, durable lifecycle and recovery records, independent audit workflow, verification gates, and host-mediated end-to-end evidence. External consumer products are out of scope.
 
 ## Safety boundary
 
-- No automatic job applications.
-- No automatic employer or recruiter contact.
 - No real credentials, CVs, application records, or confidential employer data in Git.
 - Demonstrations use synthetic or public information.
 - External actions require explicit user authority.

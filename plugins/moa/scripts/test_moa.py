@@ -104,6 +104,20 @@ def test_l() -> None:
     check(all(result["checks"].values()), "a health component failed")
 
 
+def test_m() -> None:
+    route = route_task("@MOA Audit release readiness for this core system.")
+    audit = next((node for node in route["execution_graph"] if node["id"] == "audit-review"), None)
+    check(route["selected_workflows"] == ["independent-audit"], "audit was incorrectly promoted to a standalone agent")
+    check(audit is not None and audit["assigned_agent"] == "Audit", "independent audit node missing")
+    check(audit["dependencies"] == ["verification"], "audit must follow verification")
+
+
+def test_n() -> None:
+    route = route_task("@MOA Run a bounded local experiment for this hypothesis.")
+    check(route["task_type"] == "EXPERIMENT", "experiment task class missing")
+    check(route["selected_agents"] == ["Minister", "Forge"], "experiment should be composed through Forge")
+
+
 TESTS = [
     ("A PURE DECISION", test_a),
     ("B PURE BUILD", test_b),
@@ -117,6 +131,8 @@ TESTS = [
     ("J FINAL REVIEW", test_j),
     ("K FUTURE AGENT", test_k),
     ("L MOA HEALTH", test_l),
+    ("M INDEPENDENT AUDIT WORKFLOW", test_m),
+    ("N LAB WORKFLOW", test_n),
 ]
 
 

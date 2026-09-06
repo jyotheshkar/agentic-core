@@ -2,11 +2,10 @@
 
 ## Active
 
-- Live Google Sheets credentials are not configured. Use mocked responses and synthetic fixtures until the owner completes the credential gate.
-- Live personal job records are not approved for D1 promotion.
-- Direct plugin-to-plugin process execution is not exposed by the current runtime. Host-mediated composition must be labelled accurately.
+- Direct plugin-to-plugin process execution is not exposed by the current runtime. Host-mediated composition must be labelled accurately as `EMULATED_HOST_MEDIATED`.
+- A new Codex task is required to exercise newly installed plugin skill loading in the application UI. The desktop command-line interface supports installation and discovery but no direct fresh-skill invocation command.
 
 ## Controlled
 
-- The existing Job Searching Agent workspace contains private records. It is protected and excluded from direct import.
 - The repository is private. Public access remains prohibited.
+- All examples and integration records are sanitised or synthetic. Credentials, browser state, operational data, and external consumer products remain excluded.

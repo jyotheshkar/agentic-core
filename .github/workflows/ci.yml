@@ -18,6 +18,8 @@ jobs:
         run: python -B core/validation/test_aios_skills.py
       - name: Run repository contract tests
         run: python -B -m unittest discover -s evals -p 'test_*.py'
+      - name: Validate core control-plane integration record
+        run: python -B core/control-plane/aios_control.py validate-run records/integration/core-control-plane-demo.json
       - name: Run product tests
         shell: bash
         run: |

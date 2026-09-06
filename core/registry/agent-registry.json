@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "registry_version": "0.2.0",
+  "registry_version": "0.2.1",
   "notes": "Autonomous agents are registered here. Installed capability plugins remain natively discoverable and are not promoted to agents without agent authority metadata.",
   "agents": [
     {
@@ -149,14 +149,14 @@
       "cost_profile": "FREE_FIRST",
       "risk_profile": "MEDIUM",
       "trust_level": "VERIFIED",
-      "version": "0.1.0+codex.20260902025918",
+      "version": "0.1.0+codex.20260906142235",
       "source": {
         "plugin": "moa",
         "marketplace": "personal",
         "path": "<RUNTIME_PATH_REDACTED>"
       },
       "notes": "Composes installed skills in the current task. Separate plugin process invocation is not exposed by the platform.",
-      "last_validated": "2026-09-02"
+      "last_validated": "2026-09-06"
     },
     {
       "id": "scout",

@@ -1,0 +1,15 @@
+flowchart TD
+  User[User] --> MOA[MOA: framing, routing, orchestration, completion]
+  MOA --> MinisterInitial[Minister: initial conditions]
+  MinisterInitial --> Broker[Skill Broker and registries]
+  Broker --> Scout[Scout: current evidence]
+  Scout --> Forge[Forge: implementation and technical verification]
+  Forge --> Verification[Verification gates]
+  Verification --> Audit[Independent Audit workflow]
+  Audit --> MinisterFinal[Minister: final judgment]
+  MinisterFinal --> Completion[MOA: completion governance]
+  Completion --> User
+  User -. external action authority .-> External[External systems]
+  External -. no autonomous access .-> MOA
+  classDef authority fill:#5B3FD6,color:#fff,stroke:#34217d
+  class MOA,MinisterInitial,MinisterFinal,Scout,Forge,Audit authority

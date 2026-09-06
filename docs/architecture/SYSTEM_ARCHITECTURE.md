@@ -9,7 +9,7 @@ User
   -> Scout: current evidence and provenance
   -> Forge: bounded engineering and verification
   -> Shared Skill Broker: minimum sufficient specialist capability
-  -> Job Searching Agent: persistent domain workflow and manual next actions
+  -> Independent Audit workflow: policy, evidence-quality, release-claim, and residual-risk review
 ```
 
 Direct plugin-to-plugin process execution is currently `EMULATED`. The host composes the registered contracts inside one task. This is not presented as a distributed multi-agent runtime.
@@ -18,7 +18,4 @@ Direct plugin-to-plugin process execution is currently `EMULATED`. The host comp
 
 - Installed plugin folders remain the live runtime source.
 - This repository stores reviewed, sanitised engineering snapshots.
-- Job Searching Agent D1 stores operational job and application state.
-- Google Sheets and CSV are ingestion and audit sources.
-- Approved UI images are visual acceptance references.
-
+- External products may consume Agentic Core only through explicit interfaces. Their data, source, testing, and deployment are outside this repository and this control plane.

@@ -14,6 +14,10 @@ REQUIRED = (
     "docs/00-overview/CURRENT_STATUS.md",
     "docs/governance/PUBLIC_RELEASE_CHECKLIST.md",
     "docs/progress/RISKS_AND_BLOCKERS.md",
+    "docs/architecture/CONTROL_PLANE.md",
+    "docs/architecture/CAPABILITY_FAMILY_DECISIONS.md",
+    "core/control-plane/aios_control.py",
+    "records/integration/core-control-plane-demo.json",
 )
 FORBIDDEN_SUFFIXES = (".db", ".sqlite", ".sqlite3", ".pyc")
 FORBIDDEN_PARTS = {"node_modules", "__pycache__", "private-data", "personal-data"}
