@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1152pt" height="720pt" viewBox="0 0 1152 720" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-26T17:59:59.152532</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 720 
+L 1152 720 
+L 1152 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g clip-path="url(#p3b557dcc3a)">
+    <image xlink:href="data:image/png;base64,
+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" id="imagef3fe940034" transform="scale(1 -1) translate(0 -41.76)" x="914.4" y="-665.28" width="187.2" height="41.76"/>
+   </g>
+   <g id="patch_2">
+    <path d="M 61.2 318.96 
+L 522 318.96 
+Q 527.76 318.96 527.76 313.2 
+L 527.76 133.2 
+Q 527.76 127.44 522 127.44 
+L 61.2 127.44 
+Q 55.44 127.44 55.44 133.2 
+L 55.44 313.2 
+Q 55.44 318.96 61.2 318.96 
+z
+" clip-path="url(#p3b557dcc3a)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 630 318.96 
+L 1090.8 318.96 
+Q 1096.56 318.96 1096.56 313.2 
+L 1096.56 133.2 
+Q 1096.56 127.44 1090.8 127.44 
+L 630 127.44 
+Q 624.24 127.44 624.24 133.2 
+L 624.24 313.2 
+Q 624.24 318.96 630 318.96 
+z
+" clip-path="url(#p3b557dcc3a)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 527.602588 223.2 
+Q 576.001802 223.2 622.947573 223.2 
+" clip-path="url(#p3b557dcc3a)" style="fill: none; stroke-dasharray: 1.3,2.145; stroke-dashoffset: 0; stroke: #000000; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 617.347573 220.4 
+L 622.947573 223.2 
+L 617.347573 226 
+z
+" clip-path="url(#p3b557dcc3a)" style="stroke-dasharray: 1.3,2.145; stroke-dashoffset: 0; stroke: #000000; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 262.8 527.76 
+L 889.2 527.76 
+Q 894.96 527.76 894.96 522 
+L 894.96 399.6 
+Q 894.96 393.84 889.2 393.84 
+L 262.8 393.84 
+Q 257.04 393.84 257.04 399.6 
+L 257.04 522 
+Q 257.04 527.76 262.8 527.76 
+z
+" clip-path="url(#p3b557dcc3a)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 293.522443 317.335364 
+Q 433.797877 356.399409 572.673146 395.073534 
+" clip-path="url(#p3b557dcc3a)" style="fill: none; stroke: #000000; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 568.029589 390.873847 
+L 572.673146 395.073534 
+L 566.527262 396.268567 
+z
+" clip-path="url(#p3b557dcc3a)" style="stroke: #000000; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 858.477557 317.335364 
+Q 718.202123 356.399409 579.326854 395.073534 
+" clip-path="url(#p3b557dcc3a)" style="fill: none; stroke: #000000; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 585.472738 396.268567 
+L 579.326854 395.073534 
+L 583.970411 390.873847 
+z
+" clip-path="url(#p3b557dcc3a)" style="stroke: #000000; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 25px; font-family: 'DejaVu Sans'; text-anchor: start" x="43.2" y="43.2" transform="rotate(-0 43.2 43.2)">Agentic Core + SOL System | Related Contributions</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #444444" x="43.2" y="73.44" transform="rotate(-0 43.2 73.44)">Reusable workflow architecture and a concrete operational application remain distinct projects</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start" x="69.12" y="161.077969" transform="rotate(-0 69.12 161.077969)">Agentic Core: reusable builder</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(69.12 197.045313)">Bounded requirements and capability selection</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(69.12 213.545313)">Versioned workflow packages and Guardian checks</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(69.12 230.045313)">Python compiler / engine, SQLite state and typed receipts</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(69.12 246.545313)">Execution and business acceptance are separate</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start" x="637.92" y="161.077969" transform="rotate(-0 637.92 161.077969)">SOL System: applied operations</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(637.92 197.045313)">Scout routes qualified work to Auto OR Ultra</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(637.92 213.545313)">Candidate preparation, permitted outreach and recovery</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(637.92 230.045313)">Sheets ledger, Gmail / Outlook and protected Pulse</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(637.92 246.545313)">Human-controlled portal submission</text>
+   </g>
+   <g id="text_7">
+    <g id="patch_8">
+     <path d="M 531.653125 218 
+L 620.346875 218 
+L 620.346875 203.999219 
+L 531.653125 203.999219 
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="576" y="213.597656" transform="rotate(-0 576 213.597656)">design principles</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start" x="270.72" y="427.477969" transform="rotate(-0 270.72 427.477969)">Shared engineering principles</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(270.72 463.445312)">Explicit permissions, stable state, evidence gates, checkpoints and truthful status</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(270.72 479.945312)">This connection does not establish shared runtime code or live software integration</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="43.2" y="657.36" transform="rotate(-0 43.2 657.36)">Solid: evidenced implementation / recorded mechanism    Dashed: runtime or end-to-end verification incomplete    Dotted: proposed</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #444444" x="43.2" y="684" transform="rotate(-0 43.2 684)">Earlier MOA roles remain separate from the new coordinator. Specialist instructions are not independently running services.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p3b557dcc3a">
+   <rect x="0" y="0" width="1152" height="720"/>
+  </clipPath>
+ </defs>
+</svg>
