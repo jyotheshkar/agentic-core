@@ -1,0 +1,56 @@
+{
+  "version": "2026-09-26",
+  "source": "Latest Agentic Core native MVP, built 26 September 2026",
+  "sourceVersion": "1.0.0+codex.20260926170704",
+  "exportScope": "Actual deterministic core excerpt. Original logical content, line endings normalized to LF. No plugin bundles, native model transcripts, SQLite databases, private paths or business histories.",
+  "files": [
+    {
+      "path": "core/__init__.py",
+      "sourceSha256": "5c5322e0e7f6519b671119aeaf85d029ef934f7711a8e413bbecbef313bea95f"
+    },
+    {
+      "path": "core/algorithms.py",
+      "sourceSha256": "d3ee078a49a8a9a50287c17a1f9213e3718638c4ddf4c6cc3b36260c5d7ec1c4"
+    },
+    {
+      "path": "core/contracts.py",
+      "sourceSha256": "669f0ed898b43e9a297fe94d0da67a2b279f1204ddf722a7f581cf7298d12cce"
+    },
+    {
+      "path": "core/engine.py",
+      "sourceSha256": "2d6430b149bf021e50a63a84181ea7bf177a756055a6133871ea619bc5426845"
+    },
+    {
+      "path": "core/safety.py",
+      "sourceSha256": "0eb6bef872c00d000194a7f731127c93ea7a34af2a44e9541fa63b9dbef006c6"
+    },
+    {
+      "path": "tests/test_core_algorithms.py",
+      "sourceSha256": "70eb8941f263f9576c0f2f49702b8d0fbfbce8a67592f9e0d63fee671f3c8cbf"
+    },
+    {
+      "path": "tests/test_core_engine.py",
+      "sourceSha256": "fed0e3e0e1c737c0f5a4ac21fda15002045c86c8a5270e08032e8e56f3554406"
+    },
+    {
+      "path": "requirements.txt",
+      "sourceSha256": "98f8719c838520050cfd15e90be829921790c7e8db54d8981d3cd9ca64ad5260"
+    }
+  ],
+  "checks": {
+    "freshSyntheticCoreTests": 35,
+    "result": "PASS",
+    "command": "python -B -m unittest discover -s tests -p \"test_core*.py\" -v",
+    "nativeModelCalls": false,
+    "externalActions": false,
+    "fullBuild60Tests": "Saved release-verification.json records PASS; current full rerun interrupted at Windows path integration probe, not claimed as fresh PASS."
+  },
+  "omitted": [
+    "Native installation scripts and bundled runtime",
+    "100-package skill library",
+    "Signed-in model adapter",
+    "Real application or email records",
+    "Recorded host conversation transcripts",
+    "Runtime databases and logs"
+  ]
+}
