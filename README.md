@@ -17,3 +17,5 @@ M0 establishes the private repository, safety controls, reproducible validation,
 - External actions require explicit user authority.
 
 See `SECURITY.md`, `PRIVACY.md`, and `docs/00-overview/CURRENT_STATUS.md` before importing sources.
+
+**Year provenance:** The `2026` suffix records this repository's creation year (created 2026-09-05). Later maintenance retains its own dates.
